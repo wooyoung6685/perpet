@@ -5,6 +5,8 @@
   font-weight: 600;
 }
 .footer_font-small {
+  width: 22%;
+  text-align: left;
   font-size: 0.9rem;
   font-weight: 300;
 }
@@ -18,14 +20,11 @@
   margin-top: 20px;
 }
 .footer_inner {
-  min-width: 1200px;
-  margin-left: 50%;
-  transform: translate(-50%);
+  width: 1200px;
+  margin: 0 auto;
 }
 .icon {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-.w_100 {
-  width: 100%;
 }
