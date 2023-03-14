@@ -1,0 +1,14 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+.Navigation {
+  display: flex;
+  padding: 0;
+}
+.Navigation li {
+  padding-right: 15px;
+}
+.MenuOutlined {
+  padding: 5px;
+}

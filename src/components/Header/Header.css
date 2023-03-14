@@ -1,0 +1,17 @@
+.header {
+  padding-top: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header_main {
+  display: flex;
+  justify-content: space-between;
+}
+.header_main-searchbar {
+  padding-right: 180px;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
