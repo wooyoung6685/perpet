@@ -1,0 +1,13 @@
+.product-title {
+    width: 1150px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
