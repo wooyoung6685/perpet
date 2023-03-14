@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.brand_mg-top{
+  margin-top: 20px;
+}
+.brand_inner {
+  min-width: 1200px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.brand_flex{
+  display: flex;
+}
+.brand_text-01{
+  width: 50%;
+  text-align: left;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.brand_text-02{
+  width: 50%;
+  text-align: right;
+  color: #0060D1;
+}
+.brand_text-03{
+  position: absolute;
+  left: 82px;
+  bottom: -3px;
+
+}
+.brand_name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.brand_card-box{
+  width: 220px;
+  height: 250px;
+  position: relative;
+}

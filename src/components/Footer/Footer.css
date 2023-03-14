@@ -1,0 +1,31 @@
+.flex {
+  display: flex;
+}
+.footer_font-bold {
+  font-weight: 600;
+}
+.footer_font-small {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.mg_left-10 {
+  margin-left: 10px;
+}
+.mg_top-10 {
+  margin-top: 10px;
+}
+.mg_top-20 {
+  margin-top: 20px;
+}
+.footer_inner {
+  min-width: 1200px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.w_100 {
+  width: 100%;
+}
