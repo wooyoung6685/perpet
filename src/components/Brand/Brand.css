@@ -40,6 +40,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.brand_name:hover{
+  cursor: pointer;
+}
 
 .brand_card-box {
   position: relative;

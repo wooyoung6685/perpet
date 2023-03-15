@@ -1,3 +1,7 @@
+.footer_inner {
+  width: 1200px;
+  margin: 0 auto;
+}
 .flex {
   display: flex;
 }
@@ -7,17 +11,14 @@
 .footer_pd-right {
   padding-right: 20px;
 }
-.footer_font-bold {
-  font-weight: 600;
-}
-.footer_font-small {
-  width: 23%;
-  text-align: left;
-  font-size: 0.9rem;
-  font-weight: 300;
-}
 .footer_mg-left-10 {
   margin-left: 10px;
+}
+.footer_mg-right-20 {
+  margin-right: 20px;
+}
+.footer_mg-right-30 {
+  margin-right: 30px;
 }
 .footer_mg-top-10 {
   margin-top: 10px;
@@ -25,12 +26,8 @@
 .footer_mg-top-20 {
   margin-top: 20px;
 }
-.footer_mg-top60 {
+.footer_mg-top-60 {
   margin-top: 60px;
-}
-.footer_inner {
-  width: 1200px;
-  margin: 0 auto;
 }
 .icon {
   width: 100%;
@@ -38,14 +35,78 @@
   justify-content: flex-end;
 }
 
-.test_font {
+.footer_color{
+  color: #787878;
+  font-weight: 500;
+}
+.footer_font {
   font-family: HGHaeDotum, sans-serif;
   font-weight: 400;
   line-height: 1;
   text-transform: capitalize;
 }
-.test_font2{
+.footer_font-1 {
+  color: #646464;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.footer_font3 {
+  width: 23%;
   color: #a1a1a1;
   margin-top: 10px;
   font-size: 0.9rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.footer_font-2 {
+  position: relative;
+  color: #aeaeae;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.footer_font-3{
+  color: #aeaeae;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.footer_font-2::after{
+  right: -16px;
+  bottom: 2px;
+  width: 1px;
+  height: 17px;
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 1px solid #dbdbdb;
+}
+.footer_font-bold {
+  font-weight: 600;
+}
+
+.footer_font-top{
+  color: #787878;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.footer_font-style{
+  position: relative;
+}
+.footer_font-style::after{
+  right: -16px;
+  bottom: -2px;
+  width: 1px;
+  height: 17px;
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 1px solid #dbdbdb;
+}
+
+.footer_font-top2{
+  margin: 0 20px 0 10px;
+}
+
+.footer_margin-01{
+  margin: 0 20px 0 10px;
 }
