@@ -1,14 +1,17 @@
 import React from "react";
 import "./ProductItem.css";
 import { Rate } from 'antd';
+import { BrowserRouter, Link } from "react-router-dom";
 
 function ProductItem({ name, price, seller, img }) {
   return (
     <div id="product-list">
       <div className="product-card">
-        <a href="/">
-          <div className="product-img_box"><img className="product-img" src={img} alt="product-img" /></div>
-        </a>
+        <BrowserRouter>
+          <Link to="/">
+            <div className="product-img_box"><img className="product-img" src={img} alt="product-img" /></div>
+          </Link>
+        </BrowserRouter>
         <div className="product-content">
           <span className="product-seller">{seller}</span>
           <span className="product-name">{name}</span>

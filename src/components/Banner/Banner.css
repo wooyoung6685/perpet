@@ -21,7 +21,7 @@
   opacity: 1;
 }
 .Banner_slide .swiper-button-next::after,
-.swiper-button-prev::after {
+.Banner .swiper-button-prev::after {
   font-size: 30px;
 }
 .Banner_slide .swiper-horizontal > .swiper-pagination-bullets,

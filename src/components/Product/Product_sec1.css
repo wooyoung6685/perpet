@@ -13,16 +13,27 @@
 }
 
 .left_button{
-    margin-right: 10px;
-    margin-top: 120px;
+    position: absolute;
+    top: 0;
+    left: 305px;
+    position: absolute;
 }
 
 .right_button{
-    margin-top: 120px;
+    position: absolute;
+    top: 0;
+    right: 315px;
+    position: absolute;
 }
 
 .left_button:hover,
 .right_button:hover{
     color: #ff4d4f !important;
     border-color: #ff4d4f !important;
+}
+
+.slide{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
 }
