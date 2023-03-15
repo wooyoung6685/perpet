@@ -7,11 +7,9 @@ function ProductItem({ name, price, seller, img }) {
   return (
     <div id="product-list">
       <div className="product-card">
-        <BrowserRouter>
-          <Link to="/">
-            <div className="product-img_box"><img className="product-img" src={img} alt="product-img" /></div>
-          </Link>
-        </BrowserRouter>
+        <Link to="/">
+          <div className="product-img_box"><img className="product-img" src={img} alt="product-img" /></div>
+        </Link>
         <div className="product-content">
           <span className="product-seller">{seller}</span>
           <span className="product-name">{name}</span>
