@@ -3,11 +3,26 @@
     margin: 0 auto;
     text-align: left;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 #product-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.left_button{
+    margin-right: 10px;
+    margin-top: 120px;
+}
+
+.right_button{
+    margin-top: 120px;
+}
+
+.left_button:hover,
+.right_button:hover{
+    color: #ff4d4f !important;
+    border-color: #ff4d4f !important;
 }
