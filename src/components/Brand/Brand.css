@@ -1,5 +1,9 @@
-.brand_mg-top{
+.brand_mg-top {
   margin-top: 20px;
+}
+
+.brand_mg-top60{
+  margin-top: 60px;
 }
 
 .brand_inner {
@@ -7,42 +11,53 @@
   margin: 0 auto;
 }
 
-.brand_flex{
+.brand_flex {
   display: flex;
 }
 
-.brand_text-01{
+.brand_text-01 {
   width: 50%;
   text-align: left;
-  font-size: 2.6rem;
+  font-size: 2rem;
+  font-family: HGHaeDotum, sans-serif;
   font-weight: 600;
+  text-align: left;
+  line-height: 60px;
+  padding-left: 20px;
 }
 
-.brand_text-02{
+.brand_text-02 {
   width: 50%;
   height: 100%;
   text-align: right;
   line-height: 60px;
-  color: #0060D1;
+  color: #0060d1;
+  padding-right: 20px;
 }
 
-.brand_name{
+.brand_name {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.brand_card-box{
+.brand_card-box {
   position: relative;
-  height: 250px;
-  flex-basis:auto;
+  height: 260px;
+  flex-basis: auto;
   flex-grow: 1;
+  text-align: center;
+}
+.brand_card-box > img {
+  width: 80%;
 }
 
-.brand_text-03{
+.brand_text-03 {
   position: absolute;
   width: 100%;
   text-align: center;
   left: 0;
-  bottom: 0;
+  bottom: 30px;
+  color: #676767;
+  font-size: 1.1rem;
 }

@@ -20,7 +20,7 @@ function Brand() {
     },
     {
       id: 4,
-      src:"./images/Brand/attu.jpg",
+      src:"./images/Brand/attu.png",
       brandname: "아투",
     },
     {
@@ -53,16 +53,17 @@ function Brand() {
       src: "./images/Brand/cesar.png",
       brandname: "시저",
     }
+    
   ];
 
   return (
     <>
-      <div className="brand_inner brand_mg-top">
-        <div className="brand_flex">
+      <div className="brand_inner">
+        <div className="brand_flex brand_mg-top60">
           <p className="brand_text-01">국내 최대 브랜드 보유!</p>
           <p className="brand_text-02">더보기</p>
         </div>
-        <div className="brand_name">
+        <div className="brand_name">        
           {
           images.map((image) => (
             <div className='brand_card-box brand_mg-top' key={image.id}>
