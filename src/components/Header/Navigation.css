@@ -4,11 +4,18 @@
 }
 .Navigation {
   display: flex;
-  padding: 0;
+  padding-top: 20px;
 }
 .Navigation li {
   padding-right: 15px;
 }
-.MenuOutlined {
-  padding: 5px;
+.Navigation li a span {
+  padding-right: 5px;
+  font-size: 20px;
+}
+.Navigation li a {
+  cursor: pointer;
+}
+.ant-dropdown-menu {
+  width: 280px;
 }

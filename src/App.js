@@ -5,16 +5,19 @@ import IconSlider from "./components/IconSlider/IconSlider";
 import Product from "./components/Product/Product";
 import Brand from "./components/Brand/Brand";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <IconSlider />
-      <Product />
-      <Brand />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Banner />
+        <IconSlider />
+        <Product />
+        <Brand />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
