@@ -1,11 +1,33 @@
-.brand_mg-top {
-  margin-top: 20px;
-}
 
-.brand_mg-top60{
+/*======= BrandDesign start========*/
+
+.brand_design-bg{
+  background: linear-gradient(90.3deg, #FF425C 0%, #FF9774 100%);
   margin-top: 60px;
+  padding: 60px 0 60px 0;
+}
+.brand_design-base{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly
+}
+.brand_design-cover{
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.brand_design-text{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  color: #ffffff;
+  line-height: 24px;
+  font-weight: 400;
 }
 
+/*======= BrandDesign end========*/
+
+/*======= Brand start========*/
 .brand_inner {
   width: 1200px;
   margin: 0 auto;
@@ -13,6 +35,14 @@
 
 .brand_flex {
   display: flex;
+}
+
+.brand_mg-top {
+  margin-top: 20px;
+}
+
+.brand_mg-top60{
+  margin-top: 60px;
 }
 
 .brand_text-01 {
@@ -64,3 +94,5 @@
   color: #676767;
   font-size: 1.1rem;
 }
+
+/*======= Brand end========*/

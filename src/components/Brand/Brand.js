@@ -1,5 +1,8 @@
 import React from "react";
 import "./Brand.css";
+import BrandDesign from "./BrandDesign.js";
+
+
 
 function Brand() {
   const images = [
@@ -20,7 +23,7 @@ function Brand() {
     },
     {
       id: 4,
-      src:"./images/Brand/attu.png",
+      src: "./images/Brand/attu.png",
       brandname: "아투",
     },
     {
@@ -52,29 +55,27 @@ function Brand() {
       id: 10,
       src: "./images/Brand/cesar.png",
       brandname: "시저",
-    }
-    
+    },
   ];
 
   return (
-    <>
+    <div>
       <div className="brand_inner">
         <div className="brand_flex brand_mg-top60">
           <p className="brand_text-01">국내 최대 브랜드 보유!</p>
           <p className="brand_text-02">더보기</p>
         </div>
-        <div className="brand_name">        
-          {
-          images.map((image) => (
-            <div className='brand_card-box brand_mg-top' key={image.id}>
+        <div className="brand_name">
+          {images.map((image) => (
+            <div className="brand_card-box brand_mg-top" key={image.id}>
               <img src={image.src} alt={image.brandname} />
-              <p className='brand_text-03'>{image.brandname}</p>
+              <p className="brand_text-03">{image.brandname}</p>
             </div>
-          ))
-          }
+          ))}
         </div>
       </div>
-    </>
+      <BrandDesign />
+    </div>
   );
 }
 
