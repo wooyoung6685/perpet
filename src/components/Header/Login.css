@@ -1,5 +1,6 @@
 .login {
   position: relative;
+  display: flex;
 }
 .login_first {
   transition: all 1s ease;
@@ -19,12 +20,14 @@
   border-radius: 10%;
   z-index: 999;
   right: 120px;
-  top: 40px;
-  transition: all 0.5s ease;
+  top: 50px;
+  transition: all 0.3s ease;
+  visibility:hidden;
 }
 
-.login_first:hover ~ .bellshow {
+.login_first:hover > .bellshow {
   opacity: 1;
+  visibility: visible;
 }
 .bellshow_text {
   text-align: center;
@@ -57,8 +60,9 @@
   border-radius: 10%;
   z-index: 999;
   right: 60px;
-  top: 40px;
-  transition: all 0.5s ease;
+  top: 50px;
+  transition: all 0.3s ease;
+  visibility:hidden;
 }
 .usershow_item {
   padding: 20px;
@@ -75,6 +79,7 @@
   display: inline-block;
   width: 220px;
 }
-.login_second:hover ~ .usershow {
+.login_second:hover > .usershow {
   opacity: 1;
+  visibility: visible;
 }

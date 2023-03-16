@@ -3,7 +3,7 @@ import "./ProductItem.css";
 import { Rate } from 'antd';
 import { Link } from "react-router-dom";
 
-function ProductItem({ name, price, seller, img }) {
+function ProductItem({ name, price, seller, img, orgPrice, disc }) {
   return (
     <div id="product-list">
       <div className="product-card">
@@ -15,10 +15,16 @@ function ProductItem({ name, price, seller, img }) {
         <div className="product-content">
           <span className="product-seller">{seller}</span>
           <span className="product-name">{name}</span>
-          <span className="product-price">{price}</span>
+          <span className="price-box">
+            <div className="origin-price">{orgPrice}</div>
+            <span className="product-disc">{disc}</span>
+            <span className="product-price">{price}</span>
+          </span>
+          <span>
+            <Rate className="star" disabled defaultValue={3} />
+            <span className="star_num"> 3</span>
+          </span>
         </div>
-        <Rate className="star" disabled defaultValue={3} />
-        <span className="star_num"> 3</span>
       </div>
     </div>
   )

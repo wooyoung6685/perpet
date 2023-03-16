@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./SlideComponent.css";
 import { Navigation } from "swiper";
 
 function Product_sec2() {
