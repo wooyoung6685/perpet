@@ -65,7 +65,7 @@
 .swiper-button-next {
     right: 50%;
     margin-right: -656px;
-    top: 45%;
+    top: 38%;
     --swiper-navigation-size: 30px;
     transition: all 0.2s ease;
 }
@@ -73,7 +73,7 @@
 .swiper-button-prev {
     left: 50%;
     margin-left: -656px;
-    top: 45%;
+    top: 38%;
     --swiper-navigation-size: 30px;
     transition: all 0.2s ease;
 }
@@ -81,5 +81,5 @@
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
     scale: 1.1;
-    top: 46%;
+    top: 39%;
 }
