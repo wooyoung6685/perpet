@@ -10,27 +10,7 @@
     flex-wrap: wrap;
 }
 
-.left_button {
-    position: absolute;
-    top: 0;
-    left: 305px;
-    position: absolute;
-}
-
-.right_button {
-    position: absolute;
-    top: 0;
-    right: 315px;
-    position: absolute;
-}
-
-.left_button:hover,
-.right_button:hover {
-    color: #ff4d4f !important;
-    border-color: #ff4d4f !important;
-}
-
-.slide {
+.Product_slide .slide {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
@@ -42,7 +22,7 @@
     padding-bottom: 60px;
 }
 
-.swiper-slide {
+.Product_slide .swiper-slide {
     font-size: 18px;
     background: #fff;
     display: flex;
@@ -57,12 +37,7 @@
     object-fit: cover;
 }
 
-.swiper {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.swiper-button-next {
+.Product_slide .swiper-button-next {
     right: 50%;
     margin-right: -656px;
     top: 38%;
@@ -71,7 +46,7 @@
     --swiper-theme-color: #ff4d4f;
 }
 
-.swiper-button-prev {
+.Product_slide .swiper-button-prev {
     left: 50%;
     margin-left: -656px;
     top: 38%;
@@ -80,7 +55,48 @@
     --swiper-theme-color: #ff4d4f;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.Product_slide .swiper-button-next:hover,
+.Product_slide .swiper-button-prev:hover {
     scale: 1.1;
+}
+
+.parent{
+    position: relative;
+}
+
+.hotdeal{
+    position: relative;
+}
+
+.hotdeal::before {
+    content: '핫딜';
+    position: absolute;
+    background-color: #d84c4c;
+    width: 50px;
+    height: 25px;
+    border-radius: 18px 0 18px 18px;
+    margin-left: 7px;
+    z-index: 10;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
+}
+
+.hotdeal::after {
+    content: '5일 남음';
+    position: absolute;
+    background-color: #d84c4c;
+    width: 280px;
+    height: 25px;
+    border-radius: 0 0 18px 18px;
+    margin-left: 7px;
+    z-index: 10;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
+    bottom: 130px;
 }

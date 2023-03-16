@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./SlideComponent.css";
 import { Navigation } from "swiper";
 
 function Product_sec1() {
@@ -24,10 +23,18 @@ function Product_sec1() {
             >
                 <SwiperSlide>
                     <div id="product-list">
-                        <ProductItem img='./images/Product/pet_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-                        <ProductItem img='./images/Product/pet_food1.jpg' name='양치간식' price='20,000원' seller='그리니스' />
-                        <ProductItem img='./images/Product/pet_toy1.jpg' name='말장난감' price='3,000원' seller='말' />
-                        <ProductItem img='./images/Product/pet_house1.jpg' name='집' price='40,000원' seller='아늑해' />
+                        <div className="hotdeal">
+                            <ProductItem img='./images/Product/pet_acc1.png' name='하네스' orgPrice='38,000원' disc='53% ' price='18,000원' seller='펫베오' />
+                        </div>
+                        <div className="hotdeal">
+                            <ProductItem img='./images/Product/pet_food1.jpg' name='양치간식' orgPrice='49,900원' disc='50% ' price='24,900원' seller='그리니스' />
+                        </div>
+                        <div className="hotdeal">
+                            <ProductItem img='./images/Product/pet_toy1.jpg' name='말장난감' orgPrice='9,000원' disc='41% ' price='5,300원' seller='말' />
+                        </div>
+                        <div className="hotdeal">
+                            <ProductItem img='./images/Product/pet_house1.jpg' name='집' orgPrice='40,000원' disc='20% ' price='32,000원' seller='아늑해' />
+                        </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
