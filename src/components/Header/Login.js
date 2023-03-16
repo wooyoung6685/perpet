@@ -5,9 +5,7 @@ import "./Login.css";
 function Login() {
   return (
     <div className="login">
-      <Button className="login_first" style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<BellOutlined />}></Button>
-      <Button className="login_second" style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<UserOutlined />}></Button>
-      <Button style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<ShoppingCartOutlined />}></Button>
+      <div className="login_first"><Button  style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<BellOutlined />}></Button>
       <div className="bellshow">
         <div className="bellshow_text">
           <span>가입하고 강아지 장난감</span>
@@ -19,7 +17,8 @@ function Login() {
             <Button className="bellshow_button-second">회원가입</Button>
           </div>
         </div>
-      </div>
+      </div></div>
+      <div className="login_second"><Button  style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<UserOutlined />}></Button>
       <div className="usershow">
         <ul className="usershow_item">
           <li>
@@ -69,7 +68,10 @@ function Login() {
             <Button className="bellshow_button-second">회원가입</Button>
           </div>
         </div>
-      </div>
+      </div></div>
+      <Button style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<ShoppingCartOutlined />}></Button>
+
+
     </div>
   );
 }
