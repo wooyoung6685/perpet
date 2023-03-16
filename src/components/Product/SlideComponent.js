@@ -4,7 +4,6 @@ import "./Product_sec1.css";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
-import "./SlideComponent.css";
 import { Navigation } from "swiper";
 
 export default function App() {
