@@ -16,11 +16,10 @@ function App() {
         <Banner />
         <IconSlider />
         <Product />
+        <MultipleSlide />
         <Brand />
-        <MultipleSlide/>
         <Footer />
       </BrowserRouter>
-
     </div>
   );
 }
