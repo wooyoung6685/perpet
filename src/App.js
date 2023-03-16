@@ -6,6 +6,8 @@ import Product from "./components/Product/Product";
 import Brand from "./components/Brand/Brand";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter } from "react-router-dom";
+import MultipleSlide from "./components/Multipleslide/MultipleSlide";
+import { useState } from "react";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
         <IconSlider />
         <Product />
         <Brand />
+        <MultipleSlide/>
         <Footer />
       </BrowserRouter>
+
     </div>
   );
 }
