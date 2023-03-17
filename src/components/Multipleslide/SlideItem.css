@@ -22,3 +22,31 @@
   font-size: 24px;
   padding-top: 60px;
 }
+
+.ParentMultipleSlide{
+  position: relative;
+}
+
+.MultipleSlide{
+  position: static;
+}
+
+.MultipleSlide .swiper-button-next {
+  right: 50%;
+  margin-right: -656px;
+  top: 38%;
+  --swiper-navigation-size: 30px;
+  transition: all 0.2s ease;
+  --swiper-theme-color: #ff4d4f;
+  position: absolute;
+}
+
+.MultipleSlide .swiper-button-prev {
+  left: 50%;
+  margin-left: -656px;
+  top: 38%;
+  --swiper-navigation-size: 30px;
+  transition: all 0.2s ease;
+  --swiper-theme-color: #ff4d4f;
+  position: absolute;
+}

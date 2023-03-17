@@ -23,6 +23,8 @@ function Banner() {
       navigation
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
+      style={{
+      }}
     >
       <SwiperSlide>
         <img src='images/Banner/banner_01.png' alt='' />
