@@ -17,7 +17,7 @@ function SlideItem({ title }) {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         style={{
-          width: "65%",
+          width: "1200px",
         }}
         className='MultipleSlide'
       >
