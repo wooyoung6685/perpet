@@ -19,7 +19,7 @@ function Product_sec2() {
         }}
         navigation={true}
         modules={[Navigation]}
-        className='Product_slide'
+        className='Product_slide3'
       >
         <SwiperSlide>
           <div id='product-list'>
