@@ -224,7 +224,7 @@ function IconSlider() {
     },
   ];
   return (
-    <div className="ParentIconSlider">
+    <div className='ParentIconSlider'>
       <Swiper
         slidesPerView={10}
         grid={{
@@ -240,6 +240,7 @@ function IconSlider() {
           height: "262px",
         }}
         navigation
+        slidesPerGroup={10}
       >
         {icons.map((icons, idx) => {
           return (

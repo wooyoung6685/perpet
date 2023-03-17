@@ -76,29 +76,32 @@ function Product_sec1() {
   return (
     <div>
       <h2 className='product-title'>핫딜상품🔥</h2>
-      <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Navigation]}
-        className='Product_slide'
-      >
-        {hotdeal.map((hotdealItem, idx) => {
-          return (
-            <SwiperSlide key={idx}>
-              <div id='product-list'>
-                <div className='hotdeal'>
-                  <ProductItem image={`${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={hotdealItem.discount} price={hotdealItem.price} seller={hotdealItem.seller} />
+      <div class='ParentProduct1'>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          slidesPerGroup={4}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Navigation]}
+          className='Product_slide1'
+        >
+          {hotdeal.map((hotdealItem, idx) => {
+            return (
+              <SwiperSlide key={idx}>
+                <div id='product-list'>
+                  <div className='hotdeal'>
+                    <ProductItem image={`${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={hotdealItem.discount} price={hotdealItem.price} seller={hotdealItem.seller} />
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </div>
     </div>
   );
 }
