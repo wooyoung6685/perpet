@@ -1,9 +1,14 @@
+.ParentIconSlider{
+  position: relative;
+}
+
 .IconSlider.swiper {
-  width: 1345px;
+  width: 1200px;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  position: static;
 }
 
 .IconSlider .swiper-slide {
@@ -19,17 +24,23 @@
   height: 2px !important;
 }
 .IconSlider .swiper-button-next {
+  right: 50%;
+  margin-right: -656px;
   top: 38%;
   --swiper-navigation-size: 30px;
   transition: all 0.2s ease;
   --swiper-theme-color: #ff4d4f;
+  position: absolute;
 }
 
 .IconSlider .swiper-button-prev {
+  left: 50%;
+  margin-left: -656px;
   top: 38%;
   --swiper-navigation-size: 30px;
   transition: all 0.2s ease;
   --swiper-theme-color: #ff4d4f;
+  position: absolute;
 }
 
 .IconSlider .swiper-button-next:hover,

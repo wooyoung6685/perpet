@@ -224,7 +224,7 @@ function IconSlider() {
     },
   ];
   return (
-    <div>
+    <div className="ParentIconSlider">
       <Swiper
         slidesPerView={10}
         grid={{

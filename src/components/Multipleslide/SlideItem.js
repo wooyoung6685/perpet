@@ -6,7 +6,7 @@ import ProductItem from "../Product/ProductItem";
 
 function SlideItem({ title }) {
   return (
-    <div>
+    <div className="ParentMultipleSlide">
       <p className='title'>{title}</p>
       <Swiper
         // install Swiper modules
