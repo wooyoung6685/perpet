@@ -10,6 +10,32 @@ import "swiper/css/autoplay";
 import "./Banner.css";
 
 function Banner() {
+  const bannerImg = [
+    {
+      src: "images/Banner/banner_01.png",
+      alt: "01배너",
+    },
+    {
+      src: "images/Banner/banner_02.png",
+      alt: "02배너",
+    },
+    {
+      src: "images/Banner/banner_03.png",
+      alt: "03배너",
+    },
+    {
+      src: "images/Banner/banner_04.png",
+      alt: "04배너",
+    },
+    {
+      src: "images/Banner/banner_05.png",
+      alt: "05배너",
+    },
+    {
+      src: "images/Banner/banner_06.png",
+      alt: "06배너",
+    },
+  ];
   return (
     <Swiper
       // install Swiper modules
@@ -26,24 +52,13 @@ function Banner() {
       style={{
       }}
     >
-      <SwiperSlide>
-        <img src='images/Banner/banner_01.png' alt='' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src='images/Banner/banner_02.png' alt='' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src='images/Banner/banner_03.png' alt='' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src='images/Banner/banner_04.png' alt='' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src='images/Banner/banner_05.png' alt='' />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src='images/Banner/banner_06.png' alt='' />
-      </SwiperSlide>
+      {bannerImg.map((bannerImg, idx) => {
+        return (
+          <SwiperSlide key={idx}>
+            <img src={`${bannerImg.src}`} alt={`${bannerImg.alt}`} />
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 }
