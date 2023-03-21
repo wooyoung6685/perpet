@@ -5,11 +5,11 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   const navigate = useNavigate();
-  const onClickLogin = () => {
-    navigate("/LoginPage");
-  };
   const onClickMembership = () => {
-    navigate("/Membership");
+    navigate("/Member/Membership");
+  };
+  const onClickLoginPage = () => {
+    navigate("/Member/LoginPage");
   };
   return (
     <div className="login">
@@ -20,7 +20,7 @@ function Login() {
             <span>가입하고 강아지 장난감</span>
             <p>주문하면 오늘 출발!</p>
             <div className="bellshow_button">
-              <Button className="bellshow_button-first" type="primary" danger onClick={onClickLogin}>
+              <Button className="bellshow_button-first" type="primary" danger onClick={onClickLoginPage}>
                 로그인
               </Button>
               <Button className="bellshow_button-second" onClick={onClickMembership}>
@@ -75,10 +75,12 @@ function Login() {
             <span>가입하고 강아지 장난감</span>
             <p>주문하면 오늘 출발!</p>
             <div className="bellshow_button">
-              <Button className="bellshow_button-first" type="primary" danger>
+              <Button className="bellshow_button-first" type="primary" danger onClick={onClickLoginPage}>
                 로그인
               </Button>
-              <Button className="bellshow_button-second">회원가입</Button>
+              <Button className="bellshow_button-second" onClick={onClickMembership}>
+                회원가입
+              </Button>
             </div>
           </div>
         </div>
