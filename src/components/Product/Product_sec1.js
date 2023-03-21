@@ -1,81 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./Product_sec1.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { UploadOutlined } from '@ant-design/icons';
+import { Button, message, Upload } from 'antd';
+
+import { API_URL } from "../../config/constants";
 
 function Product_sec1() {
-  const hotdeal = [
-    {
-      image: "images/Product/pet_acc1.png",
-      name: "하네스",
-      price: "18,000원",
-      orgPrice: "38,000원",
-      discount: "53%",
-      seller: "펫베오",
-    },
-    {
-      image: "images/Product/pet_food1.jpg",
-      name: "양치간식",
-      price: "24,900원",
-      orgPrice: "49,900원",
-      discount: "50%",
-      seller: "그리니스",
-    },
-    {
-      image: "images/Product/pet_toy1.jpg",
-      name: "말장난감",
-      price: "9,000원",
-      orgPrice: "5,300원",
-      discount: "41%",
-      seller: "말",
-    },
-    {
-      image: "images/Product/pet_house1.jpg",
-      name: "집",
-      orgPrice: "40,000원",
-      price: "32,000원",
-      discount: "20% ",
-      seller: "아늑해",
-    },
-    {
-      image: "images/Product/pet_food2.jpg",
-      name: "사료",
-      orgPrice: "25,000원",
-      price: "25,000원",
-      discount: "50%",
-      seller: "네추럴코어",
-    },
-    {
-      image: "images/Product/pet_toy2.jpg",
-      name: "당근노즈워크",
-      orgPrice: "12,500원",
-      price: "10,000원",
-      discount: "50%",
-      seller: "노즈워크",
-    },
-    {
-      image: "images/Product/pet_acc2.jpg",
-      name: "넥카라",
-      orgPrice: "3,500원",
-      price: "7,000원",
-      discount: "50%",
-      seller: "핥지마",
-    },
-    {
-      image: "images/Product/pet_house2.jpg",
-      name: "집",
-      orgPrice: "20,000원",
-      price: "40,000원",
-      discount: "50%",
-      seller: "아늑해",
-    },
-  ];
+  const [product, setProduct] = useState(null);
+  useEffect(() => {
+    let url = `${API_URL}/products`;
+    axios
+      .get(url)
+      .then((result) => {
+        console.log(result);
+        setProduct(result.data.product);
+        console.log(product);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  if (product == null) {
+    return <h1>상품정보를 받고 있습니다...</h1>;
+  }
+
   return (
     <div>
       <h2 className='product-title'>핫딜상품🔥</h2>
+      {/* <Upload {...props}>
+        <Button icon={<UploadOutlined />} danger>상품 업로드</Button>
+      </Upload> */}
       <div class='ParentProduct1'>
         <Swiper
           slidesPerView={4}
@@ -89,7 +49,7 @@ function Product_sec1() {
           modules={[Navigation]}
           className='Product_slide1'
         >
-          {hotdeal.map((hotdealItem, idx) => {
+          {product.map((hotdealItem, idx) => {
             return (
               <SwiperSlide key={idx}>
                 <div id='product-list'>

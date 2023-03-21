@@ -101,3 +101,7 @@
   line-height: 24px;
   bottom: 130px;
 }
+
+.ant-upload{
+  right: 0;
+}
