@@ -1,5 +1,5 @@
 .product-title {
-  width: 1150px;
+  width: 1200px;
   margin: 40px auto 20px;
   text-align: left;
 }
@@ -11,12 +11,6 @@
 }
 .ParentProduct3 {
   position: relative;
-}
-
-.product-title {
-  width: 1150px;
-  margin: 40px auto 20px;
-  text-align: left;
 }
 
 #product-list {

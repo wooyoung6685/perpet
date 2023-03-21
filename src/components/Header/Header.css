@@ -9,9 +9,14 @@
   justify-content: space-between;
 }
 .header_main-searchbar {
-  padding-right: 180px;
+  padding-right: 64px;
 }
 .header_nav {
   display: flex;
   justify-content: space-between;
+}
+
+.header_side-login{
+  display: flex;
+  align-items: center;
 }
