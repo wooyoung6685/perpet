@@ -59,13 +59,13 @@ function UploadPage() {
   return (
     <div id="upload-container">
       <Form name="uploadForm" onFinish={onFinish}>
-        <Form.Item name="upload" valuePropName="image">
+        <Form.Item name="upload" valuePropName="image" className='upload-form'>
           <Upload name="image" action={`${API_URL}/image`} listType="picture" showUploadList={false} onChange={onChangeImage}>
             {imageUrl ? (
               <img id="upload-img" src={`${API_URL}/${imageUrl}`} alt="" />
             ) : (
               <div id="upload-img-placeholder">
-                <InboxOutlined style={{ fontSize: '4em', color: '#ff4d4f' }}/>
+                <InboxOutlined style={{ fontSize: '10em', color: '#ff4d4f' }}/>
                 <span>이미지를 업로드 해주세요</span>
               </div>
             )}
