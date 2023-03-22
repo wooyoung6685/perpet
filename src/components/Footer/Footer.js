@@ -61,8 +61,6 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className='footer_mg-top-60'>
-          </div>
         </div>
       </div>
     </>
