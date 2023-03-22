@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { Form, Input, Button, Upload, Divider, InputNumber, message } from "antd";
 import { InboxOutlined } from '@ant-design/icons';
 import { API_URL } from "../../config/constants.js";
 import axios from "axios";
-import './UploadPage.css'
+import "./UploadPage.css";
 
 function UploadPage() {
   const { TextArea } = Input;
@@ -81,23 +81,23 @@ function UploadPage() {
           <p className="ant-upload-text">업로드할 파일을 클릭하거나 끌어와 주세요</p>
         </Dragger>
         <Divider></Divider>
-        <Form.Item label={<span className="upload-label">상품명</span>} name="name" rules={[{ required: true, message: "상품명은 필수 입력 사항입니다." }]}>
-          <Input className="upload-name" placeholder="상품명을 입력해주세요" size="large" />
+        <Form.Item label={<span className='upload-label'>상품명</span>} name='name' rules={[{ required: true, message: "상품명은 필수 입력 사항입니다." }]}>
+          <Input className='upload-name' placeholder='상품명을 입력해주세요' size='large' />
         </Form.Item>
         <Divider></Divider>
-        <Form.Item label={<span className="upload-price">판매가</span>} name="price" rules={[{ required: true, message: "판매가는 필수 입력 사항입니다." }]} initialValue={0}>
-          <InputNumber className="upload-price" size="large" min={0} />
+        <Form.Item label={<span className='upload-price'>판매가</span>} name='price' rules={[{ required: true, message: "판매가는 필수 입력 사항입니다." }]} initialValue={0}>
+          <InputNumber className='upload-price' size='large' min={0} />
         </Form.Item>
         <Divider></Divider>
-        <Form.Item label={<span className="upload-label">판매자명</span>} name="seller" rules={[{ required: true, message: "판매자명은 필수 입력 사항입니다." }]}>
-          <Input className="upload-seller" placeholder="판매자명을 입력해주세요" size="large" />
+        <Form.Item label={<span className='upload-label'>판매자명</span>} name='seller' rules={[{ required: true, message: "판매자명은 필수 입력 사항입니다." }]}>
+          <Input className='upload-seller' placeholder='판매자명을 입력해주세요' size='large' />
         </Form.Item>
         <Divider></Divider>
-        <Form.Item label={<span className="upload-label">상품설명</span>} name="description" rules={[{ required: true, message: "상품설명은 필수 입력 사항입니다." }]}>
-          <TextArea size="large" id="product-description" showCount maxLength={300} placeholder="상품설명을 작성해주세요"></TextArea>
+        <Form.Item label={<span className='upload-label'>상품설명</span>} name='description' rules={[{ required: true, message: "상품설명은 필수 입력 사항입니다." }]}>
+          <TextArea size='large' id='product-description' showCount maxLength={300} placeholder='상품설명을 작성해주세요'></TextArea>
         </Form.Item>
         <Form.Item>
-          <Button id="submit-button" htmlType="submit">
+          <Button id='submit-button' htmlType='submit'>
             상품등록하기
           </Button>
         </Form.Item>
@@ -107,4 +107,4 @@ function UploadPage() {
   )
 }
 
-export default UploadPage
+export default UploadPage;

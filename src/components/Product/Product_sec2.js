@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./Product_sec2.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { API_URL } from "../../config/constants";
 
 function Product_sec2() {
-  const product1 = [
-    { image: "images/Product/pet_food2.jpg", name: "사료", price: "25,000원", seller: "네추럴코어" },
-    { image: "images/Product/pet_toy2.jpg", name: "당근노즈워크", price: "10,000원", seller: "노즈워크" },
-    { image: "images/Product/pet_acc2.jpg", name: "넥카라", price: "7,000원", seller: "핥지마" },
-    { image: "images/Product/pet_house2.jpg", name: "집", price: "40,000원", seller: "아늑해" },
-    { image: "images/Product/pet_toy3.jpg", name: "바나나장난감", price: "10,000원", seller: "바나나" },
-    { image: "images/Product/pet_food3.jpg", name: "개껌", price: "25,000원", seller: "네추럴코어" },
-    { image: "images/Product/pet_house3.jpg", name: "집", price: "40,000원", seller: "아늑해" },
-    { image: "images/Product/pet_acc3.png", name: "목줄", price: "7,000원", seller: "안전하개" },
-  ];
+  const [product, setProduct] = useState(null);
+  useEffect(() => {
+    let url = `${API_URL}/suggest`;
+    axios
+      .get(url)
+      .then((result) => {
+        console.log(result);
+        setProduct(result.data.product);
+        console.log(product);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  if (product == null) {
+    return <h1>상품정보를 받고 있습니다...</h1>;
+  }
+
   return (
     <div>
       <h2 className='product-title'>이 상품 어때❔</h2>
@@ -33,7 +43,7 @@ function Product_sec2() {
           modules={[Navigation]}
           className='Product_slide1'
         >
-          {product1.map((product1, idx) => {
+          {product.map((product1, idx) => {
             return (
               <SwiperSlide key={idx}>
                 <div id='product-list'>
