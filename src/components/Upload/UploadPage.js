@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import { Form, Input, Button, Upload, Divider, InputNumber, message } from "antd";
-import { InboxOutlined } from '@ant-design/icons';
+import { InboxOutlined } from "@ant-design/icons";
 import { API_URL } from "../../config/constants.js";
 import axios from "axios";
-import './UploadPage.css'
+import "./UploadPage.css";
 
 function UploadPage() {
   const { TextArea } = Input;
@@ -20,11 +20,11 @@ function UploadPage() {
       })
       .then((result) => {
         console.log(result);
-        navigate('/', { replace: true });
+        navigate("/", { replace: true });
       })
       .catch((error) => {
         console.error(error);
-        message.error('에러가 발생하였습니다!');
+        message.error("에러가 발생하였습니다!");
       });
   };
   const onChangeImage = (info) => {
@@ -33,39 +33,20 @@ function UploadPage() {
     }
     if (info.file.status === "done") {
       const response = info.file.response;
-      const imageUrl = response.imageUrl;
+      const imageUrl = response.image;
       setImageUrl(imageUrl);
     }
   };
-  const props = {
-    name: 'file',
-    multiple: true,
-    action: API_URL,
-    onChange(info) {
-      const { status } = info.file;
-      if (status !== 'uploading') {
-        console.log(info.file, info.fileList);
-      }
-      if (status === 'done') {
-        message.success(`${info.file.name} 파일이 업로드 되었습니다`);
-      } else if (status === 'error') {
-        message.error(`${info.file.name} 파일 업로드가 실패하였습니다`);
-      }
-    },
-    onDrop(e) {
-      console.log('Dropped files', e.dataTransfer.files);
-    },
-  };
   return (
-    <div id="upload-container">
-      <Form name="uploadForm" onFinish={onFinish}>
-        <Form.Item name="upload" valuePropName="image" className='upload-form'>
-          <Upload name="image" action={`${API_URL}/image`} listType="picture" showUploadList={false} onChange={onChangeImage}>
+    <div id='upload-container'>
+      <Form name='uploadForm' onFinish={onFinish}>
+        <Form.Item name='upload' valuePropName='image' className='upload-form'>
+          <Upload name='image' action={`${API_URL}/image`} listType='picture' showUploadList={false} onChange={onChangeImage}>
             {imageUrl ? (
-              <img id="upload-img" src={`${API_URL}/${imageUrl}`} alt="" />
+              <img id='upload-img' src={`${API_URL}/${imageUrl}`} alt='' />
             ) : (
-              <div id="upload-img-placeholder">
-                <InboxOutlined style={{ fontSize: '10em', color: '#ff4d4f' }}/>
+              <div id='upload-img-placeholder'>
+                <InboxOutlined style={{ fontSize: "10em", color: "#ff4d4f" }} />
                 <span>이미지를 업로드 해주세요</span>
               </div>
             )}
@@ -93,9 +74,8 @@ function UploadPage() {
           </Button>
         </Form.Item>
       </Form>
-    </div >
-
-  )
+    </div>
+  );
 }
 
 export default UploadPage;
