@@ -1,42 +1,13 @@
 import React from "react";
 import "./Membership.css";
-import { AutoComplete, Button, Cascader, Checkbox, Col, Form, Input, InputNumber, Row, Select } from "antd";
+import { Button, Checkbox, Form, Input, Select, Divider } from "antd";
 import { useState } from "react";
+const CheckboxGroup = Checkbox.Group;
+const plainOptions = ["Apple", "Pear", "Orange"];
+const defaultCheckedList = ["Apple", "Orange"];
+
 const { Option } = Select;
-const residences = [
-  {
-    value: "zhejiang",
-    label: "Zhejiang",
-    children: [
-      {
-        value: "hangzhou",
-        label: "Hangzhou",
-        children: [
-          {
-            value: "xihu",
-            label: "West Lake",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    value: "jiangsu",
-    label: "Jiangsu",
-    children: [
-      {
-        value: "nanjing",
-        label: "Nanjing",
-        children: [
-          {
-            value: "zhonghuamen",
-            label: "Zhong Hua Men",
-          },
-        ],
-      },
-    ],
-  },
-];
+
 const formItemLayout = {
   labelCol: {
     xs: {
@@ -73,30 +44,7 @@ function Membership() {
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
   };
-  const prefixSelector = (
-    <Form.Item name="prefix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="86">+86</Option>
-        <Option value="87">+87</Option>
-      </Select>
-    </Form.Item>
-  );
-  const suffixSelector = (
-    <Form.Item name="suffix" noStyle>
-      <Select
-        style={{
-          width: 70,
-        }}
-      >
-        <Option value="USD">$</Option>
-        <Option value="CNY">¥</Option>
-      </Select>
-    </Form.Item>
-  );
+
   const [autoCompleteResult, setAutoCompleteResult] = useState([]);
   const onWebsiteChange = (value) => {
     if (!value) {
@@ -118,7 +66,7 @@ function Membership() {
         name="register"
         onFinish={onFinish}
         initialValues={{
-          residence: ["zhejiang", "hangzhou", "xihu"],
+          residence: [""],
           prefix: "86",
         }}
         style={{
@@ -223,8 +171,8 @@ function Membership() {
           <Checkbox>위 개인정보 수집.이용에 동의합니다.(필수)</Checkbox>
         </Form.Item>
         <Form.Item {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">
-            Register
+          <Button type="primary" htmlType="submit" size="large">
+            회원가입 완료
           </Button>
         </Form.Item>
       </Form>
