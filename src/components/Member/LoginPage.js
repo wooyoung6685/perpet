@@ -80,7 +80,6 @@ function LoginPage() {
           </Form.Item>
           <Form.Item
             wrapperCol={{
-              offset: 9,
               span: 9,
             }}
           >
