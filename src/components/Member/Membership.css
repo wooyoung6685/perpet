@@ -1,0 +1,11 @@
+.membership {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 250px;
+  padding-top: 100px;
+}
+.membership h1 {
+  text-align: center;
+  padding-right: 160px;
+  padding-bottom: 50px;
+}
