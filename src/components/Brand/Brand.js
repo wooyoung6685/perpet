@@ -1,6 +1,5 @@
 import React from "react";
 import "./Brand.css";
-import BrandDesign from "./BrandDesign.js";
 
 function Brand() {
   const images = [
@@ -72,9 +71,7 @@ function Brand() {
           ))}
         </div>
       </div>
-      <BrandDesign />
     </div>
-    
   );
 }
 

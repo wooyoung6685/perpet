@@ -1,0 +1,39 @@
+.loginpage {
+  width: 1200px;
+  margin: 0 auto;
+}
+.loginpage_logo {
+  text-align: center;
+  padding-top: 120px;
+}
+.loginpage_logo img {
+  width: 250px;
+}
+.loginpage_input-id {
+  background-color: white !important;
+  border: 1px solid rgb(155, 150, 150) !important;
+  height: 50px;
+}
+.loginpage_input-pw {
+  background-color: white !important;
+  border: 1px solid rgb(155, 150, 150) !important;
+  height: 50px;
+}
+#basic_password {
+  background-color: white !important;
+}
+.loginpage_form {
+  padding-top: 50px;
+}
+.loginpage_form .ant-row {
+  justify-content: center;
+}
+.loginpage_button {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 11px;
+}
+
+.loginpage_button-login {
+  width: 444px;
+}
