@@ -1,7 +1,7 @@
 import React from "react";
 import "./LoginPage.css";
-
 import { Button, Checkbox, Form, Input, ConfigProvider } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -10,6 +10,10 @@ const onFinishFailed = (errorInfo) => {
   console.log("Failed:", errorInfo);
 };
 function LoginPage() {
+  const navigate = useNavigate();
+  const onClickMembership = () => {
+    navigate("/Member/Membership");
+  };
   return (
     <div className="loginpage">
       <div className="loginpage_logo">
@@ -96,7 +100,7 @@ function LoginPage() {
             }}
           >
             <div className="loginpage_button2">
-              <Button className="loginpage_button-login" htmlType="submit" shape="round" size="large">
+              <Button className="loginpage_button-login" htmlType="submit" shape="round" size="large" onClick={onClickMembership}>
                 회원가입
               </Button>
             </div>

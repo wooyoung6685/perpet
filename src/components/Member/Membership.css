@@ -1,11 +1,30 @@
 .membership {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 250px;
   padding-top: 100px;
+  text-align: center;
 }
 .membership h1 {
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
-  padding-right: 160px;
+
   padding-bottom: 50px;
+}
+.ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 150px;
+}
+.membership_checkbox {
+  text-align: center;
+}
+#register {
+  margin: 0 auto;
+}
+.membership_input {
+  padding-right: 130px;
+}
+.membership_submit {
 }
