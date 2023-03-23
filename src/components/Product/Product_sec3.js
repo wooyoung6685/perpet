@@ -8,14 +8,14 @@ import { Navigation } from "swiper";
 
 function Product_sec2() {
   const product2 = [
-    { image: "images/Product/cat_snack2.png", name: "참치 츄르", price: "6,000원", seller: "이나바" },
-    { image: "images/Product/dog_food3.jpg", name: "개껌", price: "25,000원", seller: "네추럴코어" },
-    { image: "images/Product/dog_house3.jpg", name: "집", price: "40,000원", seller: "아늑해" },
-    { image: "images/Product/cat_snack1.jpg", name: "캔간식", price: "48,000원", seller: "굿프랜드" },
-    { image: "images/Product/dog_food4.jpg", name: "양치간식", price: "25,000원", seller: "덴티페어리" },
-    { image: "images/Product/dog_toy4.png", name: "장난감", price: "10,000원", seller: "그루비볼" },
-    { image: "images/Product/cat_scratcher4.jpg", name: "스크래쳐 하우스", price: "25,000원", seller: "도트캣" },
-    { image: "images/Product/dog_house4.jpg", name: "집", price: "40,000원", seller: "포근해" },
+    { image: "images/Product/cat_snack2.png", name: "참치 츄르", price: "6,000", seller: "이나바" },
+    { image: "images/Product/dog_food3.jpg", name: "개껌", price: "25,000", seller: "네추럴코어" },
+    { image: "images/Product/dog_house3.jpg", name: "집", price: "40,000", seller: "아늑해" },
+    { image: "images/Product/cat_snack1.jpg", name: "캔간식", price: "48,000", seller: "굿프랜드" },
+    { image: "images/Product/dog_food4.jpg", name: "양치간식", price: "25,000", seller: "덴티페어리" },
+    { image: "images/Product/dog_toy4.png", name: "장난감", price: "10,000", seller: "그루비볼" },
+    { image: "images/Product/cat_scratcher4.jpg", name: "스크래쳐 하우스", price: "25,000", seller: "도트캣" },
+    { image: "images/Product/dog_house4.jpg", name: "집", price: "40,000", seller: "포근해" },
   ];
   return (
     <div>

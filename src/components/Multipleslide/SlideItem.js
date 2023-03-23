@@ -30,8 +30,8 @@ function SlideItem({ title }) {
               </a>
             </div>
             <div className='ProductItem_main'>
-              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000원' seller='네추럴코어' />
+              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000' seller='펫베오' />
+              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000' seller='네추럴코어' />
             </div>
           </div>
         </SwiperSlide>
@@ -44,8 +44,8 @@ function SlideItem({ title }) {
               </a>
             </div>
             <div className='ProductItem_main'>
-              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000원' seller='네추럴코어' />
+              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000' seller='펫베오' />
+              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000' seller='네추럴코어' />
             </div>
           </div>
         </SwiperSlide>
@@ -58,8 +58,8 @@ function SlideItem({ title }) {
               </a>
             </div>
             <div className='ProductItem_main'>
-              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000원' seller='네추럴코어' />
+              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000' seller='펫베오' />
+              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000' seller='네추럴코어' />
             </div>
           </div>
         </SwiperSlide>
