@@ -1,6 +1,15 @@
-.navbutton_img {
-  display: block;
+.navButton button:where(.css-dev-only-do-not-override-ph9edi).ant-btn-default {
+  box-shadow: none !important;
+}
+.ant-modal-content {
+  width: 524px !important;
+  height: 750px !important;
+}
+
+.ant-modal-body img {
   width: 100%;
   height: 100%;
-  padding-top: 13px;
+}
+.ant-modal-footer {
+  display: none;
 }
