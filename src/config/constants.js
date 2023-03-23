@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:8080";
+export const API_URL = "https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/";
