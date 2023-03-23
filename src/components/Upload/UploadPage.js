@@ -15,7 +15,7 @@ function UploadPage() {
     axios
       .post(`${API_URL}/products`, {
         name: val.name,
-        price: val.price,
+        orgPrice: val.orgPrice,
         image: imageUrl,
         seller: val.seller,
         description: val.description,
@@ -59,7 +59,7 @@ function UploadPage() {
           <Input className='upload-name' placeholder='상품명을 입력해주세요' size='large' />
         </Form.Item>
         <Divider></Divider>
-        <Form.Item label={<span className='upload-price'>판매가</span>} name='price' rules={[{ required: true, message: "판매가는 필수 입력 사항입니다." }]} initialValue={0}>
+        <Form.Item label={<span className='upload-price'>판매가</span>} name='orgPrice' rules={[{ required: true, message: "판매가는 필수 입력 사항입니다." }]} initialValue={0}>
           <InputNumber className='upload-price' size='large' min={0} />
         </Form.Item>
         <Divider></Divider>
