@@ -16,9 +16,9 @@ function ProductItem({ name, price, seller, image, orgPrice, disc }) {
           <span className='product-seller'>{seller}</span>
           <span className='product-name'>{name}</span>
           <span className='price-box'>
-            <div className='origin-price'>{orgPrice}</div>
+            <div className='origin-price'>{orgPrice}원</div>
             <span className='product-disc'>{disc}</span>
-            <span className='product-price'>{price}</span>
+            <span className='product-price'>{price}원</span>
           </span>
           <span>
             <Rate className='star' disabled defaultValue={3} />
