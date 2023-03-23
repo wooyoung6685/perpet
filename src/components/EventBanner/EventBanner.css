@@ -1,0 +1,11 @@
+.eventBanner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.eventBanner img {
+  width: 1168px;
+  height: 155px;
+}

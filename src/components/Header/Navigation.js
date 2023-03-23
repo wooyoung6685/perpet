@@ -2,11 +2,8 @@ import React from "react";
 import NavItem from "./NavItem";
 import "./Navigation.css";
 import { MenuOutlined } from "@ant-design/icons";
-import { Dropdown, message, Space } from "antd";
+import { Dropdown, Space } from "antd";
 
-const onClick = ({ key }) => {
-  message.info(`Click on item ${key}`);
-};
 const items = [
   {
     label: "사료",
@@ -46,7 +43,6 @@ function Navigation() {
           <Dropdown
             menu={{
               items,
-              onClick,
             }}
           >
             <a onClick={(e) => e.preventDefault()}>
