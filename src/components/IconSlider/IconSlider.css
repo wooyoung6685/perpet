@@ -1,4 +1,4 @@
-.ParentIconSlider{
+.ParentIconSlider {
   position: relative;
 }
 
@@ -16,12 +16,14 @@
   font-size: 18px;
   height: calc((100% - 30px) / 2) !important;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .IconSlider .swiper-horizontal > .swiper-scrollbar,
 .IconSlider .swiper-scrollbar.swiper-scrollbar-horizontal {
   left: 50% !important;
   height: 2px !important;
+  transform: translateX(-50%) !important;
 }
 .IconSlider .swiper-button-next {
   right: 50%;
@@ -53,6 +55,7 @@
 }
 .IconSlider .swiper-scrollbar-drag {
   background-color: #ff425c !important;
+  height: 3px !important;
 }
 .iconSlider_icons-link {
   display: flex;

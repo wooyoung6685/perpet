@@ -1,3 +1,7 @@
+.navButton {
+  padding-top: 20px;
+}
+
 .navButton button:where(.css-dev-only-do-not-override-ph9edi).ant-btn-default {
   box-shadow: none !important;
 }
