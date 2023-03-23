@@ -11,7 +11,7 @@ import { API_URL } from "../../config/constants";
 function Product_sec2() {
   const [product, setProduct] = useState(null);
   useEffect(() => {
-    let url = `${API_URL}/suggest`;
+    let url = `${API_URL}/products`;
     axios
       .get(url)
       .then((result) => {
@@ -47,7 +47,7 @@ function Product_sec2() {
             return (
               <SwiperSlide key={idx}>
                 <div id='product-list'>
-                  <ProductItem image={`${product1.image}`} name={product1.name} price={product1.price} seller={product1.seller} />
+                  <ProductItem image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
                 </div>
               </SwiperSlide>
             );
