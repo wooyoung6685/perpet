@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
-
 import { API_URL } from "../../config/constants";
 
 function Product_sec1() {
@@ -46,15 +45,17 @@ function Product_sec1() {
           className='Product_slide1'
         >
           {product.map((hotdealItem, idx) => {
-            return (
-              <SwiperSlide key={idx}>
-                <div id='product-list'>
-                  <div className='hotdeal'>
-                    <ProductItem image={`${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={hotdealItem.discount} price={hotdealItem.price} seller={hotdealItem.seller} />
+            if (hotdealItem.discount) {
+              return (
+                <SwiperSlide key={idx}>
+                  <div id='product-list'>
+                    <div className='hotdeal'>
+                      <ProductItem image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={hotdealItem.discount} price={hotdealItem.price} seller={hotdealItem.seller} />
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            );
+                </SwiperSlide>
+              );
+            }
           })}
         </Swiper>
       </div>

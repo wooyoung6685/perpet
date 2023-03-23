@@ -11,12 +11,14 @@ function UploadPage() {
   const [imageUrl, setImageUrl] = useState(null);
   const navigate = useNavigate();
   const onFinish = (val) => {
+    console.log(val);
     axios
-      .post(`${API_URL}/suggest`, {
+      .post(`${API_URL}/products`, {
         name: val.name,
         price: val.price,
         image: imageUrl,
         seller: val.seller,
+        description: val.description,
       })
       .then((result) => {
         console.log(result);

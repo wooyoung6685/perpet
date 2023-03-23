@@ -47,10 +47,7 @@ function Banner() {
       autoplay={{ delay: 2500 }}
       className='Banner_slide'
       navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      style={{
-      }}
+      style={{}}
     >
       {bannerImg.map((bannerImg, idx) => {
         return (
