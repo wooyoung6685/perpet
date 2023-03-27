@@ -22,9 +22,9 @@ function ProductSec3() {
       <h2 className="product-title">후기 1,000개 돌파 상품⭐</h2>
       <div class="ParentProduct3">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={4}
           spaceBetween={30}
-          slidesPerGroup={1}
+          slidesPerGroup={4}
           loop={true}
           pagination={{
             clickable: true,

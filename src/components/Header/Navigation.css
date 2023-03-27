@@ -19,3 +19,11 @@
 .ant-dropdown-menu {
   width: 280px;
 }
+@media (max-width: 610px) {
+  .MenuOutlined {
+    display: none;
+  }
+  .ant-space-item {
+    font-size: 17px !important;
+  }
+}
