@@ -50,7 +50,7 @@ function Product_sec1() {
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
                     <div className='hotdeal'>
-                      <ProductItem image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
+                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
                     </div>
                   </div>
                 </SwiperSlide>

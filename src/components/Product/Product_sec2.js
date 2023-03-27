@@ -48,7 +48,7 @@ function Product_sec2() {
               return (
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
-                    <ProductItem image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
+                    <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
                   </div>
                 </SwiperSlide>
               );

@@ -3,11 +3,11 @@ import "./ProductItem.css";
 import { Rate } from "antd";
 import { Link } from "react-router-dom";
 
-function ProductItem({ name, price, seller, image, orgPrice, discount }) {
+function ProductItem({ id, name, price, seller, image, orgPrice, discount }) {
   return (
     <div id='product-list'>
       <div className='product-card'>
-        <Link to='/'>
+        <Link to={`/products/${id}`}>
           <div className='product-img_box'>
             <img className='product-img' src={image} alt='product-img' />
           </div>
