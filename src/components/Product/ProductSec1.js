@@ -48,7 +48,7 @@ function ProductSec1() {
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
                     <div className='hotdeal'>
-                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
+                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} soldout={hotdealItem.soldout} />
                     </div>
                   </div>
                 </SwiperSlide>
