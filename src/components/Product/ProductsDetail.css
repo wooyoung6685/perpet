@@ -1,0 +1,129 @@
+.Product_detail {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.Product_content {
+    padding: 16px;
+    width: 600px;
+}
+
+#image-box {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-box>img {
+    height: 100%;
+    border: 1px solid #e9ecef;
+    border-radius: 0 0 18px 18px;
+}
+
+#profile-box {
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+
+#profile-box>img {
+    width: 30px;
+    height: 30px;
+}
+
+.product-seller {
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+    color: rgb(30, 141, 214);
+
+}
+
+#contents-box {
+    padding: 16px;
+}
+
+#name {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0 5px 0;
+    margin: 0 8px;
+}
+
+#price {
+    padding: 5px 0 10px 0;
+    margin: 0 8px;
+}
+
+#price .orgPrice {
+    font-size: 16px;
+    color: rgb(204, 204, 204);
+}
+
+#price .discount {
+    font-size: 18px;
+    color: red;
+}
+
+#price .price {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#createdAt {
+    font-size: 12px;
+    color: rgb(204, 204, 204);
+    margin: 0 8px;
+}
+
+#description {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 10px 0 5px 8px;
+    font-weight: 600;
+}
+
+.purchase {
+    margin: 16px 8px 16px 8px;
+}
+
+.Product_detail .hotdeal {
+    position: relative;
+}
+
+.Product_detail .hotdeal::before {
+    content: "핫딜";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #d84c4c;
+    width: 50px;
+    height: 25px;
+    border-radius: 18px 0 18px 18px;
+    margin-left: 7px;
+    z-index: 10;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
+}
+
+.Product_detail .hotdeal::after {
+    content: "⏰ 5일 남음";
+    position: absolute;
+    background-color: #d84c4c;
+    width: 100%;
+    height: 35px;
+    border-radius: 0 0 18px 18px;
+    z-index: 10;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+    bottom: 0;
+}

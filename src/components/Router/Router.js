@@ -4,7 +4,7 @@ import Main from "../../Main";
 import LoginPage from "../Member/LoginPage";
 import Membership from "../Member/Membership";
 import UploadPage from "../Upload/UploadPage";
-import Products from "../Product/Products";
+import ProductsDetail from "../Product/ProductsDetail";
 /* import LoginPage from "../Header/LoginPage"; */
 
 function Router() {
@@ -15,7 +15,7 @@ function Router() {
         <Route path='/' element={<Main />} />
         <Route path='/Member/LoginPage' element={<LoginPage />} />
         <Route path='/Upload/UploadPage' element={<UploadPage />} />
-        <Route path='/products/:id' element={<Products />} />
+        <Route path='/products/:id' element={<ProductsDetail />} />
       </Routes>
     </div>
   );
