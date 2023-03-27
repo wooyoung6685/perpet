@@ -17,7 +17,7 @@ function ProductItem({ id, name, price, seller, image, orgPrice, discount }) {
           <span className='product-name'>{name}</span>
           <span className='price-box'>
             <div className='origin-price'>{orgPrice}</div>
-            <span className='product-disc'>{discount}</span>
+            {discount ? <span className='product-disc'>{discount}</span> : <span></span>}
             <span className='product-price'>{price}원</span>
           </span>
           <span>

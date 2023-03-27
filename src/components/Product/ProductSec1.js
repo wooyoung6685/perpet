@@ -16,9 +16,7 @@ function ProductSec1() {
     axios
       .get(url)
       .then((result) => {
-        console.log(result);
         setProduct(result.data.product);
-        console.log(product);
       })
       .catch((error) => {
         console.log(error);
@@ -50,7 +48,7 @@ function ProductSec1() {
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
                     <div className='hotdeal'>
-                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={hotdealItem.orgPrice} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
+                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
                     </div>
                   </div>
                 </SwiperSlide>

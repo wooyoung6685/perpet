@@ -76,6 +76,24 @@ a {
   height: 280px;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
+}
+
+.hotdeal .product-img_box::after {
+  content: "5일 남음";
+  position: absolute;
+  background-color: #d84c4c;
+  width: 280px;
+  height: 25px;
+  border-radius: 0 0 18px 18px;
+  z-index: 10;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 24px;
+  left: 0;
+  bottom: 0;
 }
 
 .product-img {
