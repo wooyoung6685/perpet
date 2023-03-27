@@ -19,24 +19,24 @@ function Product_sec2() {
   ];
   return (
     <div>
-      <h2 className='product-title'>후기 1,000개 돌파 상품⭐</h2>
-      <div class='ParentProduct3'>
+      <h2 className="product-title">후기 1,000개 돌파 상품⭐</h2>
+      <div class="ParentProduct3">
         <Swiper
-          slidesPerView={4}
+          slidesPerView={2}
           spaceBetween={30}
-          slidesPerGroup={4}
+          slidesPerGroup={1}
           loop={true}
           pagination={{
             clickable: true,
           }}
           navigation={true}
           modules={[Navigation]}
-          className='Product_slide1'
+          className="Product_slide1"
         >
           {product2.map((product2, idx) => {
             return (
               <SwiperSlide key={idx}>
-                <div id='product-list'>
+                <div id="product-list">
                   <ProductItem image={`${product2.image}`} name={product2.name} price={product2.price} seller={product2.seller} />
                 </div>
               </SwiperSlide>

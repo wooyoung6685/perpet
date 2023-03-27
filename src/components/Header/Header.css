@@ -16,7 +16,30 @@
   justify-content: space-between;
 }
 
-.header_side-login{
+.header_side-login {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .header_side {
+    display: none;
+  }
+  .navButton {
+    display: none;
+  }
+  .header_main {
+    justify-content: center;
+  }
+
+  .header_main-searchbar {
+    width: 100%;
+    padding-left: 25px;
+  }
+  .header_main-searchbar input {
+    width: 100%;
+  }
+  .header_nav {
+    justify-content: center;
+  }
 }
