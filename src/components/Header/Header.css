@@ -16,7 +16,64 @@
   justify-content: space-between;
 }
 
-.header_side-login{
+.header_side-login {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .header_side {
+    display: none;
+  }
+  .navButton {
+    display: none;
+  }
+  .header_main {
+    justify-content: start;
+  }
+  .searchbar_main {
+    width: 80%;
+  }
+  .header_main-searchbar {
+    width: 80%;
+    padding-left: 25px;
+  }
+  .header_main-searchbar input {
+    width: 100%;
+  }
+  .header_nav {
+    justify-content: start;
+  }
+}
+@media (max-width: 880px) {
+  .searchbar_main {
+    width: 60%;
+  }
+  .header_nav {
+    justify-content: start;
+  }
+}
+@media (max-width: 720px) {
+  .searchbar_main {
+    width: 50%;
+  }
+  .header_nav {
+    justify-content: start;
+  }
+}
+@media (max-width: 610px) {
+  .searchbar_main {
+    width: 45%;
+  }
+  .header_nav {
+    justify-content: start;
+  }
+  .nav_memu {
+    font-size: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .searchbar_main {
+    width: 38% !important;
+  }
 }

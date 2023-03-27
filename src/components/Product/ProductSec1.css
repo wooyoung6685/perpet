@@ -84,20 +84,3 @@
   text-align: center;
   line-height: 24px;
 }
-
-#product-list .hotdeal::after {
-  content: "5일 남음";
-  position: absolute;
-  background-color: #d84c4c;
-  width: 280px;
-  height: 25px;
-  border-radius: 0 0 18px 18px;
-  margin-left: 7px;
-  z-index: 10;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 24px;
-  bottom: 130px;
-}

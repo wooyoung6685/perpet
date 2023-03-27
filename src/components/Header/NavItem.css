@@ -3,3 +3,8 @@
   font-weight: 600;
   font-size: 18px;
 }
+@media (max-width: 610px) {
+  .nav_memu {
+    font-size: 17px;
+  }
+}
