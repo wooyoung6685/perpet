@@ -34,7 +34,7 @@
     height: 30px;
 }
 
-.product-seller {
+.Product_detail .product-seller {
     font-size: 16px;
     margin-left: 8px;
     font-weight: 600;
@@ -61,6 +61,7 @@
 #price .orgPrice {
     font-size: 16px;
     color: rgb(204, 204, 204);
+    text-decoration: line-through;
 }
 
 #price .discount {
