@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./Product_sec2.css";
+import "./ProductSec2.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { API_URL } from "../../config/constants";
 
-function Product_sec2() {
+function ProductSec2() {
   const [product, setProduct] = useState(null);
   useEffect(() => {
     let url = `${API_URL}/products`;
@@ -48,7 +48,7 @@ function Product_sec2() {
               return (
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
-                    <ProductItem image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
+                    <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
                   </div>
                 </SwiperSlide>
               );
@@ -60,4 +60,4 @@ function Product_sec2() {
   );
 }
 
-export default Product_sec2;
+export default ProductSec2;

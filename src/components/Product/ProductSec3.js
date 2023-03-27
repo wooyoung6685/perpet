@@ -1,12 +1,12 @@
 import React from "react";
-import "./Product_sec3.css";
+import "./ProductSec3.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
-function Product_sec2() {
+function ProductSec3() {
   const product2 = [
     { image: "images/Product/cat_snack2.png", name: "참치 츄르", price: "6,000", seller: "이나바" },
     { image: "images/Product/dog_food3.jpg", name: "개껌", price: "25,000", seller: "네추럴코어" },
@@ -48,4 +48,4 @@ function Product_sec2() {
   );
 }
 
-export default Product_sec2;
+export default ProductSec3;
