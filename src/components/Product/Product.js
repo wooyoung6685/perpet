@@ -1,17 +1,17 @@
 import React from "react";
 import "./Product.css";
-import Product_sec1 from "./Product_sec1";
-import Product_sec2 from "./Product_sec2";
-import Product_sec3 from "./Product_sec3";
-import Product_sec4 from "./Product_sec4";
+import ProductSec1 from "./ProductSec1";
+import ProductSec2 from "./ProductSec2";
+import ProductSec3 from "./ProductSec3";
+import ProductSec4 from "./ProductSec4";
 
 function Product() {
   return (
     <div>
-      <Product_sec1 />
-      <Product_sec2 />
-      <Product_sec3 />
-      <Product_sec4 />
+      <ProductSec1 />
+      <ProductSec2 />
+      <ProductSec3 />
+      <ProductSec4 />
     </div>
   );
 }
