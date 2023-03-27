@@ -6,7 +6,9 @@
 }
 
 .Product_content {
-    padding: 16px;
+    position: relative;
+    padding: 16px 16px 0 16px;
+    
     width: 600px;
 }
 
@@ -59,7 +61,7 @@
 }
 
 #price .orgPrice {
-    font-size: 16px;
+    font-size: 14px;
     color: rgb(204, 204, 204);
     text-decoration: line-through;
 }
@@ -83,12 +85,22 @@
 #description {
     font-size: 14px;
     line-height: 1.7;
-    margin: 10px 0 5px 8px;
+    margin: 20px 0 5px 8px;
     font-weight: 600;
 }
 
 .purchase {
+    position: absolute;
+    width: 70%;
+    height: 50px !important;
+    right: 13%;
+    bottom: -11px;
     margin: 16px 8px 16px 8px;
+    font-weight: 600;
+    background-color: #ff4d4f !important;
+}
+.purchase:hover{
+    opacity: .8;
 }
 
 .Product_detail .hotdeal {
@@ -100,7 +112,7 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    background-color: #d84c4c;
+    background-color: #e41a1a;
     width: 50px;
     height: 25px;
     border-radius: 18px 0 18px 18px;
@@ -116,7 +128,7 @@
 .Product_detail .hotdeal::after {
     content: "⏰ 5일 남음";
     position: absolute;
-    background-color: #d84c4c;
+    background-color: #e41a1a;
     width: 100%;
     height: 35px;
     border-radius: 0 0 18px 18px;
