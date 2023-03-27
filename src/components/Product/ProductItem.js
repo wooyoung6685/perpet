@@ -21,8 +21,8 @@ function ProductItem({ id, name, price, seller, image, orgPrice, discount,soldou
             <span className='product-price'>{price}원</span>
           </span>
           <span>
-            <Rate className='star' disabled defaultValue={3} />
-            <span className='star_num'> 3</span>
+            <Rate className='star' disabled defaultValue={5} />
+            <span className='star_num'> 5</span>
           </span>
         </div>
       </div>
