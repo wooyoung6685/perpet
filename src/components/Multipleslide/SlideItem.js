@@ -6,8 +6,8 @@ import ProductItem from "../Product/ProductItem";
 
 function SlideItem({ title }) {
   return (
-    <div className='ParentMultipleSlide'>
-      <p className='title'>{title}</p>
+    <div className="ParentMultipleSlide">
+      <p className="title">{title}</p>
       <Swiper
         // install Swiper modules
         modules={[Navigation, A11y]}
@@ -19,47 +19,47 @@ function SlideItem({ title }) {
         style={{
           width: "1200px",
         }}
-        className='MultipleSlide'
+        className="MultipleSlide"
       >
         <SwiperSlide>
           <div>
-            <div className='SwiperSlide_main'>
-              <a href='#'>
-                <img className='SwiperSlide_main-lmg' src='https://img.dogpre.com/web/dogpre/event/banner/3933/3933_mobile_main_page_banner_7478.jpg' />
-                <p>건강 필수템 최대 66% 할인</p>
+            <div className="SwiperSlide_main">
+              <a href="#">
+                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3952/3952_mobile_main_page_banner_8941.jpg" />
+                <p>대용량상품 최대 66% 할인</p>
               </a>
             </div>
-            <div className='ProductItem_main'>
-              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000원' seller='네추럴코어' />
+            <div className="ProductItem_main">
+              <ProductItem image="images/Product/dog_acc1.png" name="하네스" price="15,000원" seller="펫베오" />
+              <ProductItem image="images/Product/dog_food3.jpg" name="개껌" price="25,000원" seller="네추럴코어" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <div className='SwiperSlide_main'>
-              <a href='#'>
-                <img className='SwiperSlide_main-lmg' src='https://img.dogpre.com/web/dogpre/event/banner/3933/3933_mobile_main_page_banner_7478.jpg' />
+            <div className="SwiperSlide_main">
+              <a href="#">
+                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3933/3933_mobile_main_page_banner_7478.jpg" />
                 <p>건강 필수템 최대 66% 할인</p>
               </a>
             </div>
-            <div className='ProductItem_main'>
-              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000원' seller='네추럴코어' />
+            <div className="ProductItem_main">
+              <ProductItem image="images/Product/dog_acc1.png" name="하네스" price="15,000원" seller="펫베오" />
+              <ProductItem image="images/Product/dog_food3.jpg" name="개껌" price="25,000원" seller="네추럴코어" />
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div>
-            <div className='SwiperSlide_main'>
-              <a href='/'>
-                <img className='SwiperSlide_main-lmg' src='https://img.dogpre.com/web/dogpre/event/banner/3933/3933_mobile_main_page_banner_7478.jpg' />
+            <div className="SwiperSlide_main">
+              <a href="/">
+                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3882/3882_mobile_main_page_banner_4586.jpg" />
                 <p>건강 필수템 최대 66% 할인</p>
               </a>
             </div>
-            <div className='ProductItem_main'>
-              <ProductItem image='images/Product/dog_acc1.png' name='하네스' price='15,000원' seller='펫베오' />
-              <ProductItem image='images/Product/dog_food3.jpg' name='개껌' price='25,000원' seller='네추럴코어' />
+            <div className="ProductItem_main">
+              <ProductItem image="images/Product/dog_acc1.png" name="하네스" price="15,000원" seller="펫베오" />
+              <ProductItem image="images/Product/dog_food3.jpg" name="개껌" price="25,000원" seller="네추럴코어" />
             </div>
           </div>
         </SwiperSlide>

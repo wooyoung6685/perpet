@@ -23,11 +23,11 @@
   padding-top: 60px;
 }
 
-.ParentMultipleSlide{
+.ParentMultipleSlide {
   position: relative;
 }
 
-.MultipleSlide{
+.MultipleSlide {
   position: static;
 }
 
@@ -49,4 +49,9 @@
   transition: all 0.2s ease;
   --swiper-theme-color: #ff4d4f;
   position: absolute;
+}
+.SwiperSlide_main p {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
 }

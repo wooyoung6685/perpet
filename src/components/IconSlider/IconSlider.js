@@ -11,6 +11,7 @@ import "swiper/css/grid";
 import { Grid, Scrollbar, Navigation } from "swiper";
 import "swiper/css/scrollbar";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 function IconSlider() {
   const icons = [
@@ -224,7 +225,7 @@ function IconSlider() {
     },
   ];
   return (
-    <div className='ParentIconSlider'>
+    <div className="ParentIconSlider">
       <Swiper
         slidesPerView={10}
         grid={{
@@ -235,7 +236,7 @@ function IconSlider() {
           hide: false,
         }}
         modules={[Grid, Scrollbar, Navigation]}
-        className='IconSlider'
+        className="IconSlider"
         style={{
           height: "262px",
         }}
@@ -251,14 +252,14 @@ function IconSlider() {
                 marginRight: "28px",
               }}
             >
-              <div className='iconSlider_icons-box'>
-                <a href='/' className='iconSlider_icons-link'>
-                  <div className='iconSlider_icons-imgBox'>
+              <div className="iconSlider_icons-box">
+                <Link className="iconSlider_icons-link" to="/">
+                  <div className="iconSlider_icons-imgBox">
                     <img src={`/${icons.src}`} alt={`${icons.alt}`}></img>
                   </div>
-                  <div className='iconSlider_icons-title'>{icons.title}</div>
-                  <div className='iconSlider_icons-subTitle'>{icons.subTitle}</div>
-                </a>
+                  <div className="iconSlider_icons-title">{icons.title}</div>
+                  <div className="iconSlider_icons-subTitle">{icons.subTitle}</div>
+                </Link>
               </div>
             </SwiperSlide>
           );
