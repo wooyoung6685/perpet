@@ -44,13 +44,15 @@ function Product_sec2() {
           className='Product_slide1'
         >
           {product.map((product1, idx) => {
-            return (
-              <SwiperSlide key={idx}>
-                <div id='product-list'>
-                  <ProductItem image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
-                </div>
-              </SwiperSlide>
-            );
+            if (!product1.discount) {
+              return (
+                <SwiperSlide key={idx}>
+                  <div id='product-list'>
+                    <ProductItem image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
+                  </div>
+                </SwiperSlide>
+              );
+            }
           })}
         </Swiper>
       </div>
