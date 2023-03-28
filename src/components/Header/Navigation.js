@@ -46,8 +46,8 @@ function Navigation() {
             }}
           >
             <a onClick={(e) => e.preventDefault()}>
-              <MenuOutlined className="MenuOutlined" style={{ paddingBottom: "5px" }} />
-              <Space style={{ fontSize: "18px", color: "#454545", fontWeight: "600" }}>카테고리</Space>
+              <MenuOutlined className="MenuOutlined" style={{ marginTop: "-2px" }} />
+              <Space style={{ fontSize: "16px", color: "#454545", fontWeight: "600" }}>카테고리</Space>
             </a>
           </Dropdown>
         </li>

@@ -8,7 +8,7 @@ function SearchBar() {
   return (
     <div className="searchbar_main">
       <Form>
-        <Input className="searchbar" size="large" />
+        <Input className="searchbar" size="large" style={{}} />
         <Button style={{ fontSize: "25px" }} className="searchbar_icon" size="large" type="text" danger shape="circle" icon={<SearchOutlined />}></Button>
       </Form>
     </div>

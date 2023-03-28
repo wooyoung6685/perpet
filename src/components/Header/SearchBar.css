@@ -1,5 +1,4 @@
 .searchbar {
-  width: 500px;
   height: 46px;
 }
 .searchbar_main {
@@ -29,4 +28,8 @@
   position: absolute;
   bottom: 5px;
   right: 7px;
+}
+.header_main-searchbar {
+  justify-content: start;
+  width: 600px;
 }

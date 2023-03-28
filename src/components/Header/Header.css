@@ -1,6 +1,7 @@
 .header {
   padding-top: 20px;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -29,51 +30,49 @@
     display: none;
   }
   .header_main {
-    justify-content: start;
+    justify-content: center;
   }
   .searchbar_main {
-    width: 80%;
+    width: 90%;
+    padding: 0;
   }
   .header_main-searchbar {
-    width: 80%;
+    width: 100%;
     padding-left: 25px;
   }
   .header_main-searchbar input {
     width: 100%;
   }
   .header_nav {
-    justify-content: start;
+    justify-content: center;
   }
 }
 @media (max-width: 880px) {
-  .searchbar_main {
-    width: 60%;
-  }
   .header_nav {
     justify-content: start;
+    width: 100%;
+  }
+  .searchbar_main {
+    width: 100%;
   }
 }
 @media (max-width: 720px) {
-  .searchbar_main {
-    width: 50%;
-  }
   .header_nav {
     justify-content: start;
   }
+  .searchbar_main {
+    width: 100%;
+  }
 }
 @media (max-width: 610px) {
-  .searchbar_main {
-    width: 45%;
-  }
   .header_nav {
     justify-content: start;
   }
   .nav_memu {
     font-size: 10px;
+    width: 100%;
   }
-}
-@media (max-width: 500px) {
   .searchbar_main {
-    width: 38% !important;
+    width: 100%;
   }
 }

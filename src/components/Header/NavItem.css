@@ -1,10 +1,10 @@
 .nav_memu {
   color: #454545;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 @media (max-width: 610px) {
   .nav_memu {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
