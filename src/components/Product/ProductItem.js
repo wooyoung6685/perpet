@@ -3,7 +3,7 @@ import "./ProductItem.css";
 import { Rate } from "antd";
 import { Link } from "react-router-dom";
 
-function ProductItem({ id, name, price, seller, image, orgPrice, discount,soldout }) {
+function ProductItem({ id, name, price, seller, image, orgPrice, discount, soldout }) {
   return (
     <div id='product-list' className={`soldout${soldout}`}>
       <div className='product-card'>

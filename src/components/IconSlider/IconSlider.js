@@ -242,7 +242,6 @@ function IconSlider() {
         breakpoints={{
           768: {
             slidesPerView: 10,
-            navigation: false,
             slidesPerGroup: 10,
             grid: {
               rows: 2,
@@ -255,7 +254,6 @@ function IconSlider() {
               rows: 2,
               fill: "row",
             },
-            navigation: true,
           },
         }}
       >
