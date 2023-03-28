@@ -31,10 +31,6 @@ function Banner() {
       src: "images/Banner/banner_05.png",
       alt: "05배너",
     },
-    {
-      src: "images/Banner/banner_06.png",
-      alt: "06배너",
-    },
   ];
   return (
     <Swiper

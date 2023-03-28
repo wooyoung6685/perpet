@@ -6,7 +6,7 @@ function EventBanner() {
   return (
     <div className="eventBanner">
       <Link to="/">
-        <img src="./images/EventBanner/EventBanner1.jpg" />
+        <img src="./images/EventBanner/EventBanner1.png" />
       </Link>
     </div>
   );
