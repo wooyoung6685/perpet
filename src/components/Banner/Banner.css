@@ -48,3 +48,19 @@
   height: 8px;
   background: #fff;
 }
+
+@media (max-width: 1200px) {
+  .Banner_slide .swiper-button-prev,
+  .Banner_slide .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .Banner_slide.swiper {
+    min-width: 576px;
+  }
+  .Banner_slide .swiper-slide img {
+    min-width: 576px;
+  }
+}

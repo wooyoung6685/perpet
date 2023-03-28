@@ -59,9 +59,15 @@ function ProductSec1() {
             if (hotdealItem.discount) {
               return (
                 <SwiperSlide key={idx}>
+<<<<<<< HEAD
                   <div id="product-list">
                     <div className="hotdeal">
                       <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
+=======
+                  <div id='product-list'>
+                    <div className='hotdeal'>
+                      <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} soldout={hotdealItem.soldout} />
+>>>>>>> 4498a93f81d8449840ff0aefd3a2c96901c87f09
                     </div>
                   </div>
                 </SwiperSlide>

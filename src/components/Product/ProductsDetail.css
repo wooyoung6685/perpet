@@ -1,0 +1,142 @@
+.Product_detail {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    margin: 30px auto;
+}
+
+.Product_content {
+    position: relative;
+    padding: 16px 16px 0 16px;
+    
+    width: 600px;
+}
+
+#image-box {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-box>img {
+    height: 100%;
+    border: 1px solid #e9ecef;
+    border-radius: 0 0 18px 18px;
+}
+
+#profile-box {
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    align-items: center;
+}
+
+#profile-box>img {
+    width: 30px;
+    height: 30px;
+}
+
+.Product_detail .product-seller {
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600;
+    color: rgb(30, 141, 214);
+
+}
+
+#contents-box {
+    padding: 16px;
+}
+
+#name {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 0 5px 0;
+    margin: 0 8px;
+}
+
+#price {
+    padding: 5px 0 10px 0;
+    margin: 0 8px;
+}
+
+#price .orgPrice {
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    text-decoration: line-through;
+}
+
+#price .discount {
+    font-size: 18px;
+    color: red;
+}
+
+#price .price {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#createdAt {
+    font-size: 12px;
+    color: rgb(204, 204, 204);
+    margin: 0 8px;
+}
+
+#description {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 20px 0 5px 8px;
+    font-weight: 600;
+}
+
+.purchase {
+    position: absolute;
+    width: 70%;
+    height: 50px !important;
+    right: 13%;
+    bottom: -11px;
+    margin: 16px 8px 16px 8px;
+    font-weight: 600;
+    background-color: #ff4d4f !important;
+}
+.purchase:hover{
+    opacity: .8;
+}
+
+.Product_detail .hotdeal {
+    position: relative;
+}
+
+.Product_detail .hotdeal::before {
+    content: "핫딜";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #e41a1a;
+    width: 50px;
+    height: 25px;
+    border-radius: 18px 0 18px 18px;
+    margin-left: 7px;
+    z-index: 10;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
+}
+
+.Product_detail .hotdeal::after {
+    content: "⏰ 5일 남음";
+    position: absolute;
+    background-color: #e41a1a;
+    width: 100%;
+    height: 35px;
+    border-radius: 0 0 18px 18px;
+    z-index: 10;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 35px;
+    bottom: 0;
+}

@@ -3,9 +3,9 @@ import "./ProductItem.css";
 import { Rate } from "antd";
 import { Link } from "react-router-dom";
 
-function ProductItem({ id, name, price, seller, image, orgPrice, discount }) {
+function ProductItem({ id, name, price, seller, image, orgPrice, discount,soldout }) {
   return (
-    <div id='product-list'>
+    <div id='product-list' className={`soldout${soldout}`}>
       <div className='product-card'>
         <Link to={`/products/${id}`}>
           <div className='product-img_box'>
@@ -21,8 +21,8 @@ function ProductItem({ id, name, price, seller, image, orgPrice, discount }) {
             <span className='product-price'>{price}원</span>
           </span>
           <span>
-            <Rate className='star' disabled defaultValue={3} />
-            <span className='star_num'> 3</span>
+            <Rate className='star' disabled defaultValue={5} />
+            <span className='star_num'> 5</span>
           </span>
         </div>
       </div>

@@ -66,11 +66,11 @@
   position: relative;
 }
 
-.hotdeal {
+#product-list .hotdeal {
   position: relative;
 }
 
-.hotdeal::before {
+#product-list .hotdeal::before {
   content: "핫딜";
   position: absolute;
   background-color: #d84c4c;

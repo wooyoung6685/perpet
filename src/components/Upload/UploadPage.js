@@ -18,7 +18,7 @@ function UploadPage() {
 
   useEffect(() => {
     if (disChecked && discount) {
-      setPrice(orgPrice - orgPrice * (discount / 100));
+      setPrice(Math.round((orgPrice - orgPrice * (discount / 100)) / 100) * 100);
     }
   });
 
