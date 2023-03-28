@@ -1,5 +1,6 @@
 .footer_inner {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .flex {
@@ -111,5 +112,33 @@
   margin: 0 20px 0 10px;
 }
 
-@media (max-width: 786px) {
+.footer_middle{
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .footer_pd-left {
+    display: none;
+  }
+  .footer_middle{
+    display: block;
+    height: 400px;
+  }
+  .footer_middle-flex{
+    display: flex;
+    justify-content: center
+  }
+  .footer_middle-center{
+    display: flex;
+    justify-content: center
+  }
+  .footer_middle-mg{
+    margin: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .footer_middle-mg{
+    margin: 5px;
+    font-size: 11px;
+  }
 }
