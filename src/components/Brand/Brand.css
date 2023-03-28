@@ -1,22 +1,21 @@
-
 /*======= BrandDesign start========*/
-.brand_design-background{
-  min-width: 1200px;
-  background: linear-gradient(90.3deg, #FF425C 0%, #FF9774 100%);
+.brand_design-background {
+  width: 100%;
+  background: linear-gradient(90.3deg, #ff425c 0%, #ff9774 100%);
   margin-top: 60px;
   padding: 60px 0 60px 0;
 }
-.brand_design-container{
+.brand_design-container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
-.brand_design-item{
+.brand_design-item {
   width: 30%;
   display: flex;
   justify-content: space-evenly;
 }
-.brand_design-text{
+.brand_design-text {
   width: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +30,8 @@
 
 /*======= Brand start========*/
 .brand_inner {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -43,12 +43,12 @@
   margin-top: 20px;
 }
 
-.brand_mg-top60{
+.brand_mg-top60 {
   margin-top: 60px;
 }
 
 .brand_text-01 {
-  width: 50%;
+  width: 100%;
   text-align: left;
   font-size: 2rem;
   font-family: HGHaeDotum, sans-serif;
@@ -73,7 +73,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.brand_name:hover{
+.brand_name:hover {
   cursor: pointer;
 }
 
@@ -85,7 +85,6 @@
   text-align: center;
 }
 .brand_card-box > img {
-  width: 80%;
 }
 
 .brand_text-03 {
@@ -97,5 +96,27 @@
   color: #676767;
   font-size: 1.1rem;
 }
+.ratio_img {
+  display: none;
+}
 
 /*======= Brand end========*/
+
+@media (max-width: 1200px) {
+  .brand_design-item {
+    display: none;
+  }
+  .ratio_img {
+    display: block;
+    text-align: center;
+    width: 283px;
+    height: 80px;
+  }
+  .brand_design-background {
+    align-items: center;
+    max-width: 1200px;
+    height: 200px;
+  }
+  .brand_design-container {
+  }
+}

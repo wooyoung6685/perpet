@@ -23,31 +23,44 @@ function ProductSec1() {
       });
   }, []);
   if (product == null) {
-    return <h2 className='product-title'>상품정보를 받고 있습니다...</h2>;
+    return <h2 className="product-title">상품정보를 받고 있습니다...</h2>;
   }
 
   return (
     <div>
-      <h2 className='product-title'>핫딜상품🔥</h2>
-      <div class='ParentProduct1'>
+      <h2 className="product-title">핫딜상품🔥</h2>
+      <div class="ParentProduct1">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          slidesPerGroup={4}
+          slidesPerView={1}
+          spaceBetween={10}
           loop={true}
           pagination={{
             clickable: true,
           }}
           navigation={true}
           modules={[Navigation]}
-          className='Product_slide1'
+          className="Product_slide1"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
         >
           {product.map((hotdealItem, idx) => {
             if (hotdealItem.discount) {
               return (
                 <SwiperSlide key={idx}>
-                  <div id='product-list'>
-                    <div className='hotdeal'>
+                  <div id="product-list">
+                    <div className="hotdeal">
                       <ProductItem id={hotdealItem.id} image={`${API_URL}/${hotdealItem.image}`} name={hotdealItem.name} orgPrice={`${hotdealItem.orgPrice}원`} discount={`${hotdealItem.discount}%`} price={hotdealItem.price} seller={hotdealItem.seller} />
                     </div>
                   </div>

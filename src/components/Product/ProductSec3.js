@@ -22,9 +22,8 @@ function ProductSec3() {
       <h2 className="product-title">후기 1,000개 돌파 상품⭐</h2>
       <div class="ParentProduct3">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          slidesPerGroup={4}
+          slidesPerView={1}
+          spaceBetween={10}
           loop={true}
           pagination={{
             clickable: true,
@@ -32,6 +31,20 @@ function ProductSec3() {
           navigation={true}
           modules={[Navigation]}
           className="Product_slide1"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
         >
           {product2.map((product2, idx) => {
             return (

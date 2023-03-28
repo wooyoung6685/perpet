@@ -11,15 +11,25 @@ function SlideItem({ title }) {
       <Swiper
         // install Swiper modules
         modules={[Navigation, A11y]}
-        slidesPerView={2}
+        slidesPerView={1}
+        spaceBetween={10}
         navigation
         pagination={{ clickable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         style={{
-          width: "1200px",
+          maxWidth: "1200px",
+          width: "100%",
+          alignItems: "center",
+          justifyContent: "center",
         }}
         className="MultipleSlide"
+        breakpoints={{
+          1150: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        }}
       >
         <SwiperSlide>
           <div>

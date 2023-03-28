@@ -35,7 +35,7 @@
   justify-content: flex-end;
 }
 
-.footer_color{
+.footer_color {
   color: #787878;
   font-weight: 500;
 }
@@ -65,12 +65,12 @@
   font-size: 1rem;
   font-weight: 300;
 }
-.footer_font-3{
+.footer_font-3 {
   color: #aeaeae;
   font-size: 1rem;
   font-weight: 300;
 }
-.footer_font-2::after{
+.footer_font-2::after {
   right: -16px;
   bottom: 2px;
   width: 1px;
@@ -84,15 +84,15 @@
   font-weight: 600;
 }
 
-.footer_font-top{
+.footer_font-top {
   color: #787878;
   font-weight: 500;
   margin-right: 20px;
 }
-.footer_font-style{
+.footer_font-style {
   position: relative;
 }
-.footer_font-style::after{
+.footer_font-style::after {
   right: -16px;
   bottom: -2px;
   width: 1px;
@@ -103,10 +103,13 @@
   border-right: 1px solid #dbdbdb;
 }
 
-.footer_font-top2{
+.footer_font-top2 {
   margin: 0 20px 0 10px;
 }
 
-.footer_margin-01{
+.footer_margin-01 {
   margin: 0 20px 0 10px;
+}
+
+@media (max-width: 786px) {
 }

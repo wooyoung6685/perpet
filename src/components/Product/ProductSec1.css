@@ -15,7 +15,8 @@
 }
 
 .Product_slide1.swiper {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 100%;
   padding-bottom: 60px;
   position: static;

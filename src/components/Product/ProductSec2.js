@@ -29,25 +29,38 @@ function ProductSec2() {
 
   return (
     <div>
-      <h2 className='product-title'>이 상품 어때❔</h2>
-      <div class='ParentProduct2'>
+      <h2 className="product-title">이 상품 어때❔</h2>
+      <div class="ParentProduct2">
         <Swiper
-          slidesPerView={4}
-          spaceBetween={30}
-          slidesPerGroup={4}
+          slidesPerView={1}
+          spaceBetween={10}
           loop={true}
           pagination={{
             clickable: true,
           }}
           navigation={true}
           modules={[Navigation]}
-          className='Product_slide1'
+          className="Product_slide1"
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
         >
           {product.map((product1, idx) => {
             if (!product1.discount) {
               return (
                 <SwiperSlide key={idx}>
-                  <div id='product-list'>
+                  <div id="product-list">
                     <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
                   </div>
                 </SwiperSlide>
