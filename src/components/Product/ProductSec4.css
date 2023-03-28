@@ -66,3 +66,10 @@
 .Product_slide2 .swiper-button-prev:hover {
   scale: 1.1;
 }
+
+@media (max-width: 1200px) {
+  .Product_slide4 .swiper-button-next,
+  .Product_slide4 .swiper-button-prev {
+    display: none;
+  }
+}

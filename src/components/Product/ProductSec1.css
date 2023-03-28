@@ -85,3 +85,9 @@
   text-align: center;
   line-height: 24px;
 }
+@media (max-width: 1200px) {
+  .Product_slide1 .swiper-button-next,
+  .Product_slide1 .swiper-button-prev {
+    display: none;
+  }
+}
