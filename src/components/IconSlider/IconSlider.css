@@ -3,8 +3,10 @@
 }
 
 .IconSlider.swiper {
-  width: 1200px;
-  height: 100%;
+  width: 100%;
+  min-width: 576px;
+  max-width: 1200px;
+  height: 262px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -64,14 +66,28 @@
   align-items: center;
   text-decoration: none;
 }
+
+.iconSlider_icons-titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
 .iconSlider_icons-title {
-  font-size: 14px;
+  font-size: 0.6rem;
   color: black;
   margin-top: 10px;
-  height: 26px;
 }
 .iconSlider_icons-subTitle {
-  font-size: 14px;
   color: #a1a1a1;
-  font-size: 11px;
+  font-size: 0.4rem;
+}
+
+@media (max-width: 1200px) {
+  .IconSlider .swiper-button-next,
+  .IconSlider .swiper-button-prev {
+    display: none;
+  }
 }
