@@ -4,18 +4,15 @@ import { Dropdown, Space, Button } from "antd";
 import "./Footer.css";
 function Footer() {
   const [open, setOpen] = useState(false);
-
-  const handleMenuClick: MenuProps["onClick"] = (e) => {
-    if (e.key === "8") {
+  const handleMenuClick = (e) => {
+    if (e.key === '8') {
       setOpen(false);
     }
   };
-
-  const handleOpenChange = (flag: boolean) => {
+  const handleOpenChange = (flag) => {
     setOpen(flag);
   };
-
-  const items: MenuProps["items"] = [
+  const items = [
     {
       label: "대표자: 박규복",
       key: "1",
@@ -124,13 +121,11 @@ function Footer() {
                 onOpenChange={handleOpenChange}
                 open={open}
               >
-                <Button>
-                  <a onClick={(e) => e.preventDefault()}>
-                    <Space>
-                      사업자 정보
-                      <DownOutlined />
-                    </Space>
-                  </a>
+                <Button onClick={(e) => e.preventDefault()}>
+                  <Space>
+                    사업자 정보
+                    <DownOutlined />
+                  </Space>
                 </Button>
               </Dropdown>
             </div>
