@@ -26,6 +26,7 @@
 .Banner_slide .swiper-button-prev:hover,
 .Banner_slide .swiper-button-next:hover {
   opacity: 1;
+  scale: 1.1;
 }
 .Banner_slide .swiper-button-next::after,
 .Banner_slide .swiper-button-prev::after {
