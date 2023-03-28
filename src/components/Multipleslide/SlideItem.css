@@ -58,3 +58,10 @@
 .ProductItem_main {
   justify-content: center;
 }
+
+@media (max-width: 1200px) {
+  .MultipleSlide .swiper-button-next,
+  .MultipleSlide .swiper-button-prev {
+    display: none;
+  }
+}
