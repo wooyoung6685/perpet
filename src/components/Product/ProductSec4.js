@@ -41,7 +41,7 @@ function ProductSec4() {
               slidesPerView: 3,
               spaceBetween: 40,
             },
-            1024: {
+            1150: {
               slidesPerView: 4,
               spaceBetween: 50,
             },

@@ -50,7 +50,7 @@ function ProductSec2() {
               slidesPerView: 3,
               spaceBetween: 40,
             },
-            1024: {
+            1150: {
               slidesPerView: 4,
               spaceBetween: 50,
             },
@@ -60,13 +60,8 @@ function ProductSec2() {
             if (!product1.discount) {
               return (
                 <SwiperSlide key={idx}>
-<<<<<<< HEAD
                   <div id="product-list">
-                    <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} />
-=======
-                  <div id='product-list'>
                     <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
->>>>>>> 4498a93f81d8449840ff0aefd3a2c96901c87f09
                   </div>
                 </SwiperSlide>
               );

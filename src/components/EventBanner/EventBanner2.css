@@ -1,10 +1,16 @@
 .eventBanner2 {
-  width: 1200px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 155px;
+  padding-bottom: 15%;
+  overflow: hidden;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
 .eventBanner2 img {
-  width: 1168px;
-  height: 282px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

@@ -1,11 +1,18 @@
 .eventBanner {
-  width: 1200px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 155px;
+  padding-bottom: 10%;
+  overflow: hidden;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  margin-top: 30px;
 }
 
 .eventBanner img {
-  width: 1168px;
-  height: 155px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
