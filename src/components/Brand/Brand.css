@@ -84,15 +84,13 @@
   flex-grow: 1;
   text-align: center;
 }
-.brand_card-box > img {
-}
 
 .brand_text-03 {
   position: absolute;
   width: 100%;
   text-align: center;
   left: 0;
-  bottom: 30px;
+  bottom: 5px;
   color: #676767;
   font-size: 1.1rem;
 }
