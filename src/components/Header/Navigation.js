@@ -2,7 +2,9 @@ import React from "react";
 import NavItem from "./NavItem";
 import "./Navigation.css";
 import { MenuOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
+import { Dropdown, Space, Button } from "antd";
+import { UploadOutlined } from '@ant-design/icons';
+import { useNavigate } from "react-router-dom";
 
 const items = [
   {
@@ -36,6 +38,10 @@ const items = [
 ];
 
 function Navigation() {
+  const navigate = useNavigate();
+  const onClickUpload = () => {
+    navigate("/Upload/UploadPage");
+  };
   return (
     <div>
       <ul className="Navigation">
@@ -61,16 +67,7 @@ function Navigation() {
           <NavItem htmlText="브랜드" />
         </li>
         <li>
-          <NavItem htmlText="사료샘플" />
-        </li>
-        <li>
-          <NavItem htmlText="이벤트" />
-        </li>
-        <li>
-          <NavItem htmlText="스티커샵" />
-        </li>
-        <li>
-          <NavItem htmlText="노하우" />
+          <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>상품 업로드</Button>
         </li>
       </ul>
     </div>

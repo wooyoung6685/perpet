@@ -22,6 +22,10 @@
 .Navigation svg {
   height: 0.8em;
 }
+.Navigation .ant-dropdown-trigger,
+.Navigation .nav_memu{
+  vertical-align: middle;
+}
 @media (max-width: 610px) {
   .MenuOutlined {
     display: none;
