@@ -9,9 +9,7 @@
   display: flex;
   justify-content: space-between;
 }
-.header_main-searchbar {
-  padding-right: 64px;
-}
+
 .header_nav {
   display: flex;
   justify-content: space-between;
@@ -26,52 +24,65 @@
   .header_side {
     display: none;
   }
+
   .navButton {
     display: none;
   }
+
   .header_main {
     justify-content: center;
   }
+
   .searchbar_main {
     width: 90%;
     padding: 0;
   }
+
   .header_main-searchbar {
     width: 100%;
     padding-left: 25px;
   }
+
   .header_main-searchbar input {
     width: 100%;
   }
+
   .header_nav {
     justify-content: center;
   }
 }
+
 @media (max-width: 880px) {
   .header_nav {
     justify-content: start;
     width: 100%;
   }
+
   .searchbar_main {
     width: 100%;
   }
 }
+
 @media (max-width: 720px) {
   .header_nav {
     justify-content: start;
   }
+
   .searchbar_main {
     width: 100%;
   }
 }
+
 @media (max-width: 610px) {
   .header_nav {
     justify-content: start;
   }
+
   .nav_memu {
     font-size: 10px;
     width: 100%;
   }
+
   .searchbar_main {
     width: 100%;
   }

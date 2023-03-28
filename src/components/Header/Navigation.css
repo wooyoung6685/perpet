@@ -2,34 +2,52 @@
   text-decoration: none;
   list-style: none;
 }
+
 .Navigation {
   display: flex;
   padding-top: 20px;
 }
+
 .Navigation li {
   padding-right: 15px;
 }
+
 .Navigation li a span {
   padding-right: 5px;
   font-size: 20px;
 }
+
 .Navigation li a {
   cursor: pointer;
 }
+
 .ant-dropdown-menu {
   width: 280px;
 }
+
 .Navigation svg {
   height: 0.8em;
 }
+
 .Navigation .ant-dropdown-trigger,
-.Navigation .nav_memu{
+.Navigation .nav_memu {
   vertical-align: middle;
 }
+
+.Navigation .ant-btn {
+  font-weight: bold;
+  padding: 4px 25px;
+}
+
+.Navigation .ant-btn svg {
+  height: 0.9em;
+}
+
 @media (max-width: 610px) {
   .MenuOutlined {
     display: none;
   }
+
   .ant-space-item {
     font-size: 16px !important;
   }
