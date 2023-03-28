@@ -18,7 +18,8 @@
   display: flex;
 }
 .title {
-  width: 1180px;
+  width: 100%;
+  max-width: 1180px;
   margin: 40px auto 20px;
   text-align: left;
 }
