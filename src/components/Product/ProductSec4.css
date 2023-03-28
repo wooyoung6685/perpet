@@ -1,5 +1,6 @@
 .product-title {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 40px auto 20px;
   text-align: left;
 }
