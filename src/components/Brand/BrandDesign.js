@@ -26,7 +26,7 @@ function BrandDesign() {
     <div className="brand_design-background">
       <div className="brand_inner">
         <div className="brand_design-container">
-          <img className="ratio_img" src="https://funnc-static-images.s3.ap-northeast-2.amazonaws.com/dogpre/mobile_banner/mobile_banner.png" alt="arrow" />
+          <img className="ratio_img" src="../images/EventBanner/Group1.png" alt="arrow" />
           {DesignItems.map((item) => (
             <div className="brand_design-item" key={item.id}>
               <img src={item.src} alt={item.alt} />

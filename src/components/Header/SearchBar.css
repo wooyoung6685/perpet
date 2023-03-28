@@ -31,5 +31,6 @@
 }
 .header_main-searchbar {
   justify-content: start;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
 }
