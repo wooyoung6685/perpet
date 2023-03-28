@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
+import { Dropdown, Space, Button } from "antd";
 import "./Footer.css";
 function Footer() {
   const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ function Footer() {
     {
       label: "Email : helloanimal@test.com",
       key: "8",
-    }
+    },
   ];
   return (
     <>
@@ -111,34 +111,36 @@ function Footer() {
           </div>
         </div>
         <div>
-        <div className="footer_middle footer_mg-top-60">
-          <div className='footer_middle-flex'>
-            <img src="./images/Footer/logo.svg" alt="myImage" />
-          </div>
-          <div className='footer_middle-center footer_mg-top-20'>
+          <div className="footer_middle footer_mg-top-60">
+            <div className="footer_middle-flex">
+              <img src="./images/Footer/logo.svg" alt="myImage" />
+            </div>
+            <div className="footer_middle-center footer_mg-top-20">
               <Dropdown
-                  menu={{
-                    items,
-                    onClick: handleMenuClick,
-                  }}
-                  onOpenChange={handleOpenChange}
-                  open={open}
-                >
-                  <button onClick={(e) => e.preventDefault()}>
+                menu={{
+                  items,
+                  onClick: handleMenuClick,
+                }}
+                onOpenChange={handleOpenChange}
+                open={open}
+              >
+                <Button>
+                  <a onClick={(e) => e.preventDefault()}>
                     <Space>
                       사업자 정보
                       <DownOutlined />
                     </Space>
-                  </button>
+                  </a>
+                </Button>
               </Dropdown>
+            </div>
+            <div className="footer_middle-center footer_mg-top-20">
+              <p className="footer_middle-mg">회사소개</p>
+              <p className="footer_middle-mg footer_font-bold">개인정보 처리방침</p>
+              <p className="footer_middle-mg">이용 약관</p>
+              <p className="footer_middle-mg">사업자 정보 확인</p>
+            </div>
           </div>
-          <div className='footer_middle-center footer_mg-top-20'>
-            <p className='footer_middle-mg'>회사소개</p>
-            <p className='footer_middle-mg footer_font-bold'>개인정보 처리방침</p>
-            <p className='footer_middle-mg'>이용 약관</p>
-            <p className='footer_middle-mg'>사업자 정보 확인</p>
-          </div>
-        </div>
         </div>
       </div>
     </>
