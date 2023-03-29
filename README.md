@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PerPet
 
 <div align="center">
@@ -14,29 +13,17 @@
 
 > **프론트 서버** : [https://perpet.vercel.app/](https://perpet.vercel.app/)<br> **백엔드 서버** : [https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/)<br>
 
-## 웹개발팀 소개
+## 개발팀 소개
 
-|                                                              최우영                                                               |                                                              김민규                                                               |                                                              박천주                                                              |         이윤재         |
-| :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :--------------------: |
-| <img width="160px" src="https://user-images.githubusercontent.com/50205887/205326013-af001243-a77d-4601-8bfc-aa713931cf95.png" /> | <img width="160px" src="https://user-images.githubusercontent.com/50205887/207570536-f5a82e48-99a1-4399-91d3-75fc5f8f3349.png" /> | <img width="160px" src="https://user-images.githubusercontent.com/50205887/207570634-247c3715-a54e-4f63-8c08-9b266f8a35f7.png"/> | ㅁㄴㅇㄴㅁㅇㄴㅁㅇㄴㅁ |
-|                                             [@parkjiye](https://github.com/parkjiye)                                              |                                          [@ChaeyeonSeo](https://github.com/ChaeyeonSeo)                                           |                                         [@hyunjeong408](https://github.com/hyunjeong408)                                         |
-|                                                 성균관대학교 소프트웨어학과 4학년                                                 |                                                 성균관대학교 소프트웨어학과 4학년                                                 |                                                성균관대학교 소프트웨어학과 4학년                                                 |
+|                                                               최우영                                                               |                                                               김민규                                                               |                                                              박천주                                                               |                                                              이윤재                                                               |
+| :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+| <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415574-eef39d30-f076-4218-abe9-fe801d224e1a.jpg" /> | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415637-bca17c0c-81c8-48c5-b97c-e691a47d76c6.jpg" /> | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415794-5d11dd8d-b068-4af8-a527-662ef4226bf1.jpg"/> | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415846-b1e87f83-8e85-490f-b672-cfecee4943b6.jpg"/> |
+|                                          [@wooyoung6685](https://github.com/wooyoung6685)                                          |                                                 [@m9](https://github.com/Min9yuuu)                                                 |                                           [parkcheonju](https://github.com/parkcheonju)                                           |                                        [@davidcool0117](https://github.com/davidcool0117)                                         |
+|                                                                                                                                    |                                                                                                                                    |                                                                                                                                   |
 
 ## 프로젝트 소개
 
-발룬테인은 온라인 코딩 교육 봉사를 하는 단체입니다. 기존에 소프트웨어학과에서 월드프렌즈 ICT 봉사단이라는 개발도상국에서 약 학 달 간 코딩 교육 봉사를 하는 활동이 있었는데, 봉사가 일회성으로 끝나는 점에 아쉬움을 느껴 지속적인 봉사를 하고자 만들어졌습니다. 발룬테인에서는 스크래치, 파이썬 등 프로그래밍 언어에 관한 강의를 제공하고, 질의응답과 라이브 세션을 통해 한국 학생과 외국 학생 간에 소통이 이루어집니다.
-
-#### Voluntain will share the knowledge of programming.
-
-You can take easy-to-understand lectures created by our team, including Scratch and Python. Also, improve your understanding and application skills of programming with exercise questions in the lecture videos.
-
-#### Voluntain's website will give you a learning-friendly environment.
-
-Our website supports the following component.
-
-1. Various online lectures with detailed descriptions and exercise questions.
-2. Q&A section to ask questions freely.
-3. Function to check the lecture you watched recently.
+반려동물의 건강과 행복을 위해 필요한 다양한 용품을 판매하는 것이 목적입니다. 반려동물에 대한 정보를 제공하여, 반려인들이 반려동물을 키우는데 도움을 줄 수 있습니다. perpet은 신뢰를 바탕으로 상품 선정을 하여 최상의 상품을 제공합니다.
 
 ## 시작 가이드
 
@@ -91,10 +78,6 @@ $ npm run dev
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Strapi](https://img.shields.io/badge/Strapi-2F2E8B?style=for-the-badge&logo=Strapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
-![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=MUI&logoColor=white)
 
 ### Communication
 
@@ -128,83 +111,3 @@ $ npm run dev
 ### ⭐️ 이어 학습하기 기능
 
 - Cookie 기능을 이용하여 이전에 학습했던 내용 이후부터 바로 학습 가능
-=======
-# Perpet
-> 간략한 프로젝트 소개 문구를 작성합니다.
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
-
-[![텍스트](https://user-images.githubusercontent.com/117795271/228401908-faa0a95c-9876-4daa-b831-062c42d94780.png)](https://perpet.vercel.app/)
-
-## 설치 방법
-
-OS X & 리눅스:
-
-```sh
-npm install my-crazy-module --save
-```
-
-윈도우:
-
-```sh
-edit autoexec.bat
-```
-
-## 사용 예제
-
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
-
-_더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
-
-## 개발 환경 설정
-
-모든 개발 의존성 설치 방법과 자동 테스트 슈트 실행 방법을 운영체제 별로 작성합니다.
-
-```sh
-make install
-npm test
-```
-
-## 업데이트 내역
-
-* 0.2.1
-    * 수정: 문서 업데이트 (모듈 코드 동일)
-* 0.2.0
-    * 수정: `setDefaultXYZ()` 메서드 제거
-    * 추가: `init()` 메서드 추가
-* 0.1.1
-    * 버그 수정: `baz()` 메서드 호출 시 부팅되지 않는 현상 (@컨트리뷰터 감사합니다!)
-* 0.1.0
-    * 첫 출시
-    * 수정: `foo()` 메서드 네이밍을 `bar()`로 수정
-* 0.0.1
-    * 작업 진행 중
-
-## 정보
-
-이름 – [@트위터 주소](https://twitter.com/dbader_org) – 이메일주소@example.com
-
-XYZ 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-## 기여 방법
-
-1. (<https://github.com/yourname/yourproject/fork>)을 포크합니다.
-2. (`git checkout -b feature/fooBar`) 명령어로 새 브랜치를 만드세요.
-3. (`git commit -am 'Add some fooBar'`) 명령어로 커밋하세요.
-4. (`git push origin feature/fooBar`) 명령어로 브랜치에 푸시하세요. 
-5. 풀리퀘스트를 보내주세요.
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
->>>>>>> 96070a7bd7f51cb5dbad918e7836a8a48af08706
