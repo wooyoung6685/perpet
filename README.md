@@ -87,11 +87,11 @@ $ npm start
 
 ## 화면 구성 📺
 
-|                                                          메인 페이지                                                           |                                                          소개 페이지                                                           |
-| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
-| <img width="329" src="https://user-images.githubusercontent.com/50205887/208036155-a57900f7-c68a-470d-923c-ff3c296ea635.png"/> | <img width="329" src="https://user-images.githubusercontent.com/50205887/208036645-a76cf400-85bc-4fa2-af72-86d2abf61366.png"/> |
-|                                                        강좌 소개 페이지                                                        |                                                        강의 영상 페이지                                                        |
-| <img width="329" src="https://user-images.githubusercontent.com/50205887/208038737-2b32b7d2-25f4-4949-baf5-83b5c02915a3.png"/> | <img width="329" src="https://user-images.githubusercontent.com/50205887/208038965-43a6318a-7b05-44bb-97c8-b08b0495fba7.png"/> |
+|                                                           메인 페이지                                                           |                                                         상품구성 페이지                                                         |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: |
+| <img width="329" src="https://user-images.githubusercontent.com/117795271/228436266-adaf0e52-fe26-475b-9dfa-d46957b16833.PNG"/> | <img width="329" src="https://user-images.githubusercontent.com/117795271/228436574-5ee5bda8-001b-40ec-9fb0-1393ee56d847.PNG"/> |
+|                                                         상품등록 페이지                                                         |                                                         상세상품 페이지                                                         |
+| <img width="329" src="https://user-images.githubusercontent.com/117795271/228436930-d98ff56a-99ed-4557-b69e-74ec1bac6a27.PNG"/> | <img width="329" src="https://user-images.githubusercontent.com/117795271/228437115-7bbce6c4-d613-48d4-9883-6931251b3e0f.PNG"/> |
 
 ---
 
