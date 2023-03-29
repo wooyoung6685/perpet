@@ -7,7 +7,7 @@
 
 한 두 문단으로 프로젝트 소개 글을 작성합니다.
 
-[![텍스트](https://user-images.githubusercontent.com/117795271/228401060-03ba20f9-d227-4687-b0a1-4a98248c5ee1.PNG)](https://perpet.vercel.app/)
+[![텍스트](https://user-images.githubusercontent.com/117795271/228401908-faa0a95c-9876-4daa-b831-062c42d94780.png)](https://perpet.vercel.app/)
 
 ## 설치 방법
 
