@@ -31,9 +31,23 @@
 
 For building and running the application you need:
 
-[![React Version][react-v-image]][react-url] [![Node Version][node-v-image]][node-url] [![Npm version][npm-v-image]][npm-url]
-
 ### Installation
+
+[![React Version][react-v-image]][react-url] ![Swiper][swiper-v-image] ![Antd Version][antd-v-image]
+[![Node Version][node-v-image]][node-url] [![Npm version][npm-v-image]][npm-url] ![Express][express-v-image] ![Sequlize][sequelize-image] ![Sqlite][sqlite3]
+
+#### Frontend
+
+```bash
+$ nvm use v.16.19.0
+$ npx create-react-app .
+$ npm i axios
+$ npm i dayjs
+$ npm i react-router-dom
+$ npm i swiper
+$ npm i antd
+$ npm start
+```
 
 #### Backend
 
@@ -46,19 +60,6 @@ $ npm i multer
 $ npm i nodemon
 $ npm i sequelize
 $ npm i sqlite3
-$ npm start
-```
-
-#### Frontend
-
-```bash
-$ nvm use v.16.19.0
-$ npx create-react-app .
-$ npm i axios
-$ npm i dayjs
-$ npm i react-router-dom
-$ npm i swiper
-$ npm i antd
 $ npm start
 ```
 
@@ -113,9 +114,15 @@ $ npm start
 
 <!-- plugin and version -->
 
-[react-v-image]: https://img.shields.io/badge/react-v18-blue
+[react-v-image]: https://img.shields.io/badge/react-v18-61DAFB
 [node-v-image]: https://img.shields.io/badge/node-v16.19.0-brighgreen
 [npm-v-image]: https://img.shields.io/badge/npm-v8.19.3-red
+[axios-v-image]: https://img.shields.io/badge/axios-v1.3.4-blueviolet
+[antd-v-image]: https://img.shields.io/badge/antd-v5.3.1-informational
+[swiper-v-image]: https://img.shields.io/badge/swiper-v9.1.1-blue
+[express-v-image]: https://img.shields.io/badge/express-v4.18.2-black
+[sqlite3]: https://img.shields.io/badge/sqlite-v5.1.6-yellowgreen
+[sequelize-image]: https://img.shields.io/badge/sequelize-v6.29.3-2E3B69
 
 <!-- program -->
 
@@ -126,10 +133,6 @@ $ npm start
 [vscode-image]: https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white
 [git-image]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white
 [github-image]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white
-[css-url]: https://developer.mozilla.org/ko/docs/Web/CSS
 [node-url]: https://www.npmjs.com/package/node/v/16.19.0
 [npm-url]: https://www.npmjs.com/package/npm/v/8.19.3
 [react-url]: https://www.npmjs.com/package/react
-[vscode-url]: https://code.visualstudio.com/docs
-[git-url]: https://git-scm.com/docs/git
-[github-url]: https://github.com/
