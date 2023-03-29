@@ -7,7 +7,7 @@
 
 # PerPet React App v1.0
 
-**개발기간: 202.03.06 ~ 2022.04.03**
+> **잇몸만개조** <br/> **개발기간: 202.03.06 ~ 2022.04.03**
 
 ## 배포 주소
 
@@ -38,17 +38,11 @@ For building and running the application you need:
 #### Frontend
 
 ```bash
-$ nvm use v.16.19.0
-$ npx create-react-app .
-$ npm i axios
-$ npm i dayjs
-$ npm i react-router-dom
-$ npm i swiper
-$ npm i antd
-$ npm start
+$ git clone https://github.com/wooyoung6685/perpet.git
+$ cd perpet
 ```
 
-#### Backend
+### Backend
 
 ```bash
 $ nvm use v.16.19.0
@@ -76,7 +70,7 @@ $ npm start
 
 ### Development
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Nodejs][node-image] ![CSS 3][css-image]
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Nodejs][node-image] ![CSS 3][css-image] ![Swiper][swiper-image] ![AntDesign][antd-image]
 
 ### Communication
 
@@ -136,3 +130,4 @@ $ npm start
 [node-url]: https://www.npmjs.com/package/node/v/16.19.0
 [npm-url]: https://www.npmjs.com/package/npm/v/8.19.3
 [react-url]: https://www.npmjs.com/package/react
+[swiper-image]: https://img.shields.io/badge/Swiper-0080ff?style=for-the-badge&logo=swiper&logoColor=white
