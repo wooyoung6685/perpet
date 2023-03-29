@@ -42,7 +42,22 @@ $ git clone https://github.com/wooyoung6685/perpet.git
 $ cd perpet
 ```
 
+```bash
+$ npx create-react-app .
+$ npm i react-router-dom
+$ npm i axios
+$ npm i swiper
+$ npm i antd
+$ npm i dayjs
+$ npm start
+```
+
 ### Backend
+
+```bash
+$ git clone https://github.com/wooyoung6685/perpetserver.git
+$ cd perpetserver
+```
 
 ```bash
 $ nvm use v.16.19.0
