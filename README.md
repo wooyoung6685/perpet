@@ -43,8 +43,8 @@ $ cd perpet
 ```
 
 ```bash
-$ npx create-react-app .
 $ nvm use v.16.19.0
+$ npx create-react-app .
 $ npm i react-router-dom
 $ npm i axios
 $ npm i swiper
