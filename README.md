@@ -70,7 +70,7 @@ $ npm start
 
 ### Development
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Nodejs][node-image] ![CSS 3][css-image] ![Swiper][swiper-image] ![AntDesign][antd-image]
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![CSS 3][css-image] ![Swiper][swiper-image] ![AntDesign][antd-image] ![Javascript][javascript-image] ![Nodejs][node-image] ![Express][express-image]
 
 ### Communication
 
@@ -127,6 +127,8 @@ $ npm start
 [git-image]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white
 [github-image]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white
 [antd-image]: https://img.shields.io/badge/antd-blue?style=for-the-badge&logo=antdesign&logoColor=white
+[javascript-image]: "https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+[express-image]: "https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white"
 [node-url]: https://www.npmjs.com/package/node/v/16.19.0
 [npm-url]: https://www.npmjs.com/package/npm/v/8.19.3
 [react-url]: https://www.npmjs.com/package/react
