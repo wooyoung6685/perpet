@@ -85,7 +85,7 @@ $ npm start
 
 ### Development
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Javascript][javascript-image] ![Nodejs][node-image] ![Express][express-image] ![PWA][pwa-image] ![Sequelize][sequelize-image] ![CSS 3][css-image] ![Swiper][swiper-image] ![AntDesign][antd-image]
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Javascript][javascript-image] ![Nodejs][node-image] ![Express][express-image] ![PWA][pwa-image] ![Sequelize][sequelize-image]
 
 ### Communication
 
