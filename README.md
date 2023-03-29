@@ -31,8 +31,6 @@
 
 For building and running the application you need:
 
-[![React Version][react-v-image]][react-url] [![Node Version][node-v-image]][node-url] [![Npm version][npm-v-image]][npm-url]
-
 ### Installation
 
 ```bash
@@ -54,19 +52,6 @@ $ npm i sqlite3
 $ npm start
 ```
 
-#### Frontend
-
-```bash
-$ nvm use v.16.19.0
-$ npx create-react-app .
-$ npm i axios
-$ npm i dayjs
-$ npm i react-router-dom
-$ npm i swiper
-$ npm i antd
-$ npm start
-```
-
 ---
 
 ## Stacks 🐈
@@ -81,7 +66,7 @@ $ npm start
 
 ### Development
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Nodejs][node-image] ![CSS 3][css-image]
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Nodejs][node-image] ![CSS 3][css-image] ![Swiper][swiper-image]
 
 ### Communication
 
@@ -101,26 +86,32 @@ $ npm start
 
 ## 주요 기능 📦
 
-### ⭐️ 강좌 선택 및 강의 영상 시청 기능
+### ⭐️ 상품 업로드
 
-- Scratch, Python 2개 강좌 및 각 강좌마다 10개 가량의 강의 영상 제공
-- 추후 지속적으로 강좌 추가 및 업로드 예정
+- 상품을 등록하며 할인율 입력시 할인가 자동변경
+- 할인가가 있을 경우 할인가 상품목록 구역에 업로드
 
-### ⭐️ 강의 관련 및 단체에 대한 자유로운 댓글 작성 가능
+### ⭐️ 상세페이지
 
-- Disqus를 이용하여 강의 관련 질문이나 단체에 대한 질문 작성 가능
+- 아이템 클릭시 상세페이지로 이동하여 이미지와 상품에 대한 설명이 나오는 상세페이지 화면 렌더링
 
-### ⭐️ 이어 학습하기 기능
+### ⭐️ 결재기능
 
-- Cookie 기능을 이용하여 이전에 학습했던 내용 이후부터 바로 학습 가능
+- 결재 버튼 클릭시 메인페이지 렌더, 결재된 상품 soldout
 
 <!-- Markdown link & img dfn's -->
 
 <!-- plugin and version -->
 
-[react-v-image]: https://img.shields.io/badge/react-v18-blue
+[react-v-image]: https://img.shields.io/badge/react-v18-61DAFB
 [node-v-image]: https://img.shields.io/badge/node-v16.19.0-brighgreen
 [npm-v-image]: https://img.shields.io/badge/npm-v8.19.3-red
+[axios-v-image]: https://img.shields.io/badge/axios-v1.3.4-blueviolet
+[antd-v-image]: https://img.shields.io/badge/antd-v5.3.1-informational
+[swiper-v-image]: https://img.shields.io/badge/swiper-v9.1.1-blue
+[express-v-image]: https://img.shields.io/badge/express-v4.18.2-black
+[sqlite3]: https://img.shields.io/badge/sqlite-v5.1.6-yellowgreen
+[sequelize-image]: https://img.shields.io/badge/sequelize-v6.29.3-2E3B69
 
 <!-- program -->
 
@@ -131,10 +122,7 @@ $ npm start
 [vscode-image]: https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white
 [git-image]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white
 [github-image]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white
-[css-url]: https://developer.mozilla.org/ko/docs/Web/CSS
 [node-url]: https://www.npmjs.com/package/node/v/16.19.0
 [npm-url]: https://www.npmjs.com/package/npm/v/8.19.3
 [react-url]: https://www.npmjs.com/package/react
-[vscode-url]: https://code.visualstudio.com/docs
-[git-url]: https://git-scm.com/docs/git
-[github-url]: https://github.com/
+[swiper-image]: https://img.shields.io/badge/Swiper-0080ff?style=for-the-badge&logo=swiper&logoColor=white
