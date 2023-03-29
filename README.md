@@ -7,7 +7,7 @@
 
 # PerPet React App v1.0
 
-> **그린컴퓨터학원 잇몸만개조** <br/> **개발기간: 202.03.06 ~ 2022.04.03**
+> **잇몸만개조** <br/> **개발기간: 202.03.06 ~ 2022.04.03**
 
 ## 배포 주소
 
@@ -35,7 +35,12 @@ For building and running the application you need:
 
 ### Installation
 
-#### Backend
+```bash
+$ git clone https://github.com/wooyoung6685/perpet.git
+$ cd perpet
+```
+
+### Backend
 
 ```bash
 $ nvm use v.16.19.0
