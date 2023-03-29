@@ -7,7 +7,7 @@
 
 # PerPet React App v1.0
 
-> **그린컴퓨터학원 잇몸만개조** <br/> **개발기간: 202.03.06 ~ 2022.04.03**
+**개발기간: 202.03.06 ~ 2022.04.03**
 
 ## 배포 주소
 
@@ -34,6 +34,7 @@ For building and running the application you need:
 ### Installation
 
 [![React Version][react-v-image]][react-url] ![Swiper][swiper-v-image] ![Antd Version][antd-v-image]
+
 [![Node Version][node-v-image]][node-url] [![Npm version][npm-v-image]][npm-url] ![Express][express-v-image] ![Sequlize][sequelize-image] ![Sqlite][sqlite3]
 
 #### Frontend
@@ -97,18 +98,18 @@ $ npm start
 
 ## 주요 기능 📦
 
-### ⭐️ 강좌 선택 및 강의 영상 시청 기능
+### ⭐️ 상품 업로드
 
-- Scratch, Python 2개 강좌 및 각 강좌마다 10개 가량의 강의 영상 제공
-- 추후 지속적으로 강좌 추가 및 업로드 예정
+- 상품을 등록하며 할인율 입력시 할인가 자동변경
+- 할인가가 있을 경우 할인가 상품목록 구역에 업로드
 
-### ⭐️ 강의 관련 및 단체에 대한 자유로운 댓글 작성 가능
+### ⭐️ 상세페이지
 
-- Disqus를 이용하여 강의 관련 질문이나 단체에 대한 질문 작성 가능
+- 아이템 클릭시 상세페이지로 이동하여 이미지와 상품에 대한 설명이 나오는 상세페이지 화면 렌더링
 
-### ⭐️ 이어 학습하기 기능
+### ⭐️ 결재기능
 
-- Cookie 기능을 이용하여 이전에 학습했던 내용 이후부터 바로 학습 가능
+- 결재 버튼 클릭시 메인페이지 렌더, 결재된 상품 soldout
 
 <!-- Markdown link & img dfn's -->
 
