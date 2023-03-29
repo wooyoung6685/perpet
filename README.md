@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# PerPet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<img width="329" alt="image" src="https://user-images.githubusercontent.com/117795271/228409021-d39db6a9-7b40-4630-b779-5739818d0102.svg">
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+# PerPet React App v1.0
 
-### `npm start`
+> **그린컴퓨터학원 잇몸만개조** <br/> **개발기간: 202.03.06 ~ 2022.04.03**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 배포 주소
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> **프론트 서버** : [https://perpet.vercel.app/](https://perpet.vercel.app/)<br> **백엔드 서버** : [https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/)<br>
 
-### `npm test`
+## 웹개발팀 소개
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+|                                                              최우영                                                               |                                                              김민규                                                               |                                                              박천주                                                              |         이윤재         |
+| :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :--------------------: |
+| <img width="160px" src="https://user-images.githubusercontent.com/50205887/205326013-af001243-a77d-4601-8bfc-aa713931cf95.png" /> | <img width="160px" src="https://user-images.githubusercontent.com/50205887/207570536-f5a82e48-99a1-4399-91d3-75fc5f8f3349.png" /> | <img width="160px" src="https://user-images.githubusercontent.com/50205887/207570634-247c3715-a54e-4f63-8c08-9b266f8a35f7.png"/> | ㅁㄴㅇㄴㅁㅇㄴㅁㅇㄴㅁ |
+|                                             [@parkjiye](https://github.com/parkjiye)                                              |                                          [@ChaeyeonSeo](https://github.com/ChaeyeonSeo)                                           |                                         [@hyunjeong408](https://github.com/hyunjeong408)                                         |
+|                                                 성균관대학교 소프트웨어학과 4학년                                                 |                                                 성균관대학교 소프트웨어학과 4학년                                                 |                                                성균관대학교 소프트웨어학과 4학년                                                 |
 
-### `npm run build`
+## 프로젝트 소개
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+발룬테인은 온라인 코딩 교육 봉사를 하는 단체입니다. 기존에 소프트웨어학과에서 월드프렌즈 ICT 봉사단이라는 개발도상국에서 약 학 달 간 코딩 교육 봉사를 하는 활동이 있었는데, 봉사가 일회성으로 끝나는 점에 아쉬움을 느껴 지속적인 봉사를 하고자 만들어졌습니다. 발룬테인에서는 스크래치, 파이썬 등 프로그래밍 언어에 관한 강의를 제공하고, 질의응답과 라이브 세션을 통해 한국 학생과 외국 학생 간에 소통이 이루어집니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Voluntain will share the knowledge of programming.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can take easy-to-understand lectures created by our team, including Scratch and Python. Also, improve your understanding and application skills of programming with exercise questions in the lecture videos.
 
-### `npm run eject`
+#### Voluntain's website will give you a learning-friendly environment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Our website supports the following component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Various online lectures with detailed descriptions and exercise questions.
+2. Q&A section to ask questions freely.
+3. Function to check the lecture you watched recently.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 시작 가이드
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Requirements
 
-## Learn More
+For building and running the application you need:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Node.js 14.19.3](https://nodejs.org/ca/blog/release/v14.19.3/)
+- [Npm 9.2.0](https://www.npmjs.com/package/npm/v/9.2.0)
+- [Strapi 3.6.6](https://www.npmjs.com/package/strapi/v/3.6.6)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+```bash
+$ git clone https://github.com/Voluntain-SKKU/Voluntain-2nd.git
+$ cd Voluntain-2nd
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Backend
 
-### Analyzing the Bundle Size
+```
+$ cd strapi-backend
+$ nvm use v.14.19.3
+$ npm install
+$ npm run develop
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Frontend
 
-### Making a Progressive Web App
+```
+$ cd voluntain-app
+$ nvm use v.14.19.3
+$ npm install
+$ npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Stacks 🐈
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Environment
 
-### Deployment
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
+![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Config
 
-### `npm run build` fails to minify
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Development
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Strapi](https://img.shields.io/badge/Strapi-2F2E8B?style=for-the-badge&logo=Strapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=MUI&logoColor=white)
+
+### Communication
+
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white)
+![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white)
+![GoogleMeet](https://img.shields.io/badge/GoogleMeet-00897B?style=for-the-badge&logo=Google%20Meet&logoColor=white)
+
+---
+
+## 화면 구성 📺
+
+|                                                          메인 페이지                                                           |                                                          소개 페이지                                                           |
+| :----------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------: |
+| <img width="329" src="https://user-images.githubusercontent.com/50205887/208036155-a57900f7-c68a-470d-923c-ff3c296ea635.png"/> | <img width="329" src="https://user-images.githubusercontent.com/50205887/208036645-a76cf400-85bc-4fa2-af72-86d2abf61366.png"/> |
+|                                                        강좌 소개 페이지                                                        |                                                        강의 영상 페이지                                                        |
+| <img width="329" src="https://user-images.githubusercontent.com/50205887/208038737-2b32b7d2-25f4-4949-baf5-83b5c02915a3.png"/> | <img width="329" src="https://user-images.githubusercontent.com/50205887/208038965-43a6318a-7b05-44bb-97c8-b08b0495fba7.png"/> |
+
+---
+
+## 주요 기능 📦
+
+### ⭐️ 강좌 선택 및 강의 영상 시청 기능
+
+- Scratch, Python 2개 강좌 및 각 강좌마다 10개 가량의 강의 영상 제공
+- 추후 지속적으로 강좌 추가 및 업로드 예정
+
+### ⭐️ 강의 관련 및 단체에 대한 자유로운 댓글 작성 가능
+
+- Disqus를 이용하여 강의 관련 질문이나 단체에 대한 질문 작성 가능
+
+### ⭐️ 이어 학습하기 기능
+
+- Cookie 기능을 이용하여 이전에 학습했던 내용 이후부터 바로 학습 가능
