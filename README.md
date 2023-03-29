@@ -43,33 +43,37 @@ Our website supports the following component.
 
 For building and running the application you need:
 
-- [Node.js 14.19.3](https://nodejs.org/ca/blog/release/v14.19.3/)
-- [Npm 9.2.0](https://www.npmjs.com/package/npm/v/9.2.0)
-- [Strapi 3.6.6](https://www.npmjs.com/package/strapi/v/3.6.6)
+[![React Version][react-v-image]][react-url]
+[![Node Version][node-v-image]][node-url]
+[![Npm version][npm-v-image]][npm-url]
 
 ### Installation
 
-```bash
-$ git clone https://github.com/Voluntain-SKKU/Voluntain-2nd.git
-$ cd Voluntain-2nd
-```
-
 #### Backend
 
-```
-$ cd strapi-backend
-$ nvm use v.14.19.3
-$ npm install
-$ npm run develop
+```bash
+$ nvm use v.16.19.0
+$ npm init
+$ npm i cors
+$ npm i express
+$ npm i multer
+$ npm i nodemon
+$ npm i sequelize
+$ npm i sqlite3
+$ npm start
 ```
 
 #### Frontend
 
-```
-$ cd voluntain-app
-$ nvm use v.14.19.3
-$ npm install
-$ npm run dev
+```bash
+$ nvm use v.16.19.0
+$ npx create-react-app .
+$ npm i axios
+$ npm i dayjs
+$ npm i react-router-dom
+$ npm i swiper
+$ npm i antd
+$ npm start
 ```
 
 ---
@@ -78,9 +82,8 @@ $ npm run dev
 
 ### Environment
 
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white)
-![Github](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white)
+![Visual Studio Code][vscode-image]
+![Git][git-image]
 
 ### Config
 
@@ -88,18 +91,15 @@ $ npm run dev
 
 ### Development
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=Javascript&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Strapi](https://img.shields.io/badge/Strapi-2F2E8B?style=for-the-badge&logo=Strapi&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=Bootstrap&logoColor=white)
-![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=MUI&logoColor=white)
+![Nodejs][node-image]
+![CSS 3][css-image]
 
 ### Communication
 
 ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white)
+![Github][github-image]
 ![Notion](https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white)
-![GoogleMeet](https://img.shields.io/badge/GoogleMeet-00897B?style=for-the-badge&logo=Google%20Meet&logoColor=white)
 
 ---
 
@@ -127,3 +127,28 @@ $ npm run dev
 ### ⭐️ 이어 학습하기 기능
 
 - Cookie 기능을 이용하여 이전에 학습했던 내용 이후부터 바로 학습 가능
+
+<!-- Markdown link & img dfn's -->
+
+<!-- plugin and version -->
+
+[react-v-image]: https://img.shields.io/badge/react-v18-blue
+[node-v-image]: https://img.shields.io/badge/node-v16.19.0-brighgreen
+[npm-v-image]: https://img.shields.io/badge/npm-v8.19.3-red
+
+<!-- program -->
+
+[node-image]: https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white
+[npm-image]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
+[react-image]: https://img.shields.io/badge/react-blue?style=for-the-badge&logo=react&logoColor=61DAFB
+[css-image]: https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[vscode-image]: https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white
+[git-image]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white
+[github-image]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white
+[css-url]: https://developer.mozilla.org/ko/docs/Web/CSS
+[node-url]: https://www.npmjs.com/package/node/v/16.19.0
+[npm-url]: https://www.npmjs.com/package/npm/v/8.19.3
+[react-url]: https://www.npmjs.com/package/react
+[vscode-url]: https://code.visualstudio.com/docs
+[git-url]: https://git-scm.com/docs/git
+[github-url]: https://github.com/
