@@ -33,9 +33,7 @@ For building and running the application you need:
 
 ### Installation
 
-[![React Version][react-v-image]][react-url] ![Swiper][swiper-v-image] ![Antd Version][antd-v-image]
-
-[![Node Version][node-v-image]][node-url] [![Npm version][npm-v-image]][npm-url] ![Express][express-v-image] ![Sequlize][sequelize-image] ![Sqlite][sqlite3]
+[![React Version][react-v-image]][react-url] ![Swiper][swiper-v-image] ![Antd Version][antd-v-image] [![Node Version][node-v-image]][node-url] [![Npm version][npm-v-image]][npm-url] ![Express][express-v-image] ![Sequlize][sequelize-image] ![Sqlite][sqlite3]
 
 #### Frontend
 
@@ -134,6 +132,7 @@ $ npm start
 [vscode-image]: https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white
 [git-image]: https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white
 [github-image]: https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white
+[antd-image]: https://img.shields.io/badge/antd-blue?style=for-the-badge&logo=antdesign&logoColor=white
 [node-url]: https://www.npmjs.com/package/node/v/16.19.0
 [npm-url]: https://www.npmjs.com/package/npm/v/8.19.3
 [react-url]: https://www.npmjs.com/package/react
