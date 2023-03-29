@@ -11,7 +11,7 @@
 
 ## 배포 주소
 
-> **프론트 서버** : [https://perpet.vercel.app/](https://perpet.vercel.app/)<br> **백엔드 서버** : [https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/)<br>
+> **프론트 서버** : [https://perpet.vercel.app/](https://perpet.vercel.app/)<br> **백엔드 서버** : [https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/](https://port-0-perpetserver-p8xrq2mlfc5j4rt.sel3.cloudtype.app/products/)<br>
 
 ## 개발팀 소개
 
