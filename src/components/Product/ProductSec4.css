@@ -27,6 +27,27 @@
   padding-bottom: 60px;
   position: static;
 }
+.ParentProduct4 #product-list::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  text-align: center;
+  line-height: 360px;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#product-list:hover{
+  cursor: pointer;
+}
+
+.ParentProduct4 #product-list:hover .product-img {
+  scale: 1.1;
+}
 
 .Product_slide2 .swiper-slide {
   font-size: 18px;
