@@ -53,25 +53,6 @@ $ npm i dayjs
 $ npm start
 ```
 
-### Backend
-
-```bash
-$ git clone https://github.com/wooyoung6685/perpetserver.git
-$ cd perpetserver
-```
-
-```bash
-$ nvm use v.16.19.0
-$ npm init
-$ npm i cors
-$ npm i express
-$ npm i multer
-$ npm i nodemon
-$ npm i sequelize
-$ npm i sqlite3
-$ npm start
-```
-
 ---
 
 ## Stacks 🐈
