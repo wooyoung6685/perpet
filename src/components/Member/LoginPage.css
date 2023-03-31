@@ -52,4 +52,12 @@
   border: 0;
   outline: 0;
   display: flex;
+  background-color: white;
+  cursor: pointer;
+}
+
+.snsLogin{
+  display: flex;
+  width: 160px;
+  justify-content: space-around;
 }

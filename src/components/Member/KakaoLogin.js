@@ -5,9 +5,14 @@ function KakaoLogin() {
   const kakaologin = () => {
     window.location.href = KAKAO_AUTH_URL;
   }
-  return {
-    kakaologin
-  };
+
+  return (
+    <>
+      <button className='loginpage_button-kakao' onClick={kakaologin}>
+        <img src="../images/Member/kakao.png" alt="카카오 로그인 이동" />
+      </button>
+    </>
+  );
 }
 
 export default KakaoLogin;

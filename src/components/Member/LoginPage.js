@@ -84,10 +84,10 @@ function LoginPage() {
             >
               <div className='loginpage_login-option'>
                 <Checkbox className='loginpage_login-autologin'>자동 로그인</Checkbox>
-                <button className='loginpage_button-kakao' onClick={KakaoLogin().kakaologin}>
-                  <img src="../images/Member/kakao.png" alt="카카오 로그인 이동" />
-                </button>
-              <NaverLogin />
+                <div className="snsLogin">
+                  <KakaoLogin />
+                  <NaverLogin />
+                </div>
               </div>
 
             </ConfigProvider>
