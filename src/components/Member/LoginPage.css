@@ -36,3 +36,20 @@
 .loginpage_button-login {
   width: 444px;
 }
+
+.loginpage_login-autologin{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.loginpage_login-option{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.loginpage_button-kakao{
+  border: 0;
+  outline: 0;
+  display: flex;
+}

@@ -3,37 +3,42 @@ import NavItem from "./NavItem";
 import "./Navigation.css";
 import { MenuOutlined } from "@ant-design/icons";
 import { Dropdown, Space, Button } from "antd";
-import { UploadOutlined } from '@ant-design/icons';
+import { UploadOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const items = [
   {
-    label: "사료",
+    label: <Link to={`/products/사료`}>사료</Link>,
     key: "1",
   },
   {
-    label: "간식",
+    label: <Link to={`/products/간식`}>간식</Link>,
     key: "2",
   },
   {
-    label: "건강관리",
+    label: <Link to={`/products/위생`}>위생</Link>,
     key: "3",
   },
   {
-    label: "위생/배변",
+    label: <Link to={`/products/위생`}>위생</Link>,
     key: "4",
   },
   {
-    label: "미용/목욕",
+    label: <Link to={`/products/미용`}>미용</Link>,
     key: "5",
   },
   {
-    label: "급식기/급수기",
+    label: <Link to={`/products/급식기`}>급식기</Link>,
     key: "6",
   },
   {
-    label: "하우스/울타리",
+    label: <Link to={`/products/하우스`}>하우스</Link>,
     key: "7",
+  },
+  {
+    label: <Link to={`/products/간식`}>간식</Link>,
+    key: "8",
   },
 ];
 
@@ -44,7 +49,7 @@ function Navigation() {
   };
   return (
     <div>
-      <ul className="Navigation">
+      <ul className='Navigation'>
         <li>
           <Dropdown
             menu={{
@@ -52,22 +57,24 @@ function Navigation() {
             }}
           >
             <a onClick={(e) => e.preventDefault()}>
-              <MenuOutlined className="MenuOutlined" style={{ marginTop: "-2px" }} />
+              <MenuOutlined className='MenuOutlined' style={{ marginTop: "-2px" }} />
               <Space style={{ fontSize: "16px", color: "#454545", fontWeight: "600" }}>카테고리</Space>
             </a>
           </Dropdown>
         </li>
         <li>
-          <NavItem htmlText="랭킹" />
+          <NavItem htmlText='랭킹' />
         </li>
         <li>
-          <NavItem htmlText="신상품" />
+          <NavItem htmlText='신상품' />
         </li>
         <li>
-          <NavItem htmlText="브랜드" />
+          <NavItem htmlText='브랜드' />
         </li>
         <li>
-          <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>상품 업로드</Button>
+          <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>
+            상품 업로드
+          </Button>
         </li>
       </ul>
     </div>

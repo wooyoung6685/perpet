@@ -31,7 +31,7 @@ function Header() {
 
   const searchFilter = (e) => {
     products.map((el) => {
-      if (e.target.value == el.category) {
+      if (e.target.value == el.name) {
         setSearch("active");
         data.push(el);
         setDatas(data);
