@@ -58,6 +58,7 @@
 
 .snsLogin{
   display: flex;
-  width: 160px;
-  justify-content: space-around;
+  width: 450px;
+  justify-content: space-between;
+  margin: 0 auto;
 }

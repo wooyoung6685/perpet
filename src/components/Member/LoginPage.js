@@ -84,14 +84,14 @@ function LoginPage() {
             >
               <div className='loginpage_login-option'>
                 <Checkbox className='loginpage_login-autologin'>자동 로그인</Checkbox>
-                <div className="snsLogin">
-                  <KakaoLogin />
-                  <NaverLogin />
-                </div>
               </div>
 
             </ConfigProvider>
           </Form.Item>
+            <div className="snsLogin">
+              <KakaoLogin />
+              <NaverLogin />
+            </div>
           <Form.Item
             wrapperCol={{
               span: 9,
