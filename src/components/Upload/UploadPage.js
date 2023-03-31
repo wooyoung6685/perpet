@@ -131,11 +131,11 @@ function UploadPage() {
             onChange={handleChange}
             options={[
               {
-                value: "사료",
+                value: "food",
                 label: "사료",
               },
               {
-                value: "간식",
+                value: "snack",
                 label: "간식",
               },
               {
