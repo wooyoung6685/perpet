@@ -3,6 +3,7 @@ import "./LoginPage.css";
 import { Button, Checkbox, Form, Input, ConfigProvider } from "antd";
 import { useNavigate } from "react-router-dom";
 import NaverLogin from './NaverLogin'
+import KakaoLogin from "./KakaoLogin";
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -16,16 +17,6 @@ function LoginPage() {
     navigate("/Member/Membership");
   };
 
-  /*-------------- kakao login --------------*/
-
-  const REST_API_KEY = "52d0be4ae43601c439b012f8889eebf7";
-  const REDIRECT_URI = "http://localhost:3000";
-  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
-  const kakaoLogin = () => {
-    window.location.href = KAKAO_AUTH_URL;
-  }
-
-  /*-------------- kakao login --------------*/
   return (
     <div className="loginpage">
       <div className="loginpage_logo">
@@ -93,8 +84,8 @@ function LoginPage() {
             >
               <div className='loginpage_login-option'>
                 <Checkbox className='loginpage_login-autologin'>자동 로그인</Checkbox>
-                <button className='loginpage_button-kakao' onClick={kakaoLogin}>
-                  <img src="../images/Member/kakao.png" alt="카카오 로그인" />
+                <button className='loginpage_button-kakao' onClick={KakaoLogin().kakaologin}>
+                  <img src="../images/Member/kakao.png" alt="카카오 로그인 이동" />
                 </button>
               <NaverLogin />
               </div>
