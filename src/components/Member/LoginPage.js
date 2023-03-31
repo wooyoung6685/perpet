@@ -2,6 +2,7 @@ import React from "react";
 import "./LoginPage.css";
 import { Button, Checkbox, Form, Input, ConfigProvider } from "antd";
 import { useNavigate } from "react-router-dom";
+import NaverLogin from './NaverLogin'
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -107,7 +108,7 @@ function LoginPage() {
           </Form.Item>
         </Form>
       </div>
-
+      <NaverLogin />
       <div className="loginpage_text"></div>
       <div className="loginpage_sns"></div>
     </div>
