@@ -18,15 +18,15 @@ function Footer() {
       key: "1",
     },
     {
-      label: "사업자 등록번호: 12-34-5678",
+      label: "사업자 등록번호: 110111-7164174",
       key: "2",
     },
     {
-      label: "주소 : 서울특별시 강남구 가나다 12,마바마바 아자아자",
+      label: "주소 : 서울특별시 강남구 대방동 49, 크로바오피스텔 (01459)",
       key: "3",
     },
     {
-      label: "통신판매업 : 제 1234- 1234",
+      label: "통신판매업 : 제 2023-서울부산-2592호",
       key: "4",
     },
     {
@@ -34,15 +34,15 @@ function Footer() {
       key: "5",
     },
     {
-      label: "팩스 : 12-345-6789",
+      label: "팩스 : 010-868-2604",
       key: "6",
     },
     {
-      label: "Tel: 00-1234-5678",
+      label: "Tel: 010-868-2604",
       key: "7",
     },
     {
-      label: "Email : helloanimal@test.com",
+      label: "Email : gyubok2@gmail.com",
       key: "8",
     },
   ];
