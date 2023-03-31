@@ -96,6 +96,7 @@ function LoginPage() {
                 <button className='loginpage_button-kakao' onClick={kakaoLogin}>
                   <img src="../images/Member/kakao.png" alt="카카오 로그인" />
                 </button>
+              <NaverLogin />
               </div>
 
             </ConfigProvider>
@@ -126,7 +127,6 @@ function LoginPage() {
           </Form.Item>
         </Form>
       </div>
-      <NaverLogin />
       <div className="loginpage_text"></div>
       <div className="loginpage_sns"></div>
     </div>

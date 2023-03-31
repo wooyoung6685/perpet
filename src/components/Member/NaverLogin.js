@@ -4,14 +4,14 @@ const NaverLogin = ({ setGetToken, setUserInfo }) => {
 
     const { naver } = window
     const NAVER_CLIENT_ID = "W9TXqthoVqnsjHI3JSFD";
-    const NAVER_CALLBACK_URL = "https://perpet.vercel.app/";
+    const NAVER_CALLBACK_URL = "https://perpet.vercel.app/" || "http://localhost:3000/";
 
     const initializeNaverLogin = () => {
         const naverLogin = new naver.LoginWithNaverId({
             clientId: NAVER_CLIENT_ID,
             callbackUrl: NAVER_CALLBACK_URL,
             isPopup: false,
-            loginButton: { color: 'green', type: 3, height: 50 },
+            loginButton: { color: 'green', type: 2, height: 30 },
             callbackHandle: true,
         })
         naverLogin.init()
