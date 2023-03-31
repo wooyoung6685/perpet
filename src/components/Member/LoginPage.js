@@ -93,7 +93,7 @@ function LoginPage() {
               <div className='loginpage_login-option'>
                 <Checkbox className='loginpage_login-autologin'>자동 로그인</Checkbox>
                 <button className='loginpage_button-kakao' onClick={kakaoLogin}>
-                  <img src="../images/Member/kakao.png" alt="카카오 로그인" />
+                  <img src="../images/Member/kakao.png" alt="카카오 로그인 이동" />
                 </button>
               </div>
 
