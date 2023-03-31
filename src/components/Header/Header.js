@@ -16,7 +16,6 @@ function Header() {
   const [search, setSearch] = useState("");
   const [products, setProducts] = useState("");
   const [datas, setDatas] = useState([]);
-
   useEffect(() => {
     let url = `${API_URL}/products`;
     axios
@@ -28,21 +27,23 @@ function Header() {
         console.log(error);
       });
   }, []);
+  const data = [];
 
   const searchFilter = (e) => {
-    const data = [];
     products.map((el) => {
       if (e.target.value == el.category) {
         setSearch("active");
         data.push(el);
-      } else {
+        setDatas(data);
+      }
+      if (e.target.value == "") {
         setDatas([]);
         setSearch("");
       }
-      setDatas(data);
     });
   };
   console.log(datas);
+
   return (
     <div className='header'>
       <div className='header_main'>
@@ -52,7 +53,7 @@ function Header() {
         <div className='header_main-searchbar'>
           <div className='searchbar_main'>
             <Form>
-              <Input className='searchbar' size='large' onChange={searchFilter} />
+              <Input className='searchbar' size='large' onChange={searchFilter} placeholder='카테고리를 검색해주세요' />
               <Button style={{ fontSize: "25px" }} className='searchbar_icon' size='large' type='text' danger shape='circle' icon={<SearchOutlined />}></Button>
             </Form>
           </div>
@@ -63,7 +64,6 @@ function Header() {
                   to={`/products/${el.id}`}
                   key={`${el.id}`}
                   onClick={() => {
-                    setDatas([]);
                     setSearch("");
                   }}
                 >

@@ -22,7 +22,7 @@ function UploadPage() {
     if (disChecked && discount) {
       setPrice(Math.round((orgPrice - orgPrice * (discount / 100)) / 100) * 100);
     }
-  });
+  }, [discount]);
 
   const onFinish = (val) => {
     axios
