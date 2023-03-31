@@ -11,7 +11,7 @@ const NaverLogin = ({ setGetToken, setUserInfo }) => {
             clientId: NAVER_CLIENT_ID,
             callbackUrl: NAVER_CALLBACK_URL,
             isPopup: false,
-            loginButton: { color: 'green', type: 2, height: 50, },
+            loginButton: { color: 'green', type: 2, height: 40, },
             callbackHandle: true,
         })
         naverLogin.init()
