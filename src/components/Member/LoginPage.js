@@ -70,7 +70,7 @@ function LoginPage() {
             valuePropName="checked"
             wrapperCol={{
               offset: 8,
-              span: 16,
+              span: 18,
             }}
           >
             <ConfigProvider
@@ -92,29 +92,26 @@ function LoginPage() {
 
             </ConfigProvider>
           </Form.Item>
+
           <Form.Item
             wrapperCol={{
               span: 9,
             }}
           >
 
-            <div className="loginpage_button">
-              <Button className="loginpage_button-login" type="primary" htmlType="submit" shape="round" danger size="large">
-                로그인
-              </Button>
+            <div className='loginpage_inner'>
+              <div className="loginpage_button">
+                <Button className="loginpage_button-login" type="primary" htmlType="submit" shape="round" danger size="large">
+                  로그인
+                </Button>
+              </div>
+              <div>
+                <Button className="loginpage_button-login" htmlType="submit" shape="round" size="large" onClick={onClickMembership}>
+                  회원가입
+                </Button>
+              </div>
             </div>
-          </Form.Item>
-          <Form.Item
-            wrapperCol={{
-              offset: 7,
-              span: 16,
-            }}
-          >
-            <div className="loginpage_button2">
-              <Button className="loginpage_button-login" htmlType="submit" shape="round" size="large" onClick={onClickMembership}>
-                회원가입
-              </Button>
-            </div>
+
           </Form.Item>
         </Form>
       </div>
