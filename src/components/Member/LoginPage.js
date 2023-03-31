@@ -14,6 +14,17 @@ function LoginPage() {
   const onClickMembership = () => {
     navigate("/Member/Membership");
   };
+
+  /*-------------- kakao login --------------*/
+
+  const REST_API_KEY = "52d0be4ae43601c439b012f8889eebf7";
+  const REDIRECT_URI = "http://localhost:3000";
+  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+  const kakaoLogin = () => {
+    window.location.href = KAKAO_AUTH_URL;
+  }
+
+  /*-------------- kakao login --------------*/
   return (
     <div className="loginpage">
       <div className="loginpage_logo">
@@ -79,7 +90,13 @@ function LoginPage() {
                 },
               }}
             >
-              <Checkbox>자동 로그인</Checkbox>
+              <div className='loginpage_login-option'>
+                <Checkbox className='loginpage_login-autologin'>자동 로그인</Checkbox>
+                <button className='loginpage_button-kakao' onClick={kakaoLogin}>
+                  <img src="../images/Member/kakao.png" alt="카카오 로그인" />
+                </button>
+              </div>
+
             </ConfigProvider>
           </Form.Item>
           <Form.Item
@@ -87,6 +104,7 @@ function LoginPage() {
               span: 9,
             }}
           >
+
             <div className="loginpage_button">
               <Button className="loginpage_button-login" type="primary" htmlType="submit" shape="round" danger size="large">
                 로그인
