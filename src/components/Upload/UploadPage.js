@@ -159,8 +159,8 @@ function UploadPage() {
                 label: "하우스",
               },
               {
-                value: "스크레쳐",
-                label: "스크레쳐",
+                value: "스크래쳐",
+                label: "스크래쳐",
               },
             ]}
           />
