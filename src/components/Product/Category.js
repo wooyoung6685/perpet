@@ -19,6 +19,7 @@ function Category() {
         console.log(error);
       });
   };
+  console.log(categoryItem);
   useEffect(() => {
     getCategory();
   }, []);

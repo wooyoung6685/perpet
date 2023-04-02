@@ -139,27 +139,27 @@ function UploadPage() {
                 label: "간식",
               },
               {
-                value: "건강관리",
+                value: "healthcare",
                 label: "건강관리",
               },
               {
-                value: "위생",
+                value: "hygiene",
                 label: "위생",
               },
               {
-                value: "미용",
+                value: "beauty",
                 label: "미용",
               },
               {
-                value: "급식기",
+                value: "feeder",
                 label: "급식기",
               },
               {
-                value: "하우스",
+                value: "house",
                 label: "하우스",
               },
               {
-                value: "스크래쳐",
+                value: "scratch",
                 label: "스크래쳐",
               },
             ]}

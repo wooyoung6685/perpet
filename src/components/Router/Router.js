@@ -17,8 +17,7 @@ function Router() {
         <Route path='/Member/LoginPage' element={<LoginPage />} />
         <Route path='/Upload/UploadPage' element={<UploadPage />} />
         <Route path='/products/:id' element={<ProductsDetail />} />
-        <Route path='/products/:category' element={<Category />} />
-        <Route path='/products/:category:id' element={<ProductsDetail />} />
+        <Route path='/products/category/:category' element={<Category />} />
       </Routes>
     </div>
   );

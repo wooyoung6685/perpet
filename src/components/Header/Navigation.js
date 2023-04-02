@@ -7,22 +7,8 @@ import { Dropdown, Space, Button } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 function Navigation() {
-  const [products, setProducts] = useState();
-  useEffect(() => {
-    let url = `${API_URL}/products`;
-    axios
-      .get(url)
-      .then((result) => {
-        setProducts(result.data.product);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   const items = [
     {
       label: <Link to={`/products/category/food`}>사료</Link>,
