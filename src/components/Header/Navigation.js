@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { API_URL } from "../../config/constants";
 import NavItem from "./NavItem";
 import "./Navigation.css";
 import { MenuOutlined } from "@ant-design/icons";
@@ -6,43 +7,56 @@ import { Dropdown, Space, Button } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
-const items = [
-  {
-    label: <Link to={`/products/사료`}>사료</Link>,
-    key: "1",
-  },
-  {
-    label: <Link to={`/products/간식`}>간식</Link>,
-    key: "2",
-  },
-  {
-    label: <Link to={`/products/위생`}>위생</Link>,
-    key: "3",
-  },
-  {
-    label: <Link to={`/products/위생`}>위생</Link>,
-    key: "4",
-  },
-  {
-    label: <Link to={`/products/미용`}>미용</Link>,
-    key: "5",
-  },
-  {
-    label: <Link to={`/products/급식기`}>급식기</Link>,
-    key: "6",
-  },
-  {
-    label: <Link to={`/products/하우스`}>하우스</Link>,
-    key: "7",
-  },
-  {
-    label: <Link to={`/products/간식`}>간식</Link>,
-    key: "8",
-  },
-];
+import axios from "axios";
 
 function Navigation() {
+  const [products, setProducts] = useState();
+  useEffect(() => {
+    let url = `${API_URL}/products`;
+    axios
+      .get(url)
+      .then((result) => {
+        setProducts(result.data.product);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  const items = [
+    {
+      label: <Link to={`/products/category/food`}>사료</Link>,
+      key: "1",
+    },
+    {
+      label: <Link to={`/products/category/snack`}>간식</Link>,
+      key: "2",
+    },
+    {
+      label: <Link to={`/products/category/healthcare`}>건강관리</Link>,
+      key: "3",
+    },
+    {
+      label: <Link to={`/products/category/hygiene`}>위생</Link>,
+      key: "4",
+    },
+    {
+      label: <Link to={`/products/category/beauty`}>미용</Link>,
+      key: "5",
+    },
+    {
+      label: <Link to={`/products/category/feeder`}>급식기</Link>,
+      key: "6",
+    },
+    {
+      label: <Link to={`/products/category/house`}>하우스</Link>,
+      key: "7",
+    },
+    {
+      label: <Link to={`/products/category/scratch`}>스크레쳐</Link>,
+      key: "8",
+    },
+  ];
   const navigate = useNavigate();
   const onClickUpload = () => {
     navigate("/Upload/UploadPage");
