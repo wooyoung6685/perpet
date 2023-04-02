@@ -13,9 +13,11 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 function Header() {
-  const [search, setSearch] = useState("");
+  const [addId, setAddId] = useState("");
   const [products, setProducts] = useState("");
-  const [datas, setDatas] = useState([]);
+  const [search, setSearch] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+
   useEffect(() => {
     let url = `${API_URL}/products`;
     axios
@@ -27,22 +29,6 @@ function Header() {
         console.log(error);
       });
   }, []);
-  const data = [];
-
-  const searchFilter = (e) => {
-    products.map((el) => {
-      if (e.target.value == el.name) {
-        setSearch("active");
-        data.push(el);
-        setDatas(data);
-      }
-      if (e.target.value == "") {
-        setDatas([]);
-        setSearch("");
-      }
-    });
-  };
-  console.log(datas);
 
   return (
     <div className='header'>
@@ -53,18 +39,35 @@ function Header() {
         <div className='header_main-searchbar'>
           <div className='searchbar_main'>
             <Form>
-              <Input className='searchbar' size='large' onChange={searchFilter} placeholder='카테고리를 검색해주세요' />
+              <Input
+                className='searchbar'
+                size='large'
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                  const updateItem = products.filter((item) => {
+                    return item.name.includes(search);
+                  });
+                  setFilteredData(updateItem);
+                  if (e.target.value) {
+                    setAddId("active");
+                  } else {
+                    setAddId("");
+                  }
+                }}
+                value={search}
+                placeholder='상품이름을 적어주세요'
+              />
               <Button style={{ fontSize: "25px" }} className='searchbar_icon' size='large' type='text' danger shape='circle' icon={<SearchOutlined />}></Button>
             </Form>
           </div>
-          <div id={`${search}`} className='search_contents'>
-            {datas.map((el, idx) => {
+          <div id={`${addId}`} className='search_contents'>
+            {filteredData.map((el) => {
               return (
                 <Link
                   to={`/products/${el.id}`}
                   key={`${el.id}`}
                   onClick={() => {
-                    setSearch("");
+                    setAddId("");
                   }}
                 >
                   <div className='search_content-box'>
