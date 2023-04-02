@@ -19,7 +19,6 @@ function Category() {
         console.log(error);
       });
   };
-  console.log(categoryItem);
   useEffect(() => {
     getCategory();
   }, []);
@@ -28,14 +27,11 @@ function Category() {
   }
   return (
     <div className='product-category'>
-      {categoryItem.map((el, idx) => {
-        console.log("el:", el);
-        return (
-          <div id='product-list'>
-            <ProductItem id={el.id} image={`${API_URL}/${el.image}`} name={el.name} price={el.orgPrice} seller={el.seller} soldout={el.soldout} />
-          </div>
-        );
-      })}
+      <div id='product-list'>
+        {categoryItem.map((el, idx) => {
+          return <ProductItem id={el.id} image={`${API_URL}/${el.image}`} name={el.name} price={el.orgPrice} seller={el.seller} soldout={el.soldout} />;
+        })}
+      </div>
     </div>
   );
 }
