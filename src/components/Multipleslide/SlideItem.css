@@ -24,26 +24,13 @@
   text-align: left;
 }
 
-
-.ParentMultipleSlide #product-list::before {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background-color: rgba(0,0,0,0);
-  text-align: center;
-  line-height: 360px;
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-}
-
 .ParentMultipleSlide #product-list:hover .product-img {
   scale: 1.1;
 }
-
+.SwiperSlide_main a {
+  pointer-events: none; /*이벤트를 막음*/
+  cursor: default; /*마우스 커서를 포인트에서 디폴트로 변경*/
+}
 
 .ParentMultipleSlide {
   position: relative;
