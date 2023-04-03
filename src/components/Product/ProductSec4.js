@@ -57,16 +57,14 @@ function ProductSec4() {
           }}
         >
           {product.map((product1, idx) => {
-            if (17 <= idx <= 24) {
-              if (!product1.discount) {
-                return (
-                  <SwiperSlide key={idx}>
-                    <div id='product-list'>
-                      <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
-                    </div>
-                  </SwiperSlide>
-                );
-              }
+            if (!product1.discount && 16<=product1.id) {
+              return (
+                <SwiperSlide key={idx}>
+                  <div id='product-list'>
+                    <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
+                  </div>
+                </SwiperSlide>
+              );
             }
           })}
         </Swiper>
