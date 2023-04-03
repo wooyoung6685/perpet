@@ -59,8 +59,7 @@ function Brand() {
     <div>
       <div className="brand_inner">
         <div className="brand_flex brand_mg-top60">
-          <p className="brand_text-01">국내 최대 브랜드 보유!</p>
-          <p className="brand_text-02">더보기</p>
+          <h2>브랜드 리스트</h2>
         </div>
         <div className="brand_name">
           {images.map((image) => (
