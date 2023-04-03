@@ -1,27 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./ProductSec4.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "./ProductItem";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import { API_URL } from "../../config/constants";
 
 function ProductSec4() {
-  const product3 = [
-    { image: "./images/Product/dog_food4.jpg", name: "양치간식", price: "25,000", seller: "덴티페어리" },
-    { image: "images/Product/cat_brush1.jpg ", name: "브러쉬", price: "25,000", seller: "케어펫" },
-    { image: "./images/Product/dog_acc4.jpg", name: "하네스", price: "7,000", seller: "산책좋아" },
-    { image: "./images/Product/dog_house4.jpg", name: "집", price: "40,000", seller: "포근해" },
-    { image: "images/Product/cat_scratcher1.jpg", name: "더블캣라운지", price: "40,000", seller: "네꼬모리" },
-    { image: "./images/Product/dog_food1.jpg", name: "양치간식", price: "20,000", seller: "그리니스" },
-    { image: "./images/Product/dog_toy1.jpg", name: "말장난감", price: "3,000", seller: "말" },
-    { image: "./images/Product/dog_house1.jpg", name: "집", price: "40,000", seller: "아늑해" },
-  ];
+  const [product, setProduct] = useState(null);
+  useEffect(() => {
+    let url = `${API_URL}/products`;
+    axios
+      .get(url)
+      .then((result) => {
+        console.log(result);
+        setProduct(result.data.product);
+        console.log(product);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  if (product == null) {
+    return <h1>상품정보를 받고 있습니다...</h1>;
+  }
 
   return (
     <div>
       <h2 className='product-title'>지금 구매하면 사은품이 와르르🎁</h2>
-      <div className='ParentProduct4'>
+      <div className='ParentProduct2'>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -47,14 +56,18 @@ function ProductSec4() {
             },
           }}
         >
-          {product3.map((product3, idx) => {
-            return (
-              <SwiperSlide key={idx}>
-                <div id='product-list'>
-                  <ProductItem image={`${product3.image}`} name={product3.name} price={product3.price} seller={product3.seller} />
-                </div>
-              </SwiperSlide>
-            );
+          {product.map((product1, idx) => {
+            if (17 <= idx <= 24) {
+              if (!product1.discount) {
+                return (
+                  <SwiperSlide key={idx}>
+                    <div id='product-list'>
+                      <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
+                    </div>
+                  </SwiperSlide>
+                );
+              }
+            }
           })}
         </Swiper>
       </div>

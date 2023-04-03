@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { API_URL } from "../../config/constants";
 import axios from "axios";
 import "./ProductsDetail.css";
-import { Button, message } from 'antd';
+import { Button, message } from "antd";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 dayjs.extend(relativeTime);
@@ -35,19 +35,19 @@ const ProductsDetail = () => {
       .post(`${API_URL}/purchase/${id}`)
       .then((result) => {
         console.log(result);
-        message.info("결제가 완료되었습니다!")
-        navigate('/', { replace: true });
+        message.info("결제가 완료되었습니다!");
+        navigate("/", { replace: true });
         getProduct();
       })
       .catch((error) => {
         console.log(error);
-        message.error(`에러발생 ${error.message}`)
+        message.error(`에러발생 ${error.message}`);
       });
-  }
+  };
 
   return (
     <div className="Product_detail">
-      <div id="image-box" className='hotdeal'>
+      <div id="image-box" className="hotdeal">
         <img src={`${API_URL}/${product.image}`} alt={product.name} />
       </div>
       <div className="Product_content">
@@ -57,9 +57,9 @@ const ProductsDetail = () => {
         <div className="content-box">
           <div id="name">{product.name}</div>
           <div id="price">
-            {product.discount?<span className="discount">{`${product.discount}%`}</span>:<span></span>}
-            {product.discount?<span className="orgPrice">&nbsp;{product.orgPrice}원</span>:<span></span>}
-            {product.discount?<div className="price">{product.price}원</div>:<div className="price">{product.orgPrice}원</div>}
+            {product.discount ? <span className="discount">{`${product.discount}%`}</span> : <span></span>}
+            {product.discount ? <span className="orgPrice">&nbsp;{product.orgPrice}원</span> : <span></span>}
+            {product.discount ? <div className="price">{product.price}원</div> : <div className="price">{product.orgPrice}원</div>}
           </div>
           <div id="createdAt">상품등록일: {dayjs(product.createdAt).format("YY년MM월DD일")}</div>
           <div id="description">
@@ -67,7 +67,9 @@ const ProductsDetail = () => {
             {product.description}
           </div>
         </div>
-          <Button size="large" type="primary" danger={true} className="purchase" onClick={onClickPurchase} disabled={product.soldout === 1}>즉시 결제하기</Button>
+        <Button size="large" type="primary" danger={true} className="purchase" onClick={onClickPurchase} disabled={product.soldout === 1}>
+          즉시 결제하기
+        </Button>
       </div>
     </div>
   );

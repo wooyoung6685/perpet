@@ -21,24 +21,7 @@
   flex-wrap: wrap;
 }
 
-.ParentProduct3 #product-list::before {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  background-color: rgba(0,0,0,0);
-  text-align: center;
-  line-height: 360px;
-  color: white;
-  font-size: 48px;
-  font-weight: bold;
-}
 
-.ParentProduct3 #product-list:hover .product-img {
-  scale: 1.1;
-}
 
 .Product_slide2.swiper {
   width: 1200px;

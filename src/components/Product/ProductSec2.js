@@ -57,7 +57,7 @@ function ProductSec2() {
           }}
         >
           {product.map((product1, idx) => {
-            if (!product1.discount) {
+            if (!product1.discount && idx <= 8) {
               return (
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
