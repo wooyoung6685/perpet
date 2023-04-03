@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space, Button } from "antd";
+import { createFromIconfontCN } from "@ant-design/icons";
 import "./Footer.css";
+
+const IconFont = createFromIconfontCN({
+  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
+});
+
 function Footer() {
   const [open, setOpen] = useState(false);
   const handleMenuClick = (e) => {
-    if (e.key === '8') {
+    if (e.key === "8") {
       setOpen(false);
     }
   };
@@ -101,8 +107,12 @@ function Footer() {
             <div className="footer_mg-left-10 footer_font3">Email : gyubok2@gmail.com</div>
             <div className="icon">
               <div className="footer_pd-right">
-                <img src="./images/Footer/facebook.png" alt="facebook" />
-                <img className="footer_mg-left-10" src="./images/Footer/instagram.png" alt="instagram" />
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="./images/Footer/facebook.png" alt="facebook" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img className="footer_mg-left-10" src="./images/Footer/instagram.png" alt="instagram" />
+                </a>
               </div>
             </div>
           </div>

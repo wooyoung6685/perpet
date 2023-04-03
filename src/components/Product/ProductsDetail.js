@@ -12,6 +12,7 @@ const ProductsDetail = () => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+
   const getProduct = () => {
     axios
       .get(`${API_URL}/products/${id}`)
