@@ -16,7 +16,7 @@ function Main() {
       <Product />
       <EventBanner2 img="./images/EventBanner/EventBanner2.jpg" />
       <MultipleSlide />
-      <EventBanner2 img="./images/EventBanner/EventBanner3.jpg" />
+      <EventBanner2 img="./images/EventBanner/EventBanner3.jpg" id="3" />
       <Brand />
     </div>
   );

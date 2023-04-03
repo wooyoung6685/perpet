@@ -5,7 +5,7 @@ import "./EventBanner.css";
 function EventBanner() {
   return (
     <div className="eventBanner">
-      <Link to="/">
+      <Link to="/products/7">
         <img src="./images/EventBanner/EventBanner1.png" />
       </Link>
     </div>

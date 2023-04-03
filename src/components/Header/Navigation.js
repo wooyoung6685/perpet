@@ -1,50 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { API_URL } from "../../config/constants";
 import NavItem from "./NavItem";
 import "./Navigation.css";
 import { MenuOutlined } from "@ant-design/icons";
 import { Dropdown, Space, Button } from "antd";
-import { UploadOutlined } from '@ant-design/icons';
+import { UploadOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
-
-const items = [
-  {
-    label: "사료",
-    key: "1",
-  },
-  {
-    label: "간식",
-    key: "2",
-  },
-  {
-    label: "건강관리",
-    key: "3",
-  },
-  {
-    label: "위생/배변",
-    key: "4",
-  },
-  {
-    label: "미용/목욕",
-    key: "5",
-  },
-  {
-    label: "급식기/급수기",
-    key: "6",
-  },
-  {
-    label: "하우스/울타리",
-    key: "7",
-  },
-];
+import { Link } from "react-router-dom";
 
 function Navigation() {
+  const items = [
+    {
+      label: <Link to={`/products/category/food`}>사료</Link>,
+      key: "1",
+    },
+    {
+      label: <Link to={`/products/category/snack`}>간식</Link>,
+      key: "2",
+    },
+    {
+      label: <Link to={`/products/category/healthcare`}>건강관리</Link>,
+      key: "3",
+    },
+    {
+      label: <Link to={`/products/category/hygiene`}>위생</Link>,
+      key: "4",
+    },
+    {
+      label: <Link to={`/products/category/beauty`}>미용</Link>,
+      key: "5",
+    },
+    {
+      label: <Link to={`/products/category/feeder`}>급식기</Link>,
+      key: "6",
+    },
+    {
+      label: <Link to={`/products/category/house`}>하우스</Link>,
+      key: "7",
+    },
+    {
+      label: <Link to={`/products/category/scratch`}>스크레쳐</Link>,
+      key: "8",
+    },
+  ];
   const navigate = useNavigate();
   const onClickUpload = () => {
     navigate("/Upload/UploadPage");
   };
   return (
     <div>
-      <ul className="Navigation">
+      <ul className='Navigation'>
         <li>
           <Dropdown
             menu={{
@@ -52,22 +57,24 @@ function Navigation() {
             }}
           >
             <a onClick={(e) => e.preventDefault()}>
-              <MenuOutlined className="MenuOutlined" style={{ marginTop: "-2px" }} />
+              <MenuOutlined className='MenuOutlined' style={{ marginTop: "-2px" }} />
               <Space style={{ fontSize: "16px", color: "#454545", fontWeight: "600" }}>카테고리</Space>
             </a>
           </Dropdown>
         </li>
         <li>
-          <NavItem htmlText="랭킹" />
+          <NavItem htmlText='랭킹' />
         </li>
         <li>
-          <NavItem htmlText="신상품" />
+          <NavItem htmlText='신상품' />
         </li>
         <li>
-          <NavItem htmlText="브랜드" />
+          <NavItem htmlText='브랜드' />
         </li>
         <li>
-          <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>상품 업로드</Button>
+          <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>
+            상품 업로드
+          </Button>
         </li>
       </ul>
     </div>

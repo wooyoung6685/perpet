@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation, Pagination, Autoplay, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -12,22 +13,27 @@ import "./Banner.css";
 function Banner() {
   const bannerImg = [
     {
+      id:1,
       src: "images/Banner/banner_01.png",
       alt: "01배너",
     },
     {
+      id:2,
       src: "images/Banner/banner_02.png",
       alt: "02배너",
     },
     {
+      id:3,
       src: "images/Banner/banner_03.png",
       alt: "03배너",
     },
     {
+      id:4,
       src: "images/Banner/banner_04.png",
       alt: "04배너",
     },
     {
+      id:5,
       src: "images/Banner/banner_05.png",
       alt: "05배너",
     },
@@ -48,7 +54,7 @@ function Banner() {
       {bannerImg.map((bannerImg, idx) => {
         return (
           <SwiperSlide key={idx}>
-            <img src={`${bannerImg.src}`} alt={`${bannerImg.alt}`} />
+            <Link to={`/products/${bannerImg.id}`}><img src={`${bannerImg.src}`} alt={`${bannerImg.alt}`} /></Link>
           </SwiperSlide>
         );
       })}

@@ -29,8 +29,8 @@ function ProductSec2() {
 
   return (
     <div>
-      <h2 className="product-title">이 상품 어때❔</h2>
-      <div class="ParentProduct2">
+      <h2 className='product-title'>이 상품 어때❔</h2>
+      <div className='ParentProduct2'>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -40,7 +40,7 @@ function ProductSec2() {
           }}
           navigation={true}
           modules={[Navigation]}
-          className="Product_slide1"
+          className='Product_slide1'
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -60,7 +60,7 @@ function ProductSec2() {
             if (!product1.discount) {
               return (
                 <SwiperSlide key={idx}>
-                  <div id="product-list">
+                  <div id='product-list'>
                     <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
                   </div>
                 </SwiperSlide>

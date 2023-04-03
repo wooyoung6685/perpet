@@ -18,15 +18,15 @@ function Footer() {
       key: "1",
     },
     {
-      label: "사업자 등록번호: 12-34-5678",
+      label: "사업자 등록번호: 110111-7164174",
       key: "2",
     },
     {
-      label: "주소 : 서울특별시 강남구 가나다 12,마바마바 아자아자",
+      label: "주소 : 서울특별시 강남구 대방동 49, 크로바오피스텔 (01459)",
       key: "3",
     },
     {
-      label: "통신판매업 : 제 1234- 1234",
+      label: "통신판매업 : 제 2023-서울부산-2592호",
       key: "4",
     },
     {
@@ -34,15 +34,15 @@ function Footer() {
       key: "5",
     },
     {
-      label: "팩스 : 12-345-6789",
+      label: "팩스 : 010-868-2604",
       key: "6",
     },
     {
-      label: "Tel: 00-1234-5678",
+      label: "Tel: 010-868-2604",
       key: "7",
     },
     {
-      label: "Email : helloanimal@test.com",
+      label: "Email : gyubok2@gmail.com",
       key: "8",
     },
   ];
@@ -75,17 +75,17 @@ function Footer() {
             </div>
             <div className="footer_margin-01">
               <span className="footer_font-1">사업자등록번호</span>
-              <span className="footer_font-2">12-34-5678</span>
+              <span className="footer_font-2">110111-7164174</span>
             </div>
             <div className="footer_margin-01">
               <span className="footer_font-1">주소</span>
-              <span className="footer_font-3">서울특별시 강남구 가나다 12, 마바마바 아자아자</span>
+              <span className="footer_font-3">서울특별시 강남구 대방동 49, 크로바오피스텔 (01459)</span>
             </div>
           </div>
           <div className="flex footer_mg-top-20">
             <div className="footer_mg-right-30">
               <span className="footer_font-1">통신 판매업</span>
-              <span className="footer_font-2">제 1234- 1234</span>
+              <span className="footer_font-2">제 2023-서울부산-2592호</span>
             </div>
             <div className="footer_mg-left-10 footer_mg-right-30">
               <span className="footer_font-1">개인정보보호책임자</span>
@@ -93,12 +93,12 @@ function Footer() {
             </div>
             <div className="footer_mg-left-10">
               <span className="footer_font-1">팩스</span>
-              <span className="footer_font-3">12-345-6789</span>
+              <span className="footer_font-3">010-868-2604</span>
             </div>
           </div>
           <div className="flex footer_mg-top-10 ">
-            <div className="footer_font3">Tel: 00-1234-5678 </div>
-            <div className="footer_mg-left-10 footer_font3">Email : helloanimal@test.com</div>
+            <div className="footer_font3">전화번호: 010-868-2604 </div>
+            <div className="footer_mg-left-10 footer_font3">Email : gyubok2@gmail.com</div>
             <div className="icon">
               <div className="footer_pd-right">
                 <img src="./images/Footer/facebook.png" alt="facebook" />

@@ -1,0 +1,11 @@
+.product-category {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+#product-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

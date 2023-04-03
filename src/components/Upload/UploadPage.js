@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Form, Input, Button, Upload, Divider, InputNumber, message } from "antd";
+import { Form, Input, Button, Upload, Divider, InputNumber, message, Select } from "antd";
 import { InboxOutlined } from "@ant-design/icons";
 import { API_URL } from "../../config/constants.js";
 import axios from "axios";
@@ -11,16 +11,18 @@ function UploadPage() {
   const { TextArea } = Input;
   const [disChecked, setDischecked] = React.useState(false);
   const [imageUrl, setImageUrl] = useState(0);
+  const [category, setCategory] = useState(0);
+
   const [discount, setDiscount] = useState(null);
   const [orgPrice, setOrgPrice] = useState(0);
-  const navigate = useNavigate();
   const [price, setPrice] = useState(null);
 
+  const navigate = useNavigate();
   useEffect(() => {
     if (disChecked && discount) {
       setPrice(Math.round((orgPrice - orgPrice * (discount / 100)) / 100) * 100);
     }
-  });
+  }, [discount]);
 
   const onFinish = (val) => {
     axios
@@ -32,6 +34,7 @@ function UploadPage() {
         description: val.description,
         discount: discount,
         price: price,
+        category: category,
       })
       .then((result) => {
         console.log(result);
@@ -51,6 +54,9 @@ function UploadPage() {
       const imageUrl = response.image;
       setImageUrl(imageUrl);
     }
+  };
+  const handleChange = (value) => {
+    setCategory(value);
   };
   return (
     <div id='upload-container'>
@@ -116,6 +122,49 @@ function UploadPage() {
           <TextArea size='large' id='product-description' showCount maxLength={300} placeholder='상품설명을 작성해주세요'></TextArea>
         </Form.Item>
 
+        <Form.Item label={<span className='upload-label'>카테고리</span>} rules={[{ required: true, message: "카테고리 선택은 필수 입니다." }]}>
+          <Select
+            defaultValue='카테고리'
+            style={{
+              width: 120,
+            }}
+            onChange={handleChange}
+            options={[
+              {
+                value: "food",
+                label: "사료",
+              },
+              {
+                value: "snack",
+                label: "간식",
+              },
+              {
+                value: "healthcare",
+                label: "건강관리",
+              },
+              {
+                value: "hygiene",
+                label: "위생",
+              },
+              {
+                value: "beauty",
+                label: "미용",
+              },
+              {
+                value: "feeder",
+                label: "급식기",
+              },
+              {
+                value: "house",
+                label: "하우스",
+              },
+              {
+                value: "scratch",
+                label: "스크래쳐",
+              },
+            ]}
+          />
+        </Form.Item>
         <Form.Item>
           <Button id='submit-button' htmlType='submit'>
             상품등록하기

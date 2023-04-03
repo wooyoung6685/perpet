@@ -2,6 +2,8 @@ import React from "react";
 import "./LoginPage.css";
 import { Button, Checkbox, Form, Input, ConfigProvider } from "antd";
 import { useNavigate } from "react-router-dom";
+import NaverLogin from './NaverLogin'
+import KakaoLogin from "./KakaoLogin";
 
 const onFinish = (values) => {
   console.log("Success:", values);
@@ -14,6 +16,7 @@ function LoginPage() {
   const onClickMembership = () => {
     navigate("/Member/Membership");
   };
+
   return (
     <div className="loginpage">
       <div className="loginpage_logo">
@@ -67,7 +70,7 @@ function LoginPage() {
             valuePropName="checked"
             wrapperCol={{
               offset: 8,
-              span: 16,
+              span: 18,
             }}
           >
             <ConfigProvider
@@ -79,35 +82,39 @@ function LoginPage() {
                 },
               }}
             >
-              <Checkbox>자동 로그인</Checkbox>
+              <div className='loginpage_login-option'>
+                <Checkbox className='loginpage_login-autologin'>자동 로그인</Checkbox>
+                <div className="snsLogin">
+                  <KakaoLogin />
+                  <NaverLogin />
+                </div>
+              </div>
+
             </ConfigProvider>
           </Form.Item>
+
           <Form.Item
             wrapperCol={{
               span: 9,
             }}
           >
-            <div className="loginpage_button">
-              <Button className="loginpage_button-login" type="primary" htmlType="submit" shape="round" danger size="large">
-                로그인
-              </Button>
+
+            <div className='loginpage_inner'>
+              <div className="loginpage_button">
+                <Button className="loginpage_button-login" type="primary" htmlType="submit" shape="round" danger size="large">
+                  로그인
+                </Button>
+              </div>
+              <div>
+                <Button className="loginpage_button-login" htmlType="submit" shape="round" size="large" onClick={onClickMembership}>
+                  회원가입
+                </Button>
+              </div>
             </div>
-          </Form.Item>
-          <Form.Item
-            wrapperCol={{
-              offset: 7,
-              span: 16,
-            }}
-          >
-            <div className="loginpage_button2">
-              <Button className="loginpage_button-login" htmlType="submit" shape="round" size="large" onClick={onClickMembership}>
-                회원가입
-              </Button>
-            </div>
+
           </Form.Item>
         </Form>
       </div>
-
       <div className="loginpage_text"></div>
       <div className="loginpage_sns"></div>
     </div>

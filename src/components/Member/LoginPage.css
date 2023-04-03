@@ -1,9 +1,11 @@
 .loginpage {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 .loginpage_logo {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding-top: 120px;
 }
 .loginpage_logo img {
@@ -28,11 +30,42 @@
 .loginpage_form .ant-row {
   justify-content: center;
 }
-.loginpage_button {
-  width: 1200px;
-  margin: 0 auto;
+
+
+.loginpage_inner{
+  width: 100%;
+  margin: auto;
 }
 
+
 .loginpage_button-login {
-  width: 444px;
+  max-width: 420px;
+  width: 100%;
+  margin: 10px;
+}
+
+.loginpage_login-autologin{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.loginpage_login-option{
+  width: 50%;
+}
+.loginpage_button-kakao{
+  border: 0;
+  outline: 0;
+  display: flex;
+  margin-right: 5px ;
+  background-color: white;
+  cursor: pointer;
+}
+
+.snsLogin{
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }

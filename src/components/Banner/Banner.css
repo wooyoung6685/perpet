@@ -55,13 +55,18 @@
   .Banner_slide .swiper-button-next {
     display: none;
   }
+  .Banner_slide .swiper-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1000px) {
   .Banner_slide.swiper {
-    min-width: 576px;
+    width: 100%;
   }
   .Banner_slide .swiper-slide img {
-    min-width: 576px;
+    height: 200px;
   }
 }

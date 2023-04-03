@@ -18,7 +18,7 @@
 |                                                               최우영                                                               |                                                               김민규                                                               |                                                              박천주                                                               |                                                              이윤재                                                               |
 | :--------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
 | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415574-eef39d30-f076-4218-abe9-fe801d224e1a.jpg" /> | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415637-bca17c0c-81c8-48c5-b97c-e691a47d76c6.jpg" /> | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415794-5d11dd8d-b068-4af8-a527-662ef4226bf1.jpg"/> | <img width="160px" src="https://user-images.githubusercontent.com/117795271/228415846-b1e87f83-8e85-490f-b672-cfecee4943b6.jpg"/> |
-|                                          [@wooyoung6685](https://github.com/wooyoung6685)                                          |                                                 [@m9](https://github.com/Min9yuuu)                                                 |                                           [parkcheonju](https://github.com/parkcheonju)                                           |                                        [@davidcool0117](https://github.com/davidcool0117)                                         |
+|                                          [@wooyoung6685](https://github.com/wooyoung6685)                                          |                                                 [@m9](https://github.com/Min9yuuu)                                                 |                                           [@parkcheonju](https://github.com/parkcheonju)                                           |                                        [@davidcool0117](https://github.com/davidcool0117)                                         |
 |                                                       wooyoung6685@gmail.com                                                       |                                                         9yu6820@gmail.com                                                          |                                                         cjswne@gmail.com                                                          |                                                      davidcool0117@gmail.com                                                      |
 
 ## 프로젝트 소개
@@ -50,25 +50,6 @@ $ npm i axios
 $ npm i swiper
 $ npm i antd
 $ npm i dayjs
-$ npm start
-```
-
-### Backend
-
-```bash
-$ git clone https://github.com/wooyoung6685/perpetserver.git
-$ cd perpetserver
-```
-
-```bash
-$ nvm use v.16.19.0
-$ npm init
-$ npm i cors
-$ npm i express
-$ npm i multer
-$ npm i nodemon
-$ npm i sequelize
-$ npm i sqlite3
 $ npm start
 ```
 
@@ -115,9 +96,9 @@ $ npm start
 
 - 아이템 클릭시 상세페이지로 이동하여 이미지와 상품에 대한 설명이 나오는 상세페이지 화면 렌더링
 
-### ⭐️ 결재기능
+### ⭐️ 결제기능
 
-- 결재 버튼 클릭시 메인페이지 렌더, 결재된 상품 soldout
+- 결제 버튼 클릭시 메인페이지 렌더, 결제된 상품 soldout
 
 <!-- Markdown link & img dfn's -->
 
