@@ -41,7 +41,7 @@ function Banner() {
       pagination={{ clickable: true }}
       loop={true}
       autoplay={{ delay: 2500 }}
-      className='Banner_slide'
+      className="Banner_slide"
       navigation
       style={{}}
     >
