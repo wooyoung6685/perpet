@@ -47,18 +47,6 @@
   margin-top: 60px;
 }
 
-.brand_text-01 {
-  width: 100%;
-  text-align: left;
-  font-size: 2rem;
-  font-family: HGHaeDotum, sans-serif;
-  font-weight: 600;
-  text-align: left;
-  line-height: 60px;
-  padding-left: 20px;
-}
-
-
 .brand_name {
   display: flex;
   flex-wrap: wrap;
