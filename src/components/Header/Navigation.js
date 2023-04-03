@@ -63,15 +63,6 @@ function Navigation() {
           </Dropdown>
         </li>
         <li>
-          <NavItem htmlText='랭킹' />
-        </li>
-        <li>
-          <NavItem htmlText='신상품' />
-        </li>
-        <li>
-          <NavItem htmlText='브랜드' />
-        </li>
-        <li>
           <Button icon={<UploadOutlined />} danger onClick={onClickUpload}>
             상품 업로드
           </Button>
