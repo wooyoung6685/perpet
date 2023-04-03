@@ -14,9 +14,9 @@ function Main() {
       <IconSlider />
       <EventBanner />
       <Product />
-      <EventBanner2 img="./images/EventBanner/EventBanner2.jpg" />
+      <EventBanner2 img='./images/EventBanner/EventBanner_cat.jpeg' category={"food"} />
       <MultipleSlide />
-      <EventBanner2 img="./images/EventBanner/EventBanner3.jpg" id="3" />
+      <EventBanner2 img='./images/EventBanner/EventBanner3.jpg' category='food' />
       <Brand />
     </div>
   );
