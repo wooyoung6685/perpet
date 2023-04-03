@@ -56,12 +56,12 @@ function ProductSec3() {
             },
           }}
         >
-          {product.map((product1, idx) => {
-            if (!product1.discount&& product1.id>=8) {
+          {product.map((product3, idx) => {
+            if (!product3.discount && idx > 8) {
               return (
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
-                    <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
+                    <ProductItem id={product3.id} image={`${API_URL}/${product3.image}`} name={product3.name} price={product3.orgPrice} seller={product3.seller} soldout={product3.soldout} />
                   </div>
                 </SwiperSlide>
               );

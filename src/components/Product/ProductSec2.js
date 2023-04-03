@@ -56,12 +56,12 @@ function ProductSec2() {
             },
           }}
         >
-          {product.map((product1, idx) => {
-            if (!product1.discount) {
+          {product.map((product2, idx) => {
+            if (!product2.discount) {
               return (
                 <SwiperSlide key={idx}>
                   <div id='product-list'>
-                    <ProductItem id={product1.id} image={`${API_URL}/${product1.image}`} name={product1.name} price={product1.orgPrice} seller={product1.seller} soldout={product1.soldout} />
+                    <ProductItem id={product2.id} image={`${API_URL}/${product2.image}`} name={product2.name} price={product2.orgPrice} seller={product2.seller} soldout={product2.soldout} />
                   </div>
                 </SwiperSlide>
               );
