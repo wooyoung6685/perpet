@@ -76,8 +76,8 @@
 
 @media (max-width: 1200px) {
   .header_side-nav{
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 80%;
   }
   .header_side-nav div ul{
     margin-left: 20px;
