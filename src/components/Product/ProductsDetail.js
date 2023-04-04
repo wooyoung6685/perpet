@@ -26,7 +26,7 @@ const ProductsDetail = () => {
 
   useEffect(() => {
     getProduct();
-  }, []);
+  }, [id]);
   if (product == null) {
     return <h1>상품정보를 받고 있습니다...</h1>;
   }
@@ -47,28 +47,28 @@ const ProductsDetail = () => {
   };
 
   return (
-    <div className="Product_detail">
-      <div id="image-box" className="hotdeal">
+    <div className='Product_detail'>
+      <div id='image-box' className='hotdeal'>
         <img src={`${API_URL}/${product.image}`} alt={product.name} />
       </div>
-      <div className="Product_content">
-        <div id="profile-box">
-          <div className="product-seller">{product.seller}</div>
+      <div className='Product_content'>
+        <div id='profile-box'>
+          <div className='product-seller'>{product.seller}</div>
         </div>
-        <div className="content-box">
-          <div id="name">{product.name}</div>
-          <div id="price">
-            {product.discount ? <span className="discount">{`${product.discount}%`}</span> : <span></span>}
-            {product.discount ? <span className="orgPrice">&nbsp;{product.orgPrice}원</span> : <span></span>}
-            {product.discount ? <div className="price">{product.price}원</div> : <div className="price">{product.orgPrice}원</div>}
+        <div className='content-box'>
+          <div id='name'>{product.name}</div>
+          <div id='price'>
+            {product.discount ? <span className='discount'>{`${product.discount}%`}</span> : <span></span>}
+            {product.discount ? <span className='orgPrice'>&nbsp;{product.orgPrice}원</span> : <span></span>}
+            {product.discount ? <div className='price'>{product.price}원</div> : <div className='price'>{product.orgPrice}원</div>}
           </div>
-          <div id="createdAt">상품등록일: {dayjs(product.createdAt).format("YY년MM월DD일")}</div>
-          <div id="description">
+          <div id='createdAt'>상품등록일: {dayjs(product.createdAt).format("YY년MM월DD일")}</div>
+          <div id='description'>
             <h2>상품설명</h2>
             {product.description}
           </div>
         </div>
-        <Button size="large" type="primary" danger={true} className="purchase" onClick={onClickPurchase} disabled={product.soldout === 1}>
+        <Button size='large' type='primary' danger={true} className='purchase' onClick={onClickPurchase} disabled={product.soldout === 1}>
           즉시 결제하기
         </Button>
       </div>
