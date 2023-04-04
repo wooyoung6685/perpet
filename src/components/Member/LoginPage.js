@@ -20,7 +20,7 @@ function LoginPage() {
   return (
     <div className="loginpage">
       <div className="loginpage_logo">
-        <img src="../images/Header/logo.svg" alt="logo" />
+        <img src="/images/Header/logo.svg" alt="logo" />
       </div>
       <div className="loginpage_form">
         <Form

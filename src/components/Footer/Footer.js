@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space, Button } from "antd";
-import { createFromIconfontCN } from "@ant-design/icons";
 import "./Footer.css";
 
-const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
-});
 
 function Footer() {
   const [open, setOpen] = useState(false);
@@ -56,7 +52,7 @@ function Footer() {
     <>
       <div className="footer_inner">
         <div className="flex footer_pd-left footer_mg-top-60">
-          <img src="./images/Footer/logo.svg" alt="myImage" />
+          <img src="/images/Footer/logo.svg" alt="myImage" />
         </div>
         <div className="footer_pd-left footer_font">
           <div className="flex footer_mg-top-20">
@@ -108,10 +104,10 @@ function Footer() {
             <div className="icon">
               <div className="footer_pd-right">
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                  <img src="./images/Footer/facebook.png" alt="facebook" />
+                  <img src="/images/Footer/facebook.png" alt="facebook" />
                 </a>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                  <img className="footer_mg-left-10" src="./images/Footer/instagram.png" alt="instagram" />
+                  <img className="footer_mg-left-10" src="/images/Footer/instagram.png" alt="instagram" />
                 </a>
               </div>
             </div>
