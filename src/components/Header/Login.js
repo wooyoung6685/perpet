@@ -1,5 +1,5 @@
 import { Button } from "antd";
-import { ShoppingCartOutlined, UserOutlined, BellOutlined, RightOutlined } from "@ant-design/icons";
+import { ShoppingCartOutlined, BellOutlined} from "@ant-design/icons";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +30,7 @@ function Login() {
           </div>
         </div>
       </div>
-      <div className="login_second">
+      {/* <div className="login_second">
         <Button style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<UserOutlined />}></Button>
         <div className="usershow">
           <ul className="usershow_item">
@@ -84,7 +84,7 @@ function Login() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Button style={{ fontSize: "20px", color: "#000" }} size="large" type="text" shape="circle" icon={<ShoppingCartOutlined />}></Button>
     </div>
   );

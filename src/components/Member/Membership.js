@@ -1,12 +1,10 @@
 import React from "react";
 import "./Membership.css";
-import { Button, Checkbox, Form, Input, Select, Divider, ConfigProvider } from "antd";
+import { Button, Checkbox, Form, Input, Divider, ConfigProvider } from "antd";
 import { useState } from "react";
 const CheckboxGroup = Checkbox.Group;
 const plainOptions = ["만 14세 이상입니다.(필수)", "이용약관(필수)", "개인정보수집 및 이용동의(필수)", "이벤트,쿠폰,핫딜 알림 메일 및 SMS 수신(선택)"];
 const defaultCheckedList = [""];
-
-const { Option } = Select;
 
 const formItemLayout = {
   labelCol: {
