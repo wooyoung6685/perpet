@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProductItem.css";
 import { Rate } from "antd";
 import { Link } from "react-router-dom";
 
 function ProductItem({ id, name, price, seller, image, orgPrice, discount, soldout }) {
+  const [rating, setRating] = useState(5);
+
+  const handleRatingChange = (newRating) => {
+    setRating(newRating);
+  };
+
   return (
     <div id='product-list' className={`soldout${soldout}`}>
       <div className='product-card'>
@@ -21,8 +27,8 @@ function ProductItem({ id, name, price, seller, image, orgPrice, discount, soldo
             <span className='product-price'>{price}원</span>
           </span>
           <span>
-            <Rate className='star' disabled defaultValue={5} />
-            <span className='star_num'> 5</span>
+            <Rate className='star' value={rating} onChange={handleRatingChange} />
+            <span className='star_num'> {rating}</span>
           </span>
         </div>
       </div>
