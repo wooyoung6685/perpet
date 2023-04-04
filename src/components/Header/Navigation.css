@@ -43,6 +43,7 @@
   height: 0.9em;
 }
 
+
 @media (max-width: 610px) {
   .ant-space-item {
     font-size: 16px !important;
