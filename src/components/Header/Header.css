@@ -113,9 +113,12 @@
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 830px) {
   .searchbar_main {
     width: 100%;
+  }
+  .header_side-nav div ul{
+    margin-left: 5px;
   }
 }
 
