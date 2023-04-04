@@ -6,7 +6,7 @@ function EventBanner2({ img, category }) {
   return (
     <div className='eventBanner2'>
       <Link to={`products/category/${category}`}>
-        <img src={img} />
+        <img src={img} alt={img}/>
       </Link>
     </div>
   );

@@ -7,7 +7,7 @@
 
 .header_main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header_nav {
@@ -67,17 +67,27 @@
   visibility: visible;
 }
 
+.header_side-nav{
+  display: none;
+}
+
+
+
 @media (max-width: 1200px) {
+  .header_side-nav{
+    display: block;
+    width: 100%;
+  }
+ 
+  .header_nav{
+    display: none; 
+  }
   .header_side {
     display: none;
   }
 
   .navButton {
     display: none;
-  }
-
-  .header_main {
-    justify-content: center;
   }
 
   .searchbar_main {
@@ -100,11 +110,6 @@
 }
 
 @media (max-width: 880px) {
-  .header_nav {
-    justify-content: start;
-    width: 100%;
-  }
-
   .searchbar_main {
     width: 100%;
   }

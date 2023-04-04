@@ -107,10 +107,10 @@ function Footer() {
             <div className="footer_mg-left-10 footer_font3">Email : gyubok2@gmail.com</div>
             <div className="icon">
               <div className="footer_pd-right">
-                <a href="https://www.facebook.com/" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                   <img src="./images/Footer/facebook.png" alt="facebook" />
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                   <img className="footer_mg-left-10" src="./images/Footer/instagram.png" alt="instagram" />
                 </a>
               </div>

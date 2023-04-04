@@ -89,6 +89,7 @@ function Header() {
         <Navigation />
         <NavButton />
       </div>
+      <div className='header_side-nav'><Navigation /></div>
     </div>
   );
 }
