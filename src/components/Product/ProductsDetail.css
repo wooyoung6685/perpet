@@ -1,6 +1,5 @@
 .Product_detail {
   display: flex;
-  position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 30px auto;
@@ -49,7 +48,7 @@
 }
 
 #name {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 600;
   padding: 10px 0 5px 0;
   margin: 0 8px;
@@ -158,4 +157,8 @@
     height: 600px;
     margin: 0 auto;
   }
+}
+
+.content_description-box{
+  margin-top: 20px;
 }

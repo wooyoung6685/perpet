@@ -65,12 +65,14 @@ const ProductsDetail = () => {
           <div id='createdAt'>상품등록일: {dayjs(product.createdAt).format("YY년MM월DD일")}</div>
           <div id='description'>
             <h2>상품설명</h2>
-            {product.description}
+            <div className='content_description-box'>{product.description}</div>
           </div>
         </div>
-        <Button size='large' type='primary' danger={true} className='purchase' onClick={onClickPurchase} disabled={product.soldout === 1}>
-          즉시 결제하기
-        </Button>
+        <div>
+          <Button size='large' type='primary' danger={true} className='purchase' onClick={onClickPurchase} disabled={product.soldout === 1}>
+            즉시 결제하기
+          </Button>
+        </div>
       </div>
     </div>
   );

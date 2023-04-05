@@ -116,7 +116,7 @@ function Footer() {
         <div>
           <div className="footer_middle footer_mg-top-60">
             <div className="footer_middle-flex">
-              <img src="./images/Footer/logo.svg" alt="myImage" />
+              <img src="/images/Footer/logo.svg" alt="myImage" />
             </div>
             <div className="footer_middle-center footer_mg-top-20">
               <Dropdown
