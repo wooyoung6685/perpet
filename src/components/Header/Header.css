@@ -7,7 +7,7 @@
 
 .header_main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header_nav {
@@ -72,17 +72,25 @@
   display: none;
 }
 
-
-
 @media (max-width: 1200px) {
+  .header_main-logo{
+    padding-left: 20px;
+  }
+  .header_main{
+    justify-content: space-between;
+  }
+.header_main-searchbar{
+  padding-right: 20px;
+}
   .header_side-nav{
-    display: inline-block;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
-  .header_side-nav div ul{
-    margin-left: 20px;
+  .header_side-nav > div > ul{
+    padding-left: 20px;
   }
- 
+
   .header_nav{
     display: none; 
   }
@@ -117,11 +125,7 @@
   .searchbar_main {
     width: 100%;
   }
-  .header_side-nav div ul{
-    margin-left: 5px;
-  }
 }
-
 @media (max-width: 720px) {
   .header_nav {
     justify-content: start;
