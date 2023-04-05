@@ -80,6 +80,9 @@
 /*======= Brand end========*/
 
 @media (max-width: 1200px) {
+  .brand_design-container {
+    justify-content: space-evenly;
+  }
   .brand_design-item {
     display: none;
   }
