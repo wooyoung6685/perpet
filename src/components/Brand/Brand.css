@@ -11,9 +11,9 @@
   justify-content: space-between;
 }
 .brand_design-item {
-  width: 30%;
+  width: 25%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .brand_design-text {
   width: 200px;

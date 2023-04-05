@@ -127,7 +127,7 @@ function Footer() {
                 onOpenChange={handleOpenChange}
                 open={open}
               >
-                <Button onClick={(e) => e.preventDefault()}>
+                <Button type="primary" danger onClick={(e) => e.preventDefault()}>
                   <Space>
                     사업자 정보
                     <DownOutlined />
