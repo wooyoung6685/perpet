@@ -8,7 +8,7 @@
 .brand_design-container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .brand_design-item {
   width: 30%;
