@@ -1,8 +1,11 @@
+.eventBanner_container{
+  height: 260px;
+}
+
 .eventBanner {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  min-height: 260px;
   margin: 30px auto;
 }
 
