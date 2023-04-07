@@ -22,7 +22,7 @@ function ProductSec2() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [product]);
   if (product == null) {
     return <h1>상품정보를 받고 있습니다...</h1>;
   }
