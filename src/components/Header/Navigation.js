@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { API_URL } from "../../config/constants";
-import NavItem from "./NavItem";
+import React from "react";
 import "./Navigation.css";
 import { MenuOutlined } from "@ant-design/icons";
 import { Dropdown, Space, Button } from "antd";
@@ -49,17 +47,13 @@ function Navigation() {
   };
   return (
     <div>
-      <ul className='Navigation'>
+      <ul className="Navigation">
         <li>
-          <Dropdown
-            menu={{
-              items,
-            }}
-          >
-            <a onClick={(e) => e.preventDefault()}>
-              <MenuOutlined className='MenuOutlined' style={{ marginTop: "-2px" }} />
+          <Dropdown menu={{ items }}>
+            <span onClick={(e) => e.preventDefault()}>
+              <MenuOutlined className="MenuOutlined" style={{ marginTop: "-2px" }} />
               <Space style={{ fontSize: "16px", color: "#454545", fontWeight: "600" }}>카테고리</Space>
-            </a>
+            </span>
           </Dropdown>
         </li>
         <li>

@@ -76,7 +76,7 @@ function Brand() {
     <div>
       <div className="brand_inner">
         <div className="brand_flex brand_mg-top60">
-          <h2>브랜드 리스트</h2>
+          <h2>브랜드 리스트🧾</h2>
         </div>
         <div className="brand_name">
           {images.map((image) => (

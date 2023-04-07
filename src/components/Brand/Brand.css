@@ -8,12 +8,12 @@
 .brand_design-container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .brand_design-item {
-  width: 30%;
+  width: 25%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .brand_design-text {
   width: 200px;
@@ -80,6 +80,9 @@
 /*======= Brand end========*/
 
 @media (max-width: 1200px) {
+  .brand_design-container {
+    justify-content: space-evenly;
+  }
   .brand_design-item {
     display: none;
   }

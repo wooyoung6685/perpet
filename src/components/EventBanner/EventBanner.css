@@ -1,10 +1,11 @@
+.eventBanner_container{
+  height: 260px;
+}
+
 .eventBanner {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  height: 155px;
-  padding-bottom: 15%;
-  overflow: hidden;
   margin: 30px auto;
 }
 
@@ -13,5 +14,47 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+}
+@media (max-width: 1024px) {
+  .eventBanner{
+    height: 250px;
+  }
+  .eventBanner img{
+    top: 30px;
+  }
+}
+
+@media (max-width: 772px) {
+  .eventBanner{
+    height: 250px;
+  }
+  .eventBanner img{
+    top: 50px;
+  }
+}
+
+@media (max-width: 772px) {
+  .eventBanner{
+    height: 250px;
+  }
+  .eventBanner img{
+    top: 50px;
+  }
+}
+
+@media (max-width: 580px) {
+  .eventBanner{
+    height: 200px;
+  }
+  .eventBanner img{
+    height: 150px;
+    top: 70px;
+  }
+}
+
+@media (max-width: 425px) {
+  .eventBanner img{
+    top: 80px;
+    height: 110px;
+  }
 }

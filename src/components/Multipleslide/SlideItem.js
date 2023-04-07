@@ -34,8 +34,8 @@ function SlideItem({ title }) {
         <SwiperSlide>
           <div>
             <div className="SwiperSlide_main">
-              <a href="#">
-                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3952/3952_mobile_main_page_banner_8941.jpg" />
+              <a href="#none">
+                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3952/3952_mobile_main_page_banner_8941.jpg" alt="banner"/>
                 <p>대용량상품 최대 66% 할인</p>
               </a>
             </div>
@@ -48,8 +48,8 @@ function SlideItem({ title }) {
         <SwiperSlide>
           <div>
             <div className="SwiperSlide_main">
-              <a href="#">
-                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3933/3933_mobile_main_page_banner_7478.jpg" />
+              <a href="#none">
+                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3933/3933_mobile_main_page_banner_7478.jpg" alt="banner"/>
                 <p>건강 필수템 최대 66% 할인</p>
               </a>
             </div>
@@ -63,7 +63,7 @@ function SlideItem({ title }) {
           <div>
             <div className="SwiperSlide_main">
               <a href="/">
-                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3882/3882_mobile_main_page_banner_4586.jpg" />
+                <img className="SwiperSlide_main-lmg" src="https://img.dogpre.com/web/dogpre/event/banner/3882/3882_mobile_main_page_banner_4586.jpg" alt="banner"/>
                 <p>건강 필수템 최대 66% 할인</p>
               </a>
             </div>

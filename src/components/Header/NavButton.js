@@ -18,10 +18,10 @@ function NavButton() {
   return (
     <div className="navButton">
       <Link onClick={showModal}>
-        <img src="./images/Header/gnb_banner_new.svg" />
+        <img src="/images/Header/gnb_banner_new.svg" alt='banner'/>
       </Link>
       <Modal title="" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <img src="./images/EventBanner/ExpirationDateGuaranteePc.jpg" />
+        <img src="/images/EventBanner/ExpirationDateGuaranteePc.jpg" alt='banner'/>
       </Modal>
     </div>
   );

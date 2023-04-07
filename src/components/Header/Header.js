@@ -31,17 +31,17 @@ function Header() {
   }, []);
 
   return (
-    <div className='header'>
-      <div className='header_main'>
-        <div className='header_main-logo'>
+    <div className="header">
+      <div className="header_main">
+        <div className="header_main-logo">
           <Logo />
         </div>
-        <div className='header_main-searchbar'>
-          <div className='searchbar_main'>
+        <div className="header_main-searchbar">
+          <div className="searchbar_main">
             <Form>
               <Input
-                className='searchbar'
-                size='large'
+                className="searchbar"
+                size="large"
                 onChange={(e) => {
                   setSearch(e.target.value);
                   const updateItem = products.filter((item) => {
@@ -55,12 +55,12 @@ function Header() {
                   }
                 }}
                 value={search}
-                placeholder='상품이름을 적어주세요'
+                placeholder="상품이름을 적어주세요"
               />
-              <Button style={{ fontSize: "25px" }} className='searchbar_icon' size='large' type='text' danger shape='circle' icon={<SearchOutlined />}></Button>
+              <Button style={{ fontSize: "25px" }} className="searchbar_icon" size="large" type="text" danger shape="circle" icon={<SearchOutlined />}></Button>
             </Form>
           </div>
-          <div id={`${addId}`} className='search_contents'>
+          <div id={`${addId}`} className="search_contents">
             {filteredData.map((el) => {
               return (
                 <Link
@@ -70,24 +70,30 @@ function Header() {
                     setAddId("");
                   }}
                 >
-                  <div className='search_content-box'>
-                    <img className='search_content-img' src={`${API_URL}/${el.image}`} />
-                    <span className='search_content-text'>{el.name}</span>
+                  <div className="search_content-box">
+                    <img className="search_content-img" src={`${API_URL}/${el.image}`} alt="content-images" />
+                    <span className="search_content-text">{el.name}</span>
                   </div>
                 </Link>
               );
             })}
           </div>
         </div>
-        <div className='header_side'>
-          <div className='header_side-login'>
+        <div className="header_side">
+          <div className="header_side-login">
             <Login />
           </div>
         </div>
       </div>
-      <div className='header_nav'>
+      <div className="header_nav">
         <Navigation />
         <NavButton />
+      </div>
+      <div className="header_side-nav">
+        <Navigation />
+        <div className='header_side-login'>
+          <Login />
+        </div>
       </div>
     </div>
   );
